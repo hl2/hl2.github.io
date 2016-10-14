@@ -1,0 +1,12 @@
+# Site settings
+title: HL2 Group
+email: contact@hl2.com
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+
+twitter_username: HL2group
+facebook_username: HL2-group-653613411447910
+
+# Build settings
+markdown: kramdown
