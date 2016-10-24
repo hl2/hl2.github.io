@@ -1,12 +1,39 @@
-# Site settings
-title: HL2 Group
+name: HL2 group
+address: 2, avenue Galilée 86961 Chasseneuil Futuroscope - FRANCE
 email: contact@hl2.com
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+description: Connected Objects Services
+
+baseurl: ""
+url: ""
+production_url : //hl2.com
 
 twitter_username: HL2group
 facebook_username: HL2-group-653613411447910
 
-# Build settings
-markdown: kramdown
+# Team names, titles and social links
+people:
+- name: Bernard Le Hetet
+  pic: bernard-le-hetet.jpg
+  position: Chief Executive Officer
+
+- name: Didier Longueville
+  pic: didier-longueville.jpg
+  position: Chief Technology Officer
+
+- name: Florent Agneray
+  pic: florent-agneray.jpg
+  position: Lead Developer
+
+- name: Mickaël Bosch
+  pic: mickael-bosch.jpg
+  position: Firmware & Hardware Developer
+
+- name: Kevin Pollet
+  pic: kevin-pollet.jpg
+  position: Web Developer
+
+- name: Guillaume Seguin
+  pic: guillaume-seguin.jpg
+  position: Web Developer
+
+paginate: 10
