@@ -1,0 +1,31 @@
+<section id="team" class="container-fluid bg-light section-next">
+    <div class="row">
+      	<div class="text-center">
+        		<h2 class="section-heading">Team</h2>
+        		<hr class="primary">
+      	</div>
+    </div>
+    <div class="row">
+      {% for member in site.members %}
+      	<div class="col-sm-4">
+        		<div class="team-member text-center">
+          			<img src="img/team/{{ member.pic }}" class="img-responsive img-circle" alt="">
+          			<h3>{{ member.name }}</h3>
+          			<p class="text-muted">{{ member.position }}</p>
+          			<ul class="list-inline social-buttons">
+                  {% for network in member.social %}
+            				<li>
+              					<a href="{{ network.url }}" target="_blank">
+                          <span class="fa-stack fa-1x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-stack-1x fa-{{ network.title }} fa-inverse"></i>
+                          </span>
+              					</a>
+            				</li>
+                  {% endfor %}
+          			</ul>
+        		</div>
+      	</div>
+      {% endfor %}
+    </div>
+	</section>

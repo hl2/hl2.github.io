@@ -1,39 +1,55 @@
-name: HL2 group
-address: 2, avenue Galilée 86961 Chasseneuil Futuroscope - FRANCE
+# Site settings
+title: HL2 Group
+defaultDescription: LoRaWAN Services and Software. Public, community-based Network as a Service (NaaS). Enabling large-scale Internet of Things (IoT) deployments and world-wide M2M applications with LoRa.
 email: contact@hl2.com
-description: Connected Objects Services
-
-baseurl: ""
-url: ""
+address: 2, avenue Galilée 86961 Chasseneuil Futuroscope - FRANCE
+url: "" # the base hostname & protocol for your site
 production_url : //hl2.com
 
 twitter_username: HL2group
 facebook_username: HL2-group-653613411447910
 
 # Team names, titles and social links
-people:
+founders:
 - name: Bernard Le Hetet
   pic: bernard-le-hetet.jpg
-  position: Chief Executive Officer
-
+  position: CEO
+  social:
+    - title: linkedin
+      url: https://fr.linkedin.com/in/bernard-le-hetet-0a4a0b83
 - name: Didier Longueville
   pic: didier-longueville.jpg
-  position: Chief Technology Officer
+  position: CTO
+  social:
+    - title: linkedin
+      url: https://fr.linkedin.com/in/bernard-le-hetet-0a4a0b83
+- name: Christian Holweck
+  pic: christian-holweck.jpg
+  position: Investor relations
+  social:
+    - title: linkedin
+      url: https://fr.linkedin.com/in/christian-holweck-aa521610a
 
+members:
 - name: Florent Agneray
   pic: florent-agneray.jpg
-  position: Lead Developer
+  position: Project Manager
 
-- name: Mickaël Bosch
+- name: Mickaël Bosh
   pic: mickael-bosch.jpg
-  position: Firmware & Hardware Developer
+  position: Firmware engineer
 
 - name: Kevin Pollet
   pic: kevin-pollet.jpg
-  position: Web Developer
+  position: Software engineer
+
+- name: David Cho-Lerat
+  pic: david-cho-lerat.jpg
+  position: Software engineer
 
 - name: Guillaume Seguin
   pic: guillaume-seguin.jpg
-  position: Web Developer
+  position: Software engineer
 
-paginate: 10
+# Build settings
+markdown: kramdown
