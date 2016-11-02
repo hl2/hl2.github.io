@@ -297,8 +297,9 @@ header {
 
 .box {
   @include border-radius($border-radius-base);
-  &.image-bottom {
+  &.media-bottom {
     padding-bottom: 0;
+    iframe,
     img {
       margin: 20px auto 0;
       @include border-bottom-radius($border-radius-base);
