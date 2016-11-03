@@ -159,6 +159,7 @@ aside {
                     }
                     &.btn {
                       box-shadow: inset 0 0 0 2px $theme-primary !important;
+                      border: none;
                     }
                 }
             }
@@ -185,9 +186,11 @@ aside {
             }
             &.btn {
               box-shadow: inset 0 0 0 2px #00438d;
+              border: none;
             }
             &.btn:hover {
               box-shadow: inset 0 0 0 2px $theme-dark;
+              border: none;
             }
         }
         &.affix {
@@ -212,6 +215,11 @@ aside {
                 }
                 &.btn {
                   box-shadow: inset 0 0 0 2px $theme-dark;
+                  border: none;
+                }
+                &.btn:hover {
+                  box-shadow: inset 0 0 0 2px $theme-primary;
+                  border: none;
                 }
             }
         }
@@ -542,7 +550,7 @@ footer {
 
 .news {
   h2 {
-    margin: 0 4em 25px;
+    margin: 2em 4em 25px;
   }
   img {
     margin: 1em auto;
