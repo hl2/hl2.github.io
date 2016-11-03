@@ -13,13 +13,13 @@
     -o-background-size: cover;
 }
 
-@mixin button-variant($color, $background, $border)
+@mixin button-variant($color, $background, $border, $backgroundAlt)
 {
 	color: $color;
 	background-color: $background;
 	border-color: $border;
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
 	@include transition-all;
 
 	&:hover,
@@ -28,9 +28,9 @@
 	&:active,
 	&.active,
 	.open > .dropdown-toggle & {
-		color: $color;
-		background-color: darken($background, 10%);
-    border-color: darken($border, 15%);
+		color: $backgroundAlt;
+		background-color: darken($color, 10%);
+    border-color: darken($backgroundAlt, 15%);
 	}
 	&:active,
 	&.active,

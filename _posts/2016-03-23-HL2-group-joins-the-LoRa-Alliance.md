@@ -1,9 +1,10 @@
 ---
 title: HL2 group joins the LoRa Alliance
 layout: news
+imageTag: <img class="img-responsive" src="/img/news/lora-alliance.jpg" alt="" />
 ---
 
-<img class="img-responsive" src="/img/news/lora-alliance.jpg" alt="" />
+{{ page.imageTag }}
 <p>
   HL2 group joining the LoRa Alliance was self-evident after these last 3 years devoted to developing our set of technologies based on LPWAN.
 </p>

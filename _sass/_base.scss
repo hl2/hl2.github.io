@@ -495,21 +495,51 @@ footer {
   h3 {
     margin: 0 4em 25px;
   }
-  section {
-    padding: 0;
-    margin: 0 4em;
-    text-align: justify;
-    img {
-      margin: 1em auto;
+  .news-date {
+    margin-bottom: 1em;
+    font-size: smaller;
+  }
+  .news-item {
+    > div:nth-child(2) {
+      display: flex;
+      @media screen and (max-width: $screen-sm) {
+        flex-direction: column;
+        > div:nth-child(2){
+          margin-top: 1em;
+          > div:last-child {
+            margin-top: 1em;
+          }
+        }
+      }
+      .news-content {
+        padding: 0;
+        margin: 0 1em;
+        text-align: justify;
+        img {
+          display: none;
+        }
+      }
+      > div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+    &:nth-child(odd) > div:nth-child(2) {
+      flex-direction: row-reverse;
+      @media screen and (max-width: $screen-sm) {
+        flex-direction: column;
+      }
+    }
+    hr {
+      margin: 4em auto;
+    }
+    &:last-child hr {
+      display: none;
     }
   }
-  .btn {
-    margin: 50px 0;
-  }
-  .news-item:last-child hr {
-    display: none;
-  }
 }
+
 .news {
   h2 {
     margin: 0 4em 25px;
@@ -625,19 +655,17 @@ input::-moz-focus-inner {
 
 // Button Styles
 .btn-default {
-    @include button-variant($theme-dark, white, $theme-dark);
+    @include button-variant(white, transparent, white, $theme-primary);
 }
 
 .btn-primary {
-    @include button-variant(white, $theme-primary, $theme-primary);
+    @include button-variant($theme-primary, transparent, $theme-primary, white);
 }
 
 .btn {
     @include sans-serif-font;
-    border: none;
-    border-radius: 300px;
+    border-radius: 6px;
     font-weight: 700;
-    text-transform: uppercase;
 }
 
 .btn-xl {
