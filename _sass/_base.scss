@@ -326,7 +326,7 @@ header {
   > div:first-child{
     padding: 1em;
     @include border-top-radius($border-radius-large);
-    h3 {
+    h2 {
       margin: 0;
     }
   }
@@ -500,7 +500,7 @@ footer {
 
 // News
 .news-list {
-  h3 {
+  h1 {
     margin: 0 4em 25px;
   }
   .news-date {
@@ -549,8 +549,8 @@ footer {
 }
 
 .news {
-  h2 {
-    margin: 2em 4em 25px;
+  h1 {
+    margin: 0 4em 25px;
   }
   img {
     margin: 1em auto;
