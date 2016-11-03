@@ -22,7 +22,7 @@ founders:
   position: CTO
   social:
     - title: linkedin
-      url: https://fr.linkedin.com/in/bernard-le-hetet-0a4a0b83
+      url: https://fr.linkedin.com/in/didier-longueville-64b5731b
 - name: Christian Holweck
   pic: christian-holweck.jpg
   position: Investor relations
@@ -31,25 +31,29 @@ founders:
       url: https://fr.linkedin.com/in/christian-holweck-aa521610a
 
 members:
-- name: Florent Agneray
+- name: Florent
   pic: florent-agneray.jpg
-  position: Project Manager
+  position: Project manager
 
-- name: Mickaël Bosh
+- name: Mickaël
   pic: mickael-bosch.jpg
   position: Firmware engineer
 
-- name: Kevin Pollet
+- name: Kevin
   pic: kevin-pollet.jpg
   position: Software engineer
 
-- name: David Cho-Lerat
+- name: David
   pic: david-cho-lerat.jpg
   position: Software engineer
 
-- name: Guillaume Seguin
+- name: Guillaume
   pic: guillaume-seguin.jpg
   position: Software engineer
+
+- name: Catherine
+  pic: catherine-lagorre.jpg
+  position: Accounting & admin
 
 # Build settings
 markdown: kramdown

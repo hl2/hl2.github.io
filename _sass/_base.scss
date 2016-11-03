@@ -73,6 +73,9 @@ ol {
 .bg-light {
     background-color: $theme-light;
     color: $theme-dark;
+    .text-highlighting {
+      color: $theme-primary;
+    }
 }
 
 .bg-primary {
@@ -263,10 +266,7 @@ header {
         min-height: 100%;
         .header-content {
             position: absolute;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+            bottom: 0;
             padding: 0 50px;
             .header-content-inner {
                 max-width: 1000px;
@@ -521,6 +521,13 @@ footer {
     margin: 0 4em;
   }
 }
+
+/* Youtube */
+.ytp-watermark,
+.yt-uix-sessionlink {
+  display: none;
+}
+
 
 /* google search */
 
