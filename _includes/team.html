@@ -2,12 +2,19 @@
     <div class="row">
       	<div class="text-center">
         		<h2 class="section-heading">Team</h2>
-        		<hr class="primary">
+
       	</div>
     </div>
     <div class="row">
+      {% assign first = true %}
       {% for member in site.members %}
-      	<div class="col-sm-2">
+        {% if first == true %}
+        	<div class="col-sm-2 col-sm-offset-2">
+        {% elsif member.pic == 'david-cho-lerat.jpg' %}
+          <div class="col-sm-2 col-sm-offset-2">
+        {% else %}
+          <div class="col-sm-2 col-sm-offset-1">
+        {% endif %}
         		<div class="team-member text-center">
           			<img src="img/team/{{ member.pic }}" class="img-responsive img-circle" alt="">
           			<h3>{{ member.name }}</h3>
@@ -26,6 +33,7 @@
           			</ul>
         		</div>
       	</div>
+        {% assign first = false %}
       {% endfor %}
     </div>
 	</section>
