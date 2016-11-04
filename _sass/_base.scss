@@ -91,6 +91,10 @@ ol {
     color: rgba(white, .7);
 }
 
+.top-spacing {
+  margin-top: 50px;
+}
+
 section {
     padding: 47px 0;
     &.section-continue {
@@ -435,11 +439,13 @@ header {
       margin: 0 auto;
       border: 8px solid #eee;
       margin-bottom: 32px;
+      width: 127px;
     }
     h3 {
       margin-top: 25px;
       margin-bottom: 0;
       text-transform: none;
+      font-size: 18px;
     }
     p {
       margin-top: 0;
