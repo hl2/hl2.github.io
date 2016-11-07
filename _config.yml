@@ -14,21 +14,12 @@ founders:
 - name: Bernard Le Hetet
   pic: bernard-le-hetet.jpg
   position: CEO
-  social:
-    - title: linkedin
-      url: https://fr.linkedin.com/in/bernard-le-hetet-0a4a0b83
 - name: Didier Longueville
   pic: didier-longueville.jpg
   position: CTO
-  social:
-    - title: linkedin
-      url: https://fr.linkedin.com/in/didier-longueville-64b5731b
 - name: Christian Holweck
   pic: christian-holweck.jpg
   position: Investor relations
-  social:
-    - title: linkedin
-      url: https://fr.linkedin.com/in/christian-holweck-aa521610a
 
 members:
 - name: Florent
@@ -38,6 +29,10 @@ members:
 - name: Mickaël
   pic: mickael-bosch.jpg
   position: Firmware engineer
+
+- name: Philippe
+  pic: philippe-delussy.jpg
+  position: Business development manager
 
 - name: Kevin
   pic: kevin-pollet.jpg
