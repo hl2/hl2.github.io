@@ -41,6 +41,10 @@ members:
   pic: kevin-pollet.jpg
   position: Software engineer
 
+- name: Claude
+  pic: claude-wesquy.jpg
+  position: Business development manager
+
 - name: David
   pic: david-cho-lerat.jpg
   position: Software engineer
