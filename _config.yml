@@ -17,9 +17,11 @@ founders:
   social:
     - title: linkedin
       url: https://fr.linkedin.com/in/bernard-le-hetet-167180113
+
 - name: Didier Longueville
   pic: didier-longueville.jpg
   position: CTO
+
 - name: Christian Holweck
   pic: christian-holweck.jpg
   position: Investor relations
@@ -32,6 +34,10 @@ members:
 - name: Mickaël
   pic: mickael-bosch.jpg
   position: Firmware engineer
+
+- name: Sophie
+  pic: sophie-roubertie.jpg
+  position: Communication
 
 - name: Philippe
   pic: philippe-delussy.jpg
