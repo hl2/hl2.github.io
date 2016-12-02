@@ -31,6 +31,10 @@ members:
   pic: florent-agneray.jpg
   position: Project manager
 
+- name: Jean-Louis
+  pic: jean-louis-guillon.jpg
+  position: Mechatronics engineer
+
 - name: Mickaël
   pic: mickael-bosch.jpg
   position: Firmware engineer
@@ -62,6 +66,10 @@ members:
 - name: Catherine
   pic: catherine-lagorre.jpg
   position: Accounting & admin
+
+- name: Anthony
+  pic: anthony-rabine.jpg
+  position: Community manager
 
 # Build settings
 markdown: kramdown
