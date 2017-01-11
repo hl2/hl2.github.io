@@ -43,10 +43,6 @@ members:
   pic: sophie-roubertie.jpg
   position: Communication
 
-- name: Philippe
-  pic: philippe-delussy.jpg
-  position: Business development manager
-
 - name: Kevin
   pic: kevin-pollet.jpg
   position: Software engineer
