@@ -13,10 +13,7 @@ facebook_username: hl2group
 founders:
 - name: Bernard Le Hetet
   pic: bernard-le-hetet.jpg
-  position: CEO
-  social:
-    - title: linkedin
-      url: https://fr.linkedin.com/in/bernard-le-hetet-167180113
+  position: Associate
 
 - name: Didier Longueville
   pic: didier-longueville.jpg
@@ -27,43 +24,43 @@ founders:
   position: Investor relations
 
 members:
-- name: Florent
+- name: Florent Agneray
   pic: florent-agneray.jpg
-  position: Project manager
+  position: Chairman
 
-- name: Jean-Louis
+- name: Jean-Louis Guillon
   pic: jean-louis-guillon.jpg
   position: Mechatronics engineer
 
-- name: Mickaël
+- name: Mickaël Bosch
   pic: mickael-bosch.jpg
-  position: Firmware engineer
+  position: Hardware tech lead
 
-- name: Sophie
+- name: Sophie Roubertie
   pic: sophie-roubertie.jpg
   position: Communication
 
-- name: Kevin
+- name: Kevin Pollet
   pic: kevin-pollet.jpg
-  position: Software engineer
+  position: Software tech lead
 
-- name: Claude
+- name: Claude Wesquy
   pic: claude-wesquy.jpg
   position: Business development manager
 
-- name: David
+- name: David Cho-lerat
   pic: david-cho-lerat.jpg
   position: Software engineer
 
-- name: Guillaume
+- name: Guillaume Seguin
   pic: guillaume-seguin.jpg
   position: Software engineer
 
-- name: Catherine
+- name: Catherine Lagorre
   pic: catherine-lagorre.jpg
   position: Accounting & admin
 
-- name: Anthony
+- name: Anthony Rabine
   pic: anthony-rabine.jpg
   position: Community manager
 
