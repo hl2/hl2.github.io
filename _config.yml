@@ -28,10 +28,6 @@ members:
   pic: florent-agneray.jpg
   position: Chairman
 
-- name: Jean-Louis Guillon
-  pic: jean-louis-guillon.jpg
-  position: Mechatronics engineer
-
 - name: Mickaël Bosch
   pic: mickael-bosch.jpg
   position: Hardware tech lead
