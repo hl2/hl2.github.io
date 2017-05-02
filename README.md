@@ -19,7 +19,8 @@ Follow the online documentation of [Jekyll](https://jekyllrb.com/docs/quickstart
 
 From the root project :
 ```
-jekyll serve
+npm i
+npm start
 ```
 
 ## License

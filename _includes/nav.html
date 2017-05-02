@@ -1,63 +1,103 @@
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+{% assign homePageHref = "/" %}
+{% assign hrefSuffix = "/" %}
 {% if page.url == "/" %}
-            <a class="navbar-brand page-scroll" href="#page-top">
-                <img src="/img/logo.svg" alt=""/>
-            </a>
-{% else %}
-            <a class="navbar-brand page-scroll" href="/">
-                <img src="/img/logo.svg" alt=""/>
-            </a>
+  {% assign homePageHref = "#page-top" %}
+  {% assign hrefSuffix = "" %}
 {% endif %}
-        </div>
+<nav
+  class="navbar navbar-toggleable-sm fixed-top navbar-light bg-faded"
+  role="navigation"
+>
+  <a
+    class="navbar-brand"
+    href="{{ homePageHref }}"
+  >
+    <img
+      src="/img/logo.svg"
+      alt=""
+      width="136"
+      height="30"
+    />
+  </a>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-{% if page.url == "/" %}
-                <li>
-                    <a class="page-scroll" href="#about">About</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#hardware">Hardware</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#network">Networks</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                </li>
-{% else %}
-                <li>
-                    <a href="/#about">About</a>
-                </li>
-                <li>
-                    <a href="/#hardware">Hardware</a>
-                </li>
-                <li>
-                    <a href="/#network">Networks</a>
-                </li>
-                <li>
-                    <a href="/#contact">Contact</a>
-                </li>
-{% endif %}
-		            <li>
-                    <a href="/news" role="button">News</a>
-                </li>
-		            <li>
-                    <a class="btn btn-default btn-xs" href="/signin.html" role="button">Sign In</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
+  <div
+    id="navbarSupportedContent"
+    class="collapse navbar-collapse justify-content-end"
+  >
+    <ul
+      class="navbar-nav"
+    >
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="{{ hrefSuffix }}#about"
+        >
+          About
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="{{ hrefSuffix }}#hardware"
+        >
+          Hardware
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="{{ hrefSuffix }}#network"
+        >
+          Networks
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="{{ hrefSuffix }}#contact"
+        >
+          Contact
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="/news"
+        >
+          News
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="/signin.html"
+        >
+          Sign In
+        </a>
+      </li>
+    </ul>
+  </div>
+  <button
+    class="navbar-toggler navbar-toggler-right"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
 </nav>

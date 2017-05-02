@@ -1,0 +1,31 @@
+{
+  "name": "hl2.com",
+  "version": "2.0.0",
+  "description": "## Synopsis",
+  "main": "index.html",
+  "scripts": {
+    "build": "gulp",
+    "prestart": "npm run build",
+    "start": "jekyll serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hl2/hl2.com.git"
+  },
+  "author": "HL2 group",
+  "license": "Copyright (C) HL2 group",
+  "bugs": {
+    "url": "https://github.com/hl2/hl2.com/issues"
+  },
+  "homepage": "https://github.com/hl2/hl2.com#readme",
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "font-awesome": "4.7.0",
+    "jquery.easing": "1.4.1"
+  },
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-inject": "4.2.0"
+  }
+}
