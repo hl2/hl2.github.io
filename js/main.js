@@ -62,7 +62,13 @@
       duration: 1000,
       delay: 200,
   };
-  window.sr = ScrollReveal();
+  var config = {
+    viewFactor : 0.15,
+    duration   : 800,
+    distance   : "0px",
+    scale      : 0.8,
+  };
+  window.sr = new ScrollReveal(config);
   sr.reveal(".sr-hello", hello);
   sr.reveal(".sr-intro", intro);
   sr.reveal(".sr-hello .sr-desc", description);

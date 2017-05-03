@@ -47,5 +47,6 @@ $border-radius-small: 3px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "mixins",
-        "base"
+        "base",
+        "animate"
 ;

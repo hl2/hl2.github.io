@@ -14,6 +14,7 @@ gulp.task('copy-css-vendor', function() {
   return gulp
     .src([
       './node_modules/bootstrap/dist/css/bootstrap.min.css',
+      './node_modules/animate.css/animate.min.css',
     ])
     .pipe(
       gulp.dest('./css/vendor')
@@ -41,6 +42,7 @@ gulp.task('inject-dependencies', function() {
       inject(
         gulp.src(
           [
+            './css/vendor/animate.min.css',
             './css/vendor/bootstrap.min.css',
             './js/vendor/jquery.min.js',
             './js/vendor/tether.min.js',
