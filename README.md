@@ -23,6 +23,10 @@ npm i
 npm start
 ```
 
+## Todos
+
+You must launch `npm run build` twice on adding a new dependency
+
 ## License
 
 Copyright (C) HL2 group

@@ -27,6 +27,7 @@ gulp.task('copy-js-vendor', function() {
       './node_modules/tether/dist/js/tether.min.js',
       './node_modules/bootstrap/dist/js/bootstrap.min.js',
       './node_modules/jquery.easing/jquery.easing.min.js',
+      './node_modules/scrollreveal/dist/scrollreveal.min.js',
     ])
     .pipe(
       gulp.dest('./js/vendor')
@@ -45,6 +46,7 @@ gulp.task('inject-dependencies', function() {
             './js/vendor/tether.min.js',
             './js/vendor/bootstrap.min.js',
             './js/vendor/jquery.easing.min.js',
+            './js/vendor/scrollreveal.min.js',
           ],
           {
             read: false
