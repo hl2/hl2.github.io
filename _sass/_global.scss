@@ -59,39 +59,12 @@ ol {
   }
 }
 
-.bg-light {
-    background-color: $theme-light;
-    color: $theme-dark;
-    .text-highlighting {
-      color: $theme-primary;
-    }
-}
-
-.bg-primary {
-    background-color: $theme-primary;
-}
-
-.bg-dark {
-    background-color: $theme-dark;
-    color: $theme-light;
-}
-
 .text-faded {
     color: rgba(white, .7);
 }
 
 .top-spacing {
   margin-top: 50px;
-}
-
-section {
-    padding: 47px 0;
-    &.section-continue {
-      padding-bottom: 0;
-    }
-    &.section-next {
-      padding-top: 0;
-    }
 }
 
 aside {
@@ -103,11 +76,6 @@ aside {
 }
 
 // Sections
-
-.section-heading {
-    margin-top: 0;
-    margin-bottom: 50px;
-}
 
 .section-overlay {
   margin-top: -17%;
@@ -125,16 +93,6 @@ aside {
     }
     img {
       @include border-radius($border-radius-small);
-    }
-}
-
-// internal page
-.row {
-    h1 {
-        margin-bottom: 50px;
-    }
-    ul {
-        list-style: none;
     }
 }
 

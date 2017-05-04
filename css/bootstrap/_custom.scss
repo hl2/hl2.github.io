@@ -3,7 +3,9 @@
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
 
-$blue: #2196f3;
+$blue: #21589c;
+
+$brand-primary: $blue;
 
 $font-family-base: 'Open Sans', 'Helvetica Neue', $font-family-sans-serif;
 

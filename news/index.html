@@ -2,39 +2,31 @@
 title: News posts
 layout: default
 ---
-<section class="container-fluid news-list">
-		<div class="row">
-		  	<div class="text-center">
-		    		<h1 class="section-heading">{{ page.title }}</h1>
-		    		<hr class="primary">
-		  	</div>
-		</div>
-	{% for post in site.posts offset: 0 limit: 10 %}
-		<div class="container-fluid news-item">
-				<div class="row">
-						<div class="text-center section-heading">
-								<h2>
-										<a href="{{ post.url }}">{{ post.title }}</a>
-								</h2>
-						</div>
-						<p class="news-date col-sm-2">{{ post.date | date_to_string }}</p>
+<section class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col text-center">
+			<h1 class="p-5 text-muted">
+				{{ page.title }}
+			</h1>
+    </div>
+  </div>
+	<ul class="list-unstyled list-group">
+		{% for post in site.posts offset: 0 limit: 10 %}
+	  <li class="media m-3">
+			<a href="{{ post.url }}" class="list-group-item list-group-item-action flex-column align-items-start">
+				<img class="img-fluid d-flex mr-3" src="{{ post.image }}" alt="{{ post.title }} image">
+				<div class="media-body">
+					<div class="d-flex w-100 justify-content-between p-2">
+						<h3 class="mt-0 mb-1">{{ post.title }}</h3>
+						<small>{{ post.date | date_to_string }}</small>
+					</div>
+					<p class="mb-1">
+						{{ post.content | remove: '<p>' | remove: '</p>' | slice: 0, 400 }}...
+					</p>
+					<small>Read Article</small>
 				</div>
-				<div class="row">
-						<div class="col-sm-6">
-								{{ post.imageTag }}
-						</div>
-						<div class="col-sm-6">
-								<div class="news-content">
-										{{ post.content | remove: post.imageTag  | remove: '<p>' | remove: '</p>' | slice: 0, 400 }}...
-								</div>
-								<div class="text-center">
-										<a class="btn btn-primary" href="{{ post.url }}" role="button">Read Article</a>
-								</div>
-						</div>
-				</div>
-				<div class="row">
-						<hr class="primary">
-				</div>
-		</div>
-	{% endfor %}
+			</a>
+	  </li>
+		{% endfor %}
+	</ul>
 </section>

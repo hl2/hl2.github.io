@@ -1,29 +1,45 @@
 <section id="contact" class="container-fluid bg-primary">
-    <div class="row">
-        <div class="text-center col-xs-10 col-xs-offset-1">
-            <h2 class="section-heading">Let's Get In Touch&nbsp!</h2>
-
-            <p>
-                Ready to start your next project with us ? That's great&nbsp!<br>
-                Send us an email and we will get back to you as soon as possible&nbsp!
-            </p>
-        </div>
+  <div class="row justify-content-center">
+    <div class="col-8 text-white text-center">
+      <h2 class="p-5">
+				Let's Get In Touch!
+			</h2>
+      <p class="m-1">
+        Ready to start your next project with us? That's great!
+      </p>
+      <div class="w-100"></div>
+      <p class="m-1">
+        Send us an email and we will get back to you as soon as possible!
+      </p>
     </div>
-    <div class="row">
-        <div class="col-sm-2 col-sm-offset-3 text-center">
-            <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
-                <i class="fa fa-twitter fa-3x sr-icons"></i>
-            </a>
-        </div>
-        <div class="col-sm-2 text-center">
-            <a href="mailto:{{ site.email }}" target="_blank">
-            <i class="fa fa-envelope-o fa-3x sr-icons"></i>
-            </a>
-        </div>
-        <div class="col-sm-2 text-center">
-            <a href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
-            <i class="fa fa-facebook fa-3x sr-icons"></i>
-            </a>
-        </div>
+  </div>
+  <div class="row justify-content-center p-5 text-center">
+    <div class="col">
+      <a
+        href="https://twitter.com/{{ site.twitter_username }}"
+        target="_blank"
+        class="btn btn-primary"
+      >
+        <i class="fa fa-twitter fa-3x sr-icons"></i>
+      </a>
     </div>
+    <div class="col">
+      <a
+        href="mailto:{{ site.email }}"
+        target="_blank"
+        class="btn btn-primary"
+      >
+        <i class="fa fa-envelope-o fa-3x sr-icons"></i>
+      </a>
+    </div>
+    <div class="col">
+      <a
+        href="https://facebook.com/{{ site.facebook_username }}"
+        target="_blank"
+        class="btn btn-primary"
+      >
+        <i class="fa fa-facebook fa-3x sr-icons"></i>
+      </a>
+    </div>
+  </div>
 </section>

@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body id="page-top" class="margins">
+<body id="page-top" class="margins">
 
-    {% include nav.html %}
-    {% include header.html %}
-    <div class="container-fluid">
-        <section class="section-overlay row">
-          <div class="col-lg-10 col-lg-offset-1">
+  {% include nav.html %}
+  {% include header.html %}
+  <div class="container-fluid">
+    <section class="section-overlay row">
+      <div class="col-lg-10 col-lg-offset-1">
 
-            {{ content }}
+        {{ content }}
 
-          </div>
-        </section>
-    </div>
-
+      </div>
+    </section>
     {% include contact.html %}
-    {% include scripts.html %}
-  </body>
+  </div>
+
+  {% include scripts.html %}
+</body>
 
 </html>

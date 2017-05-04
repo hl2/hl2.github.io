@@ -1,22 +1,6 @@
 /**
  * Team styling
  */
-.team-member {
-    margin-bottom: 50px;
-    text-align: center;
-    img {
-      margin: 0 auto;
-      border: 8px solid #eee;
-      margin-bottom: 32px;
-      width: 127px;
-    }
-    h3 {
-      margin-top: 25px;
-      margin-bottom: 0;
-      text-transform: none;
-      font-size: 18px;
-    }
-    p {
-      margin-top: 0;
-    }
+img.gray-border {
+  border: 8px solid #eee;
 }

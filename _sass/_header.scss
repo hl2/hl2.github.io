@@ -1,7 +1,6 @@
 /**
  * Header styling
  */
-
 header {
     position: relative;
     width: 100%;
@@ -15,13 +14,13 @@ header {
       background-image: url('../img/header-mini.jpg');
       min-height: 130px;
     }
-    .header-content {
+    & .header-content {
         position: relative;
         text-align: center;
-        padding: 100px 15px 125px;
         width: 100%;
         &.bg-dark {
           background-color: rgba($theme-dark, .6);
+          color: $theme-light;
         }
         .header-content-inner {
             h1 {

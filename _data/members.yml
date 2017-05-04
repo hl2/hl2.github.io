@@ -1,0 +1,35 @@
+- name: Florent Agneray
+  pic: florent-agneray.jpg
+  position: Chairman
+
+- name: Mickaël Bosch
+  pic: mickael-bosch.jpg
+  position: Hardware tech lead
+
+- name: Sophie Roubertie
+  pic: sophie-roubertie.jpg
+  position: Communication
+
+- name: Kevin Pollet
+  pic: kevin-pollet.jpg
+  position: Software tech lead
+
+- name: Claude Wesquy
+  pic: claude-wesquy.jpg
+  position: Business development manager
+
+- name: David Cho-lerat
+  pic: david-cho-lerat.jpg
+  position: Software engineer
+
+- name: Guillaume Seguin
+  pic: guillaume-seguin.jpg
+  position: Software engineer
+
+- name: Catherine Lagorre
+  pic: catherine-lagorre.jpg
+  position: Accounting & admin
+
+- name: Anthony Rabine
+  pic: anthony-rabine.jpg
+  position: Community manager

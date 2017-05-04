@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+{% include head.html %}
 
-  {% include head.html %}
-
-  <body id="page-top">
-
-    {% include nav.html %}
-
-    <section class="news container-fluid">
-    		<div class="row">
-    		  	<div class="text-center">
-    		    		<h1 class="section-heading">{{ page.title }}</h1>
-    		    		<hr class="primary">
-    		  	</div>
-    		</div>
-        <div class="row">
-          <span class="date">{{ page.date | date_to_string }}</span>
-          {{ page.content }}
-        </div>
-		</section>
-
-  </body>
-
+<body id="page-top">
+  {% include nav.html %}
+  <section class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col text-center">
+        <img class="img-fluid" src="{{ page.image }}" alt="">
+        <h3 class="p-5 text-muted">
+  				{{ page.title }}
+  			</h3>
+      </div>
+    </div>
+    <div class="row justify-content-start">
+      <div class="col">
+        {{ page.content }}
+        <small>{{ page.date | date_to_string }}</small>
+      </div>
+    </div>
+  </section>
   {% include contact.html %}
   {% include scripts.html %}
+</body>
 
 </html>

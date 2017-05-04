@@ -1,0 +1,14 @@
+- name: Sigfox
+  img: sigfox.svg
+  imgAlt: Sigfox
+
+- name: Loriot
+  img: loriot.png
+  imgAlt: Loriot
+
+- img: orange.svg
+  imgAlt: Orange
+
+- img: ttn.svg
+  imgAlt: The Things Network
+  unavailable: true

@@ -1,39 +1,39 @@
-<section id="founder" class="container-fluid bg-light section-continue">
-    <div class="row">
-      	<div class="text-center">
-        		<h2 class="section-heading">Founders</h2>
-
-      	</div>
-    </div>
-    <div class="row">
-      {% assign first = true %}
-      {% for member in site.founders %}
-      {% if first == true %}
-      	<div class="col-sm-2 col-sm-offset-2">
-      {% else %}
-        <div class="col-sm-2 col-sm-offset-1">
-      {% endif %}
-        		<div class="team-member text-center">
-          			<img src="img/team/{{ member.pic }}" class="img-fluid img-circle" alt="">
-          			<h3>{{ member.name }}</h3>
-          			<p class="text-muted">{{ member.position }}</p>
-                {% if member.social | size %}
-          			<ul class="list-inline social-buttons">
-                  {% for network in member.social %}
-            				<li>
-              					<a href="{{ network.url }}" target="_blank">
-                          <span class="fa-stack fa-1x">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-stack-1x fa-{{ network.title }} fa-inverse"></i>
-                          </span>
-              					</a>
-            				</li>
-                  {% endfor %}
-          			</ul>
-              {% endif %}
-        		</div>
-      	</div>
-        {% assign first = false %}
-      {% endfor %}
-    </div>
-	</section>
+<section id="founder" class="container-fluid">
+	<div class="row justify-content-center">
+		<div class="col-8">
+			<h2 class="text-center p-5">
+				Founders
+			</h2>
+		</div>
+	</div>
+  <div class="row justify-content-center">
+		{% for founder in site.data.founders %}
+		<div class="col card border-0">
+			<img
+				class="rounded-circle mx-auto img-fluid gray-border"
+				src="img/founder/{{ founder.pic }}"
+				alt="{{ founder.name }} image"
+			/>
+			<div class="card-block text-center">
+				<h5 class="card-title">{{ founder.name }}</h5>
+				<p class="card-text text-muted">
+					<span>{{ founder.position }}</span>
+        	{% if founder.social | size %}
+	        <ul class="list-inline social-buttons">
+	          {% for network in founder.social %}
+	          <li>
+	            <a href="{{ network.url }}" target="_blank">
+	              <span class="fa-stack fa-1x">
+	                <i class="fa fa-circle fa-stack-2x"></i>
+	                <i class="fa fa-stack-1x fa-{{ network.title }} fa-inverse"></i>
+	              </span>
+	            </a>
+	          </li>
+	          {% endfor %}
+	        </ul>
+        	{% endif %}
+				</p>
+			</div>
+		</div>
+		{% endfor %}
+</section>

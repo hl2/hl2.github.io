@@ -3,6 +3,11 @@
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
 
+// [_reboot.scss](https://github.com/twbs/bootstrap/blob/v4.0.0-alpha.6/scss/_reboot.scss#L75)
+body {
+  margin: 0;
+}
+
 // [_navbar.scss](https://github.com/twbs/bootstrap/blob/v4-dev/scss/_navbar.scss)
 .navbar {
   text-transform: uppercase;

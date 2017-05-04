@@ -1,32 +1,30 @@
-<section id="network"  class="container-fluid bg-primary">
-		<div class="row">
-				<div class="text-center">
-  					<h2 class="section-heading">Integrated networks</h2>
-				</div>
+<section id="network" class="container-fluid bg-primary">
+	<div class="row justify-content-center">
+		<div class="col-8">
+			<h2 class="text-white text-center p-5">
+				Integrated networks
+			</h2>
 		</div>
-		<div class="row">
-				<div class="col-sm-3 text-center sr-block">
-  					<div class="service-box">
-    						<img src="img/network/sigfox.svg" alt="" />
-    						<h4>Sigfox</h4>
-  					</div>
-				</div>
-				<div class="col-sm-3 text-center sr-block">
-  					<div class="service-box">
-    						<img src="img/network/loriot.png" alt="" />
-    						<h4>Loriot</h4>
-  					</div>
-				</div>
-				<div class="col-sm-3 text-center sr-block">
-  					<div class="service-box">
-    						<h4><img src="img/network/orange.svg" alt="Orange" /></h4>
-  					</div>
-				</div>
-				<div class="col-sm-3 text-center sr-block">
-  					<div class="service-box">
-    						<h4><img src="img/network/ttn.svg" alt="The Things Network" /></h4>
-    						<p class="text-highlighting animated bounceIn">Coming soon !</p>
-  					</div>
-				</div>
+	</div>
+	<div class="row justify-content-start">
+		{% for network in site.data.networks %}
+		<div class="col card bg-primary border-0 sr-block">
+			<img
+				class="card-img-top mx-auto"
+				src="img/network/{{ network.img }}"
+				alt="{{ network.imgAlt }} logo"
+			/>
+			<div class="card-block text-white text-center">
+				{% if network.name %}
+				<h5 class="card-title">{{ network.name }}</h5>
+				{% endif %}
+				{% if network.unavailable %}
+				<p class="card-text">
+					<span class="animated bounceIn">Coming soon !</span>
+				</p>
+				{% endif %}
+			</div>
 		</div>
+		{% endfor %}
+	</div>
 </section>

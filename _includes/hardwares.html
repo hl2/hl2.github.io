@@ -1,41 +1,28 @@
-<section id="hardware" class="container-fluid bg-light">
-		<div class="row">
-				<div class="text-center">
-  					<h2 class="section-heading">Supported hardware</h2>
-
-				</div>
+<section id="hardware" class="container-fluid">
+	<div class="row justify-content-center">
+		<div class="col-8">
+			<h2 class="text-center p-5">
+				Supported hardware
+			</h2>
 		</div>
-		<div class="row">
-				<div class="col-sm-3 col-xs-12 text-center sr-block">
-  					<div class="service-box">
-    						<img src="img/hardware/td1208.jpg" alt="" />
-    						<h4>Telecom Design (TD1208)</h4>
-  					</div>
-				</div>
-				<div class="col-sm-3 col-xs-12 text-center sr-block">
-  					<div class="service-box">
-    						<img src="img/hardware/nemeus.jpg" alt="" />
-    						<h4>Nemeus (MM02-LS-EU, MM02-L-EU)</h4>
-  					</div>
-				</div>
-				<div class="col-sm-3 col-xs-12 text-center sr-block">
-  					<div class="service-box">
-    						<img src="img/hardware/multitech.jpg" alt="" />
-    						<h4>Multitech (MTDOT-868)</h4>
-  					</div>
-				</div>
-				<div class="col-sm-3 col-xs-12 text-center sr-block">
-  					<div class="service-box">
-    						<img src="img/hardware/multitech.jpg" alt="" />
-    						<h4>Multitech (MTDOT-915)</h4>
-    						<p class="text-highlighting animated bounceIn">Available soon !</p>
-  					</div>
-				</div>
-				<div class="col-sm-3 col-xs-12 text-center sr-block">
-  					<div class="service-box">
-    						<img src="img/hardware/standard-HL2-pld.jpg" alt="" />
-    						<h4>Standard HL2 PLD</h4>
-  					</div>
-				</div>
+	</div>
+	<div class="row justify-content-start">
+		{% for hardware in site.data.hardwares %}
+		<div class="col card border-0 sr-block">
+			<img
+				class="card-img-top mx-auto"
+				src="img/hardware/{{ hardware.img }}"
+				alt="{{ hardware.name }} image"
+			/>
+			<div class="card-block">
+				<h5 class="card-title">{{ hardware.name }}</h5>
+				<p class="card-text">
+					{% if hardware.unavailable %}
+					<span class="text-primary animated bounceIn">Available soon !</span>
+					{% endif %}
+				</p>
+			</div>
 		</div>
+		{% endfor %}
+	</div>
 </section>
