@@ -1,0 +1,13 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+// [_navbar.scss](https://github.com/twbs/bootstrap/blob/v4-dev/scss/_navbar.scss)
+.navbar {
+  text-transform: uppercase;
+}
+
+.nav-link.btn-outline-secondary {
+  @include button-outline-variant($navbar-light-color);
+}
