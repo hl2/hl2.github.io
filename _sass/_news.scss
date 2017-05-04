@@ -1,0 +1,68 @@
+/**
+ * News styling
+ */
+.news-list {
+  h1 {
+    margin: 0 4em 25px;
+  }
+  .news-date {
+    margin-bottom: 1em;
+    font-size: smaller;
+  }
+  .news-item {
+    h2 {
+      a:hover {
+        text-decoration: none;
+      }
+    }
+    > div:nth-child(2) {
+      display: flex;
+      @media screen and (max-width: $screen-sm) {
+        flex-direction: column;
+        > div:nth-child(2){
+          margin-top: 1em;
+          > div:last-child {
+            margin-top: 1em;
+          }
+        }
+      }
+      .news-content {
+        padding: 0;
+        margin: 0 1em;
+        text-align: justify;
+        img {
+          display: none;
+        }
+      }
+      > div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+    &:nth-child(odd) > div:nth-child(2) {
+      flex-direction: row-reverse;
+      @media screen and (max-width: $screen-sm) {
+        flex-direction: column;
+      }
+    }
+    hr {
+      margin: 6em auto;
+    }
+    &:last-child hr {
+      display: none;
+    }
+  }
+}
+
+.news {
+  h1 {
+    margin: 0 4em 25px;
+  }
+  img {
+    margin: 1em auto;
+  }
+  .row:last-child {
+    margin: 0 4em;
+  }
+}

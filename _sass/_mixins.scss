@@ -57,18 +57,6 @@
 	}
 }
 
-@import url(//fonts.googleapis.com/css?family=Lato);
-
-@mixin sans-serif-font()
-{
-	font-family: 'Lato', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-}
-
-@mixin serif-font()
-{
-	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
-}
-
 @mixin border-radius($radius)
 {
   -webkit-border-radius: $radius;

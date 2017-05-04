@@ -1,0 +1,172 @@
+/**
+ * Global styling
+ */
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body.margins {
+  background-color: darken(white, 5%);
+}
+
+hr {
+    border-color: $theme-primary;
+    border-width: 3px;
+    max-width: 50px;
+}
+
+hr.light {
+    border-color: $theme-light;
+}
+
+.bg-primary hr {
+  border-color: $theme-light;
+}
+
+a {
+    @include transition-all;
+    color: $theme-primary;
+    &:hover,
+    &:focus {
+        color: darken($theme-primary, 10%);
+    }
+}
+
+.bg-primary a:not(.btn-default) {
+  color: $theme-light;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+ul,
+ol {
+  font-size: 16px;
+  line-height: 1.5;
+  list-style-position: inside;
+  padding: 0;
+  &.in-line {
+    > li {
+      display: inline-block;
+      width: 29%;
+      text-align: center;
+    }
+  }
+}
+
+.bg-light {
+    background-color: $theme-light;
+    color: $theme-dark;
+    .text-highlighting {
+      color: $theme-primary;
+    }
+}
+
+.bg-primary {
+    background-color: $theme-primary;
+}
+
+.bg-dark {
+    background-color: $theme-dark;
+    color: $theme-light;
+}
+
+.text-faded {
+    color: rgba(white, .7);
+}
+
+.top-spacing {
+  margin-top: 50px;
+}
+
+section {
+    padding: 47px 0;
+    &.section-continue {
+      padding-bottom: 0;
+    }
+    &.section-next {
+      padding-top: 0;
+    }
+}
+
+aside {
+    padding: 50px 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+// Sections
+
+.section-heading {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.section-overlay {
+  margin-top: -17%;
+  padding-bottom: 0;
+}
+
+.service-box {
+    max-width: 400px;
+    margin: 50px auto 0;
+    @media (min-width: 992px) {
+        margin: 20px auto 0;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    img {
+      @include border-radius($border-radius-small);
+    }
+}
+
+// internal page
+.row {
+    h1 {
+        margin-bottom: 50px;
+    }
+    ul {
+        list-style: none;
+    }
+}
+
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+// Extras
+// -- Highlight Color Customization
+::-moz-selection {
+    color: white;
+    text-shadow: none;
+    background: $theme-dark;
+}
+
+::selection {
+    color: white;
+    text-shadow: none;
+    background: $theme-dark;
+}
+
+img::selection {
+    color: white;
+    background: transparent;
+}
+
+img::-moz-selection {
+    color: white;
+    background: transparent;
+}
+
+body {
+    -webkit-tap-highlight-color: $theme-dark;
+}

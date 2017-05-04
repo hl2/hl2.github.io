@@ -1,7 +1,7 @@
 ---
 title: HL2 group in partnership with OBERTHUR TECHNOLOLOGIES at MOBILE WORLD CONGRESS
 layout: news
-imageTag: <img class="img-responsive" src="/img/news/mobile-world-congress.jpg" alt="">
+imageTag: <img class="img-fluid" src="/img/news/mobile-world-congress.jpg" alt="">
 ---
 
 {{ page.imageTag }}

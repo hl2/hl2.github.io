@@ -1,7 +1,7 @@
 ---
 title: HL2 group joins the LoRa Alliance
 layout: news
-imageTag: <img class="img-responsive" src="/img/news/lora-alliance.jpg" alt="" />
+imageTag: <img class="img-fluid" src="/img/news/lora-alliance.jpg" alt="" />
 ---
 
 {{ page.imageTag }}
