@@ -1,0 +1,35 @@
+- title: Secure data exchange
+  img: secure.svg
+
+- title: On-the-fly segmentation and recombination
+  img: segmentation.svg
+
+- title: Live operator selection
+  img: operator.svg
+
+- title: PLD stands for "Place and leave device" literally
+  img: ip65.svg
+
+- title: Arduino™ compatible
+  img: arduino.svg
+
+- title: Plug in almost any sensor
+  img: sensor.svg
+
+- title: Long-lasting batteries
+  img: batteries.svg
+
+- title: Use the two best LPWAN technologies available
+  img: lpwan.svg
+
+- title: Quick application development
+  img: application.svg
+
+- title: Code and documentation on Github™
+  img: github.svg
+
+- title: Share your apps
+  img: share.svg
+
+- title: Improved QoS of LPWAN networks
+  img: qos.svg

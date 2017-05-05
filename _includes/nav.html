@@ -4,7 +4,7 @@
   {% assign homePageHref = "#page-top" %}
   {% assign hrefSuffix = "" %}
 {% endif %}
-<div class="p-4"></div>
+<div class="hl2-nav"></div>
 <nav
   class="navbar navbar-toggleable-sm fixed-top navbar-light bg-faded"
   role="navigation"
@@ -26,7 +26,7 @@
     class="collapse navbar-collapse justify-content-end"
   >
     <ul
-      class="navbar-nav align-items-end"
+      class="navbar-nav align-items-sm-end align-items-md-center"
     >
       <li
         class="nav-item"
@@ -53,7 +53,7 @@
       >
         <a
           class="nav-link"
-          href="{{ hrefSuffix }}#network"
+          href="{{ hrefSuffix }}#networks"
         >
           Networks
         </a>
@@ -83,7 +83,8 @@
       >
         <a
           class="nav-link btn btn-outline-secondary"
-          href="/signin.html"
+          href="https://panorama.hl2.com"
+          target="_blank"
         >
           Sign In
         </a>

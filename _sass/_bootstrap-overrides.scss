@@ -10,10 +10,6 @@
     @include button-variant(white, transparent, white, $theme-primary);
 }
 
-.btn-primary {
-    @include button-variant($theme-primary, transparent, $theme-primary, white);
-}
-
 .btn-xl {
   padding: 1em;
 }
