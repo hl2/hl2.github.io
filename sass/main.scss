@@ -12,19 +12,19 @@ $border-radius-large: 6px;
 $border-radius-small: 3px;
 
 @import
-        "bootstrap/bootstrap.scss",
-        "_mixins.scss",
-        "_animate-overrides.scss",
-        "_bootstrap-overrides.scss",
-        "_global.scss",
-        "_nav.scss",
-        "_header.scss",
-        "_features.scss",
-        "_application.scss",
-        "_about.scss",
-        "_team.scss",
+        "./bootstrap/bootstrap.scss",
+        "./_mixins.scss",
+        "./_animate-overrides.scss",
+        "./_bootstrap-overrides.scss",
+        "./_global.scss",
+        "./_nav.scss",
+        "./_header.scss",
+        "./_features.scss",
+        "./_application.scss",
+        "./_about.scss",
+        "./_team.scss",
         "_contact.scss",
         "_news.scss",
-        "_footer.scss",
-        "_404.scss"
+        "./_footer.scss",
+        "./_404.scss"
 ;
