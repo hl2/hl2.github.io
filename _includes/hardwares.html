@@ -1,6 +1,6 @@
 <section id="hardware" class="container-fluid">
 	<div class="row justify-content-center">
-		<div class="col-8">
+		<div class="col">
 			<h2 class="text-center p-5">
 				Supported hardware
 			</h2>
@@ -8,9 +8,9 @@
 	</div>
 	<div class="row justify-content-start">
 		{% for hardware in site.data.hardwares %}
-		<div class="col card border-0 sr-block">
+		<div class="col-sm card border-0 sr-block">
 			<img
-				class="card-img-top mx-auto"
+				class="card-img-top img-fluid mx-auto"
 				src="img/hardware/{{ hardware.img }}"
 				alt="{{ hardware.name }} image"
 			/>
