@@ -37,7 +37,6 @@ gulp.task('inject-dependencies', function() {
         gulp.src(
           [
             './css/vendor/animate.min.css',
-            './css/vendor/bootstrap.min.css',
             './js/vendor/jquery.min.js',
             './js/vendor/tether.min.js',
             './js/vendor/bootstrap.min.js',
@@ -56,7 +55,7 @@ gulp.task('inject-dependencies', function() {
 });
 
 gulp.task('build-css-sass', function() {
-  return gulp.src(['./css/bootstrap/*.scss'])
+  return gulp.src(['./sass/main.scss'])
     .pipe(sass({
       importer: moduleImporter()
     }).on('error', sass.logError))
@@ -64,7 +63,7 @@ gulp.task('build-css-sass', function() {
     .pipe(rename({
       extname: '.min.css'
     }))
-    .pipe(gulp.dest('./css/vendor/'));
+    .pipe(gulp.dest('./css/'));
 });
 
 gulp.task(

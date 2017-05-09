@@ -1,0 +1,27 @@
+/**
+ * Header styling
+ */
+.hl2-row-rounded-bottom {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  padding: 0.5rem 5rem 5rem;
+}
+
+@include media-breakpoint-down(sm) {
+  .hl2-row-rounded-bottom {
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    padding: 0.5rem 0.5rem 2.5rem;
+  }
+}
+
+.hl2-plus {
+  font-size: 5rem;
+}
+
+.hl2-btn {
+  padding: 0 0.25rem;
+  font-size: 2rem;
+  border-style: none;
+  line-height: 1.75rem;
+}

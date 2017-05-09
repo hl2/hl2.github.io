@@ -1,0 +1,22 @@
+.hl2-image-outside {
+  margin-top: 5rem;
+  & .row {
+    & div:first-child {
+      border-radius: 50%;
+      padding-top: 2rem;
+      margin-top: -4rem;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .hl2-image-outside {
+    margin-top: 4rem;
+    & .row {
+      & div:first-child {
+        padding-top: 1rem;
+        margin-top: -2.5rem;
+      }
+    }
+  }
+}
