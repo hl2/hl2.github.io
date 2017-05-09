@@ -6,11 +6,12 @@
 			</h2>
 		</div>
 	</div>
-  <div class="row justify-content-center">
+  <div class="row justify-content-around">
 		{% for founder in site.data.founders %}
-		<div class="col-6 col-sm-4 col-md-3 col-lg-2 card border-0">
+		<div class="col-6 col-sm-4 col-md-3 card border-0">
 			<img
-				class="rounded-circle mx-auto img-fluid gray-border"
+				class="rounded-circle mx-auto img-fluid"
+				class="rounded-circle mx-auto gray-border "
 				src="img/founder/{{ founder.pic }}"
 				alt="{{ founder.name }} image"
 			/>

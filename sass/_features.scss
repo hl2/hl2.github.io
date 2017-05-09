@@ -13,7 +13,12 @@
   font-size: 0.85rem;
 }
 
-.hl2-features:hover {
-  transition: transform 150ms ease-in;
-  transform: scale(1.05);
+.hl2-features {
+  & > div:first-child {
+    margin: 0 auto;
+  }
+  &:hover {
+    transition: transform 150ms ease-in;
+    transform: scale(1.05);
+  }
 }
