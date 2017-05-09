@@ -1,14 +1,14 @@
-<section id="founder" class="container-fluid">
+<section id="founder" class="container-fluid no-pb">
 	<div class="row justify-content-center">
 		<div class="col">
-			<h2 class="text-center p-5">
+			<h2 class="text-center pb-5">
 				Founders
 			</h2>
 		</div>
 	</div>
   <div class="row justify-content-center">
 		{% for founder in site.data.founders %}
-		<div class="col-sm card border-0 p-5">
+		<div class="col-6 col-sm-4 col-md-3 col-lg-2 card border-0">
 			<img
 				class="rounded-circle mx-auto img-fluid gray-border"
 				src="img/founder/{{ founder.pic }}"
