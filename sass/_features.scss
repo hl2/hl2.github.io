@@ -12,3 +12,8 @@
 .hl2-font-size-s {
   font-size: 0.85rem;
 }
+
+.hl2-features:hover {
+  transition: transform 150ms ease-in;
+  transform: scale(1.05);
+}
