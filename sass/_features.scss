@@ -16,6 +16,10 @@
 .hl2-features {
   & > div:first-child {
     margin: 0 auto;
+
+    & img {
+      color: $brand-primary;
+    }
   }
   &:hover {
     transition: transform 150ms ease-in;

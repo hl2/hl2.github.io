@@ -25,7 +25,8 @@ npm start
 
 ## Todos
 
-You must launch `npm run build` twice on adding a new dependency
+- You must launch `npm run build` twice on adding a new dependency
+- use `font-awesome` as dependency
 
 ## License
 
