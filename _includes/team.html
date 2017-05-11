@@ -10,12 +10,12 @@
     {% for member in site.data.members %}
     <div class="col-6 col-sm-4 col-md-3 card border-0">
       <img
-        class="rounded-circle mx-auto img-fluid"
+        class="rounded-circle mx-auto img-fluid p-4"
         src="img/member/{{ member.pic }}"
         alt="{{ member.name }} image"
       />
       <div class="card-block text-center">
-        <h5 class="card-title">{{ member.name }}</h5>
+        <h5 class="card-title hl2-font-size-l">{{ member.name }}</h5>
         <p class="card-text text-muted">
           <span>{{ member.position }}</span>
           {% if member.social | size %}

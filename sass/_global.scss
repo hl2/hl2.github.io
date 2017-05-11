@@ -1,31 +1,71 @@
 /**
  * Global styling
  */
-html,
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
 body {
+  & ::selection {
+    background: $brand-primary;
+    color: $white;
+  }
+
+  & .hl2-font-size-s {
+    font-size: $font-size-sm;
+  }
+
+  & .hl2-font-size-m {
+    font-size: $font-size-base;
+  }
+
+  & .hl2-font-size-l {
+    font-size: $font-size-lg;
+  }
+
+  & > header {
+    padding-top: 7rem;
+  }
+
+  & .hl2-height-full {
     height: 100%;
-    width: 100%;
-}
+  }
 
-body.margins {
-  background-color: darken(white, 5%);
-}
+  & > section {
+    &.hl2-section {
+      min-height: 100vh;
 
-a {
-  @include transition-all;
-  color: $theme-primary;
-  &:hover,
-  &:focus {
-    color: darken($theme-primary, 10%);
+      & .hl2-flex-full {
+        flex: 1;
+      }
+
+      & .hl2-flex-half {
+        flex: 0.5;
+      }
+    }
+  }
+
+  &.margins {
+    background-color: darken(white, 5%);
+  }
+
+  a {
+    @include transition-all;
+    color: $theme-primary;
+
+    &:focus,
+    &:hover {
+      color: darken($theme-primary, 10%);
+    }
+  }
+
+  .bg-primary a:not(.btn-default) {
+    color: $theme-light;
   }
 }
-
-.bg-primary a:not(.btn-default) {
-  color: $theme-light;
-}
-
 // Sections
-
 section {
   padding: 3rem 0;
 
@@ -44,48 +84,50 @@ section {
 }
 
 .service-box {
-    max-width: 400px;
-    margin: 50px auto 0;
-    @media (min-width: 992px) {
-        margin: 20px auto 0;
-    }
-    p {
-        margin-bottom: 0;
-    }
-    img {
-      @include border-radius($border-radius-small);
-    }
+  max-width: 400px;
+  margin: 50px auto 0;
+  @media (min-width: 992px) {
+    margin: 20px auto 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  img {
+    @include border-radius($border-radius-small);
+  }
 }
 
 input::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
-
 // Extras
 // -- Highlight Color Customization
+
 ::-moz-selection {
-    color: white;
-    text-shadow: none;
-    background: $theme-dark;
+  color: white;
+  text-shadow: none;
+  background: $theme-dark;
 }
 
 ::selection {
-    color: white;
-    text-shadow: none;
-    background: $theme-dark;
+  color: white;
+  text-shadow: none;
+  background: $theme-dark;
 }
 
 img::selection {
-    color: white;
-    background: transparent;
+  color: white;
+  background: transparent;
 }
 
 img::-moz-selection {
-    color: white;
-    background: transparent;
+  color: white;
+  background: transparent;
 }
 
 body {
-    -webkit-tap-highlight-color: $theme-dark;
+  -webkit-tap-highlight-color: $theme-dark;
 }

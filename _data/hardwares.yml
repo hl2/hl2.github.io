@@ -10,6 +10,3 @@
 - name: Multitech (MTDOT-915)
   img: multitech.jpg
   unavailable: true
-
-- name: Standard HL2 PLD
-  img: standard-HL2-pld.jpg

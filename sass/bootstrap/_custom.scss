@@ -3,18 +3,42 @@
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
 
+// Colors
 $blue: #21589c;
-
+$gray-light: #63605d;
 $brand-primary: $blue;
 
-$btn-primary-bg: $brand-primary;
+// Fonts
+$font-size-h1: 3.25rem;
+$font-size-h2: 3rem;
+$font-size-h3: 2.75rem;
+$font-size-h4: 2.5rem;
+$font-size-h5: 2.25rem;
+$font-size-h6: 2rem;
+$font-family-base: 'Open Sans', 'Helvetica Neue', $font-family-sans-serif;
+$headings-font-weight: 600;
 
-$btn-primary-border-color: $btn-primary-bg;
+// Body
+$body-bg: darken($white, 3%);
+$body-color: $gray-light;
 
+// Components
 $border-width: 0;
 
+// Buttons
+$btn-primary-bg: $brand-primary;
+$btn-primary-border-color: $btn-primary-bg;
+
+// Forms
 $input-btn-border-width: $border-width;
 
-$font-family-base: 'Open Sans', 'Helvetica Neue', $font-family-sans-serif;
-
+// Navbar
 $navbar-light-color: rgba($blue,.5);
+
+// Cards
+$card-bg: transparent;
+$card-border-width: 0;
+$card-cap-bg: transparent;
+
+// Image thumbnails
+$thumbnail-bg: $body-bg;

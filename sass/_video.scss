@@ -1,0 +1,17 @@
+.bg-primary {
+  & .hl2-btn {
+    color: $brand-primary;
+  }
+}
+
+.hl2-list {
+  display: flex;
+  align-items: center;
+
+  & .hl2-btn {
+    padding: 0 0.25rem;
+    font-size: 2rem;
+    border-style: none;
+    line-height: 1.75rem;
+  }
+}

@@ -1,0 +1,62 @@
+.hl2-skill {
+  &:hover {
+
+    & .hl2-skill-content {
+      & .hl2-rounded {
+        transform: scale(1.2);
+        transition: all 7s;
+      }
+    }
+
+    & .hl2-overlay {
+      opacity: 1;
+
+      & .hl2-overlay-content {
+        margin-top: 0;
+        transition-duration: 0.4s;
+      }
+    }
+  }
+
+  & .hl2-rounded {
+    border-radius: 1rem;
+    width: 6rem;
+    height: 5rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  & .hl2-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 1rem;
+    background: rgba(34, 34, 34, 0.8);
+    transition: all 0.3s linear;
+
+    & .hl2-overlay-content {
+      margin-top: 100%;
+
+      & h3 {
+        font-size: $font-size-lg;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      & p {
+        font-size: $font-size-xs;
+      }
+    }
+  }
+}
+
+.hl2-rounded {
+  border-radius: 1rem;
+  padding: 1rem;
+}

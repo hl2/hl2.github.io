@@ -10,13 +10,12 @@
 		{% for founder in site.data.founders %}
 		<div class="col-6 col-sm-4 col-md-3 card border-0">
 			<img
-				class="rounded-circle mx-auto img-fluid"
-				class="rounded-circle mx-auto gray-border "
+				class="rounded-circle mx-auto img-fluid p-4"
 				src="img/founder/{{ founder.pic }}"
 				alt="{{ founder.name }} image"
 			/>
 			<div class="card-block text-center">
-				<h5 class="card-title">{{ founder.name }}</h5>
+				<h5 class="card-title hl2-font-size-l">{{ founder.name }}</h5>
 				<p class="card-text text-muted">
 					<span>{{ founder.position }}</span>
         	{% if founder.social | size %}
