@@ -2,12 +2,11 @@
 title: HL2 Group
 defaultDescription: Ultra fast prototyping of industrial IoT applications
 email: contact@hl2.com
-address: 2, avenue Galilée 86961 Chasseneuil Futuroscope - FRANCE
+address: HL2 group Futuropolis 5, Teleport 4 Avenue Thomas Edison 86960 Futuroscope Chasseneuil - FRANCE
+gmap_parameters: ?ll=46.670045,0.363126&z=19&t=h
+gtm_id: GTM-55HF8C3
 url: "" # the base hostname & protocol for your site
 production_url : //hl2.com
 
-twitter_username: HL2group
+twitter_username: hl2group
 facebook_username: hl2group
-
-# Build settings
-markdown: kramdown

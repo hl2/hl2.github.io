@@ -1,28 +1,11 @@
 @charset 'utf-8';
 
-// variables.less
-$theme-light: white;
-$theme-primary: #21589c;
-$theme-dark: #333;
-
-$screen-sm: 750px;
-
-$border-radius-base: 4px;
-$border-radius-large: 6px;
-$border-radius-small: 3px;
-
 @import
         './bootstrap/bootstrap.scss',
-        './_mixins.scss',
-        './_animate-overrides.scss',
-        './_bootstrap-overrides.scss',
+        './font-awesome/font-awesome.scss',
         './_global.scss',
-        './_home.scss',
         './_video.scss',
-        './_whatwedo.scss',
-        './_skills.scss',
         './_contact.scss',
         './_news.scss',
-        './_footer.scss',
         './_404.scss'
 ;

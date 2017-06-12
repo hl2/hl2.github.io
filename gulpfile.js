@@ -7,9 +7,7 @@ var moduleImporter = require('sass-module-importer');
 
 gulp.task('copy-css-vendor', function() {
   return gulp
-    .src([
-      './node_modules/animate.css/animate.min.css',
-    ])
+    .src([])
     .pipe(
       gulp.dest('./css/vendor')
     );
@@ -22,7 +20,6 @@ gulp.task('copy-js-vendor', function() {
       './node_modules/tether/dist/js/tether.min.js',
       './node_modules/bootstrap/dist/js/bootstrap.min.js',
       './node_modules/jquery.easing/jquery.easing.min.js',
-      './node_modules/scrollreveal/dist/scrollreveal.min.js',
     ])
     .pipe(
       gulp.dest('./js/vendor')
@@ -36,12 +33,10 @@ gulp.task('inject-dependencies', function() {
       inject(
         gulp.src(
           [
-            './css/vendor/animate.min.css',
             './js/vendor/jquery.min.js',
             './js/vendor/tether.min.js',
             './js/vendor/bootstrap.min.js',
             './js/vendor/jquery.easing.min.js',
-            './js/vendor/scrollreveal.min.js',
           ],
           {
             read: false
@@ -76,6 +71,6 @@ gulp.task(
 );
 
 // watch for file changes, then run tasks assigned
-gulp.task('watch', function () {
-    gulp.watch('./css/bootstrap/*.scss', ['build-css-sass']);
+gulp.task('watch', function() {
+  gulp.watch('./css/bootstrap/*.scss', ['build-css-sass']);
 });

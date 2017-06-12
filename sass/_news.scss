@@ -17,7 +17,7 @@
     }
     > div:nth-child(2) {
       display: flex;
-      @media screen and (max-width: $screen-sm) {
+      @include media-breakpoint-down(sm) {
         flex-direction: column;
         > div:nth-child(2){
           margin-top: 1em;
@@ -42,7 +42,7 @@
     }
     &:nth-child(odd) > div:nth-child(2) {
       flex-direction: row-reverse;
-      @media screen and (max-width: $screen-sm) {
+      @include media-breakpoint-down(sm) {
         flex-direction: column;
       }
     }

@@ -1,0 +1,44 @@
+{% capture content_operators %}{% include contents/home/operators.md %}{% endcapture %}
+<section
+  id="operators"
+  class="container-fluid d-flex flex-column justify-content-between hl2-section"
+>
+  <div class="row hl2-flex-full">
+    <div class="col-sm-6 d-flex flex-column justify-content-between">
+      <div class="hl2-content">
+        {{ content_operators | markdownify }}
+      </div>
+      <div class="row align-items-center">
+        <div class="col-sm-8">
+          {% include templates/skill.html index=2 %}
+          {% include templates/skill.html index=7 %}
+        </div>
+        <div class="col-sm-4 text-right">
+          <a href="#" class="btn btn-secondary">
+            Learn more
+            <img src="img/strip_right_gray.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 d-flex flex-wrap justify-content-around align-items-center">
+      {% for network in site.data.operators %}
+      <div class="card m-3">
+        <img
+          class="card-img-top img-fluid mx-auto"
+          src="img/home/operators/{{ network.img }}"
+          alt="{{ network.name }} logo"
+        />
+        <div class="card-block text-center">
+          <h5 class="card-title hl2-font-size-m">{{ network.name }}</h5>
+          {% if network.unavailable %}
+          <p class="card-text hl2-font-size-m">
+            Coming soon!
+          </p>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

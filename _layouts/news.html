@@ -3,16 +3,18 @@
 {% include head.html %}
 
 <body id="page-top">
-  {% include nav.html %}
-  <section class="container-fluid">
+  {% include templates/nav.html %}
+  <header>
     <div class="row justify-content-center">
       <div class="col text-center">
         <img class="img-fluid" src="{{ page.image }}" alt="">
         <h3 class="p-5 text-muted">
-  				{{ page.title }}
-  			</h3>
+          {{ page.title }}
+        </h3>
       </div>
     </div>
+  </header>
+  <section class="container-fluid">
     <div class="row justify-content-start">
       <div class="col">
         {{ page.content }}
@@ -20,8 +22,10 @@
       </div>
     </div>
   </section>
-  {% include contact.html %}
-  {% include scripts.html %}
+  {% include templates/contact.html %}
 </body>
+
+{% include scripts.html %}
+{% include gtm.html %}
 
 </html>

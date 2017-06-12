@@ -26,57 +26,9 @@
     $('.navbar-collapse').collapse('hide');
   });
 
-  // Scroll reveal calls
-  var hello = {
-    origin: 'top',
-    distance: '24px',
-    duration: 1500,
-    scale: 1.05,
-  }
-
-  var intro = {
-    origin: 'bottom',
-    distance: '64px',
-    duration: 900,
-    delay: 1500,
-    scale: 1,
-  }
-
-  var description = {
-    origin: 'top',
-    distance: '32px',
-    duration: 600,
-    delay: 1800,
-    scale: 0,
-  }
-  var block = {
-    reset: true,
-    viewOffset: {
-      top: 64
-    },
-  };
-  var icon = {
-    duration: 600,
-    scale: 0.3,
-    distance: '0px',
-  };
-  var btn = {
-    duration: 1000,
-    delay: 200,
-  };
-  var config = {
-    viewFactor: 0.15,
-    duration: 800,
-    distance: '0px',
-    scale: 0.8,
-  };
-  window.sr = new ScrollReveal(config);
-  sr.reveal('.sr-hello', hello);
-  sr.reveal('.sr-intro', intro);
-  sr.reveal('.sr-hello .sr-desc', description);
-  sr.reveal('.sr-block', block, 200);
-  sr.reveal('.sr-icons', icon, 200);
-  sr.reveal('.sr-btn', btn);
-  sr.reveal('.sr-contact', icon, 300);
+  //  Enable bootsrap popovers everywhere
+  $(function () {
+    $('[data-toggle="popover"]').popover();
+  })
 
 })(jQuery); // End of use strict

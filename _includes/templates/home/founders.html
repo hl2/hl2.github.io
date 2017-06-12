@@ -1,0 +1,39 @@
+<section id="founder" class="container-fluid pb-0">
+	<div class="row justify-content-center">
+		<div class="col">
+			<h2 class="text-center p-5">
+				Founders
+			</h2>
+		</div>
+	</div>
+  <div class="row justify-content-around">
+		{% for founder in site.data.founders %}
+		<div class="col-6 col-sm-4 col-md-3 card border-0">
+			<img
+				class="rounded-circle mx-auto img-fluid p-4"
+				src="img/home/founder/{{ founder.pic }}"
+				alt="{{ founder.name }} image"
+			/>
+			<div class="card-block text-center">
+				<h5 class="card-title hl2-font-size-l">{{ founder.name }}</h5>
+				<p class="card-text text-muted">
+					<span>{{ founder.position }}</span>
+        	{% if founder.social | size %}
+	        <ul class="list-inline social-buttons">
+	          {% for network in founder.social %}
+	          <li>
+	            <a href="{{ network.url }}" target="_blank">
+	              <span class="fa-stack fa-1x">
+	                <i class="fa fa-circle fa-stack-2x"></i>
+	                <i class="fa fa-stack-1x fa-{{ network.title }} fa-inverse"></i>
+	              </span>
+	            </a>
+	          </li>
+	          {% endfor %}
+	        </ul>
+        	{% endif %}
+				</p>
+			</div>
+		</div>
+		{% endfor %}
+</section>

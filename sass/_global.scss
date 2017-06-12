@@ -8,7 +8,10 @@ html {
 }
 
 body {
-  & ::selection {
+  -webkit-tap-highlight-color: $brand-primary;
+
+  & ::selection,
+    ::-moz-selection {
     background: $brand-primary;
     color: $white;
   }
@@ -25,17 +28,20 @@ body {
     font-size: $font-size-lg;
   }
 
-  & > header {
-    padding-top: 7rem;
-  }
-
   & .hl2-height-full {
     height: 100%;
   }
 
+  & > header {
+    padding-top: $spacer-y * 7 !important;
+  }
+
+  & > header,
   & > section {
+
     &.hl2-section {
-      min-height: 100vh;
+      padding: ($spacer-x * 3 )($spacer-x * 5);
+      min-height: 90vh;
 
       & .hl2-flex-full {
         flex: 1;
@@ -44,90 +50,29 @@ body {
       & .hl2-flex-half {
         flex: 0.5;
       }
-    }
-  }
 
-  &.margins {
-    background-color: darken(white, 5%);
+      & h2 {
+          padding-bottom: 1rem;
+        }
+    }
   }
 
   a {
-    @include transition-all;
-    color: $theme-primary;
+    @include transition($transition-fade);
+    color: $brand-primary;
 
     &:focus,
     &:hover {
-      color: darken($theme-primary, 10%);
+      color: darken($brand-primary, 10%);
     }
   }
+}
 
-  .bg-primary a:not(.btn-default) {
-    color: $theme-light;
+// Skills
+.hl2-skill {
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
   }
-}
-// Sections
-section {
-  padding: 3rem 0;
-
-  &.no-pb {
-    padding-bottom: 0;
-  }
-
-  &.no-pt {
-    padding-top: 0;
-  }
-}
-
-.section-overlay {
-  margin-top: -17%;
-  padding-bottom: 0;
-}
-
-.service-box {
-  max-width: 400px;
-  margin: 50px auto 0;
-  @media (min-width: 992px) {
-    margin: 20px auto 0;
-  }
-
-  p {
-    margin-bottom: 0;
-  }
-
-  img {
-    @include border-radius($border-radius-small);
-  }
-}
-
-input::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-// Extras
-// -- Highlight Color Customization
-
-::-moz-selection {
-  color: white;
-  text-shadow: none;
-  background: $theme-dark;
-}
-
-::selection {
-  color: white;
-  text-shadow: none;
-  background: $theme-dark;
-}
-
-img::selection {
-  color: white;
-  background: transparent;
-}
-
-img::-moz-selection {
-  color: white;
-  background: transparent;
-}
-
-body {
-  -webkit-tap-highlight-color: $theme-dark;
 }

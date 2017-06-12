@@ -20,10 +20,9 @@
   },
   "homepage": "https://github.com/hl2/hl2.com#readme",
   "dependencies": {
-    "animate.css": "3.5.2",
     "font-awesome": "4.7.0",
     "jquery.easing": "1.4.1",
-    "scrollreveal": "3.3.5"
+    "tether": "1.4.0"
   },
   "devDependencies": {
     "bootstrap": "4.0.0-alpha.6",

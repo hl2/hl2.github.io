@@ -1,0 +1,23 @@
+{% capture content_application %}{% include contents/home/application.md %}{% endcapture %}
+{% capture content_api %}{% include contents/home/api.md %}{% endcapture %}
+<section
+  id="panorama"
+  class="container-fluid d-flex flex-column justify-content-between hl2-section"
+>
+  <div class="row hl2-flex-half">
+    <div class="col-sm-6 d-flex flex-column justify-content-start">
+      {{ content_application | markdownify }}
+    </div>
+    <div class="col-sm-6 d-flex flex-column justify-content-around">
+      <img class="img-thumbnail border-0" src="img/home/application/panorama.png" alt="Panorama" />
+    </div>
+  </div>
+  <div class="row hl2-flex-half">
+    <div class="col-sm-6 d-flex flex-column justify-content-around">
+      <img class="img-thumbnail border-0" src="img/home/application/application.svg" alt="Panorama" />
+    </div>
+    <div class="col-sm-6 d-flex flex-column justify-content-start">
+      {{ content_api | markdownify }}
+    </div>
+  </div>
+</section>

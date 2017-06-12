@@ -1,0 +1,113 @@
+{% assign homePageHref = "/" %}
+{% assign hrefSuffix = "/" %}
+{% if page.url == "/" %}
+  {% assign homePageHref = "#page-top" %}
+  {% assign hrefSuffix = "" %}
+{% endif %}
+<nav
+  class="navbar navbar-toggleable-sm fixed-top navbar-light bg-faded"
+  role="navigation"
+>
+  <button
+    class="navbar-toggler navbar-toggler-right"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a
+    class="navbar-brand"
+    href="{{ homePageHref }}"
+  >
+    <img
+      src="/img/logo.svg"
+      alt=""
+      width="136"
+      height="30"
+    />
+  </a>
+  <div
+    id="navbarSupportedContent"
+    class="collapse navbar-collapse justify-content-end"
+  >
+    <ul
+      class="navbar-nav align-items-sm-end align-items-md-center"
+    >
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="{{ hrefSuffix }}#panorama"
+        >
+          HL2 Panorama
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="{{ hrefSuffix }}#lpwan"
+        >
+          LPWAN
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="{{ hrefSuffix }}#operators"
+        >
+          Operators
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="{{ hrefSuffix }}#hardwares"
+        >
+          Hardwares
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="{{ hrefSuffix }}#contact"
+        >
+          Contact
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="/news"
+        >
+          News
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link btn btn-outline-secondary"
+          href="https://panorama.hl2.com"
+          target="_blank"
+        >
+          Sign In
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

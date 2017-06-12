@@ -1,0 +1,30 @@
+{% capture content_lpwan %}{% include contents/home/lpwan.md %}{% endcapture %}
+<section
+  id="lpwan"
+  class="container-fluid d-flex flex-column justify-content-between bg-primary text-white hl2-section"
+>
+  <div class="row hl2-flex-full">
+    <div class="col-sm-6 d-flex flex-column justify-content-between">
+      <div class="hl2-content">
+        {{ content_lpwan | markdownify }}
+      </div>
+      <div class="row align-items-center">
+        <div class="col-sm-8">
+          {% include templates/skill.html index=0 %}
+          {% include templates/skill.html index=1 %}
+          {% include templates/skill.html index=9 %}
+          {% include templates/skill.html index=11 %}
+        </div>
+        <div class="col-sm-4 text-right">
+          <a href="#" class="btn btn-primary">
+            Learn more
+            <img src="img/strip_right_white.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 d-flex flex-column justify-content-around">
+      <img class="img-thumbnail border-0" src="img/home/lpwan/network.svg" alt="Panorama" />
+    </div>
+  </div>
+</section>

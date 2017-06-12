@@ -1,0 +1,50 @@
+{% capture content_contact %}{% include contents/contact.md %}{% endcapture %}
+<footer id="contact" class="container-fluid bg-primary">
+  <div class="row justify-content-center">
+    <div class="col-8 text-white text-center pt-5">
+      {{ content_contact | markdownify }}
+    </div>
+  </div>
+  <div class="row justify-content-center p-5 text-center">
+    <div class="col">
+      <a
+        href="https://twitter.com/{{ site.twitter_username }}"
+        target="_blank"
+        class="btn btn-primary hl2-contact"
+      >
+        <i class="fa fa-twitter fa-5x"></i>
+        <p>{{ site.twitter_username }}</p>
+      </a>
+    </div>
+    <div class="col">
+      <a
+        href="mailto:{{ site.email }}"
+        target="_blank"
+        class="btn btn-primary hl2-contact"
+      >
+        <i class="fa fa-envelope-o fa-5x"></i>
+        <p>{{ site.email }}</p>
+      </a>
+    </div>
+    <div class="col">
+      <a
+        href="https://maps.google.com/maps{{ site.gmap_parameters }}"
+        target="_blank"
+        class="btn btn-primary hl2-contact"
+      >
+        <i class="fa fa-map-marker fa-5x"></i>
+        <p>{{ site.address }}</p>
+      </a>
+    </div>
+    <div class="col">
+      <a
+        href="https://facebook.com/{{ site.facebook_username }}"
+        target="_blank"
+        class="btn btn-primary hl2-contact"
+      >
+        <i class="fa fa-facebook fa-5x"></i>
+        <p>{{ site.facebook_username }}</p>
+      </a>
+    </div>
+  </div>
+</footer>

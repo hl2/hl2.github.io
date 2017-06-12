@@ -1,0 +1,14 @@
+{% capture content_home %}{% include contents/home/home.md %}{% endcapture %}
+<header
+  class="container-fluid d-flex flex-column justify-content-between bg-primary text-white hl2-section"
+>
+  <div class="row text-white text-center align-items-strech hl2-flex-full">
+    <div class="col-sm-6 d-flex flex-column justify-content-center">
+      {{ content_home | markdownify }}
+    </div>
+    <div class="col-sm-6 d-flex flex-column justify-content-around">
+      <img class="img-thumbnail border-0" src="/img/home/home/HL2-panorama-example.png" alt="Panorama example" />
+      <img class="img-thumbnail border-0" src="/img/home/home/HL2-panorama-vibrations.png" alt="Panorama vibrations" />
+    </div>
+  </div>
+</header>
