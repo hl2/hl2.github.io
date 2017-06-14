@@ -3,11 +3,14 @@ var inject = require('gulp-inject');
 var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 var moduleImporter = require('sass-module-importer');
 
 gulp.task('copy-css-vendor', function() {
   return gulp
-    .src([])
+    .src([
+      './node_modules/peacock/styles/manni.css',
+    ])
     .pipe(
       gulp.dest('./css/vendor')
     );
@@ -33,6 +36,7 @@ gulp.task('inject-dependencies', function() {
       inject(
         gulp.src(
           [
+            './css/vendor/*.css',
             './js/vendor/jquery.min.js',
             './js/vendor/tether.min.js',
             './js/vendor/bootstrap.min.js',
@@ -54,6 +58,10 @@ gulp.task('build-css-sass', function() {
     .pipe(sass({
       importer: moduleImporter()
     }).on('error', sass.logError))
+    .pipe(autoprefixer({
+			browsers: ['last 2 versions'],
+			cascade: false,
+		}))
     .pipe(cssmin())
     .pipe(rename({
       extname: '.min.css'

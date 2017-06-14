@@ -1,12 +1,8 @@
 - name: Telecom Design (TD1208)
-  img: td1208.jpg
+  img: td1208.png
 
 - name: Nemeus (MM02-LS-EU, MM02-L-EU)
-  img: nemeus.jpg
+  img: nemeus.png
 
 - name: Multitech (MTDOT-868)
-  img: multitech.jpg
-
-- name: Multitech (MTDOT-915)
-  img: multitech.jpg
-  unavailable: true
+  img: multitech.png

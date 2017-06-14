@@ -1,0 +1,35 @@
+{% capture content_hardwares %}{% include contents/home/devices_system.md %}{% endcapture %}
+{% capture content_pld %}{% include contents/home/devices_pld.md %}{% endcapture %}
+<section
+  id="devices"
+  class="container-fluid d-flex flex-column justify-content-between bg-primary text-white hl2-section hl2-90-screen-height"
+>
+  <div class="row hl2-flex-half mb-5">
+    <div class="col-sm-6 d-flex flex-column">
+      {{ content_hardwares | markdownify }}
+    </div>
+    <div class="col-sm-6 d-flex flex-wrap justify-content-around align-items-center">
+      <div class="row">
+        {% for hardware in site.data.hardwares %}
+        <img
+        class="card-img-top img-fluid mx-auto"
+        src="/img/home/hardwares/{{ hardware.img }}"
+        alt="{{ hardware.name }} image"
+        />
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="row hl2-flex-half">
+    <div class="col-lg-5 d-flex justify-content-center flex-last flex-lg-first">
+      <img
+        class="img-fluid"
+        src="/img/home/pld/HL2-boitier.png"
+        alt="PLD"
+      />
+    </div>
+    <div class="col-lg-7 d-flex flex-column flex-first flex-lg-last">
+      {{ content_pld | markdownify }}
+    </div>
+  </div>
+</section>

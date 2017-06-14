@@ -16,22 +16,32 @@ $font-size-h4: 1.75rem;
 $font-size-h5: 1.25rem;
 $font-size-h6: 0.75rem;
 $font-family-base: 'Open Sans', 'Helvetica Neue', $font-family-sans-serif;
-$headings-font-weight: 600;
+$font-weight-base: 200;
+$headings-font-weight: 400;
 
 // Body
 $body-bg: darken($white, 3%);
 $body-color: $gray-light;
+$brand-inverse: darken($body-bg, 10%);
 
-// Components
-$border-width: 0;
+// Links
+$link-color: $gray-light;
+$link-hover-color: darken($link-color, 15%);
+
+// Grid columns
+$grid-gutter-width-base: 60px;
+$grid-gutter-widths: (
+  xs: $grid-gutter-width-base,
+  sm: $grid-gutter-width-base,
+  md: $grid-gutter-width-base,
+  lg: $grid-gutter-width-base,
+  xl: $grid-gutter-width-base
+);
 
 // Buttons
 $btn-primary-bg: $brand-primary;
 $btn-primary-border-color: $btn-primary-bg;
 $btn-secondary-color: $gray-light;
-
-// Forms
-$input-btn-border-width: $border-width;
 
 // Navbar
 $navbar-light-color: rgba($blue,.5);
@@ -40,6 +50,7 @@ $navbar-light-color: rgba($blue,.5);
 $card-bg: transparent;
 $card-border-width: 0;
 $card-cap-bg: transparent;
+$card-deck-margin: ($grid-gutter-width-base / 2);
 
 // Popovers
 $popover-title-bg: darken($gray-lightest, 3%);

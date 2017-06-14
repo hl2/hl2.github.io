@@ -1,14 +1,22 @@
 {% capture content_home %}{% include contents/home/home.md %}{% endcapture %}
 <header
-  class="container-fluid d-flex flex-column justify-content-between bg-primary text-white hl2-section"
+  class="container-fluid d-flex flex-column justify-content-between bg-primary text-white hl2-section hl2-70-screen-height"
 >
   <div class="row text-white text-center align-items-strech hl2-flex-full">
-    <div class="col-sm-6 d-flex flex-column justify-content-center">
+    <div class="col-md-6 d-flex flex-column justify-content-center">
       {{ content_home | markdownify }}
+      <span>
+        <a
+        class="btn btn-outline-white"
+        href="https://panorama.hl2.com"
+        target="_blank"
+        >
+        Sign in
+      </a>
+      </span>
     </div>
-    <div class="col-sm-6 d-flex flex-column justify-content-around">
-      <img class="img-thumbnail border-0" src="/img/home/home/HL2-panorama-example.png" alt="Panorama example" />
-      <img class="img-thumbnail border-0" src="/img/home/home/HL2-panorama-vibrations.png" alt="Panorama vibrations" />
+    <div class="col-md-6 d-flex justify-content-center align-items-center mt-3 mt-md-0">
+      <img class="img-fluid" src="/img/home/home/panorama.png" alt="Panorama example" />
     </div>
   </div>
 </header>

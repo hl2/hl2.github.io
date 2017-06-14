@@ -1,0 +1,26 @@
+{% capture content_application %}{% include contents/home/saas_application.md %}{% endcapture %}
+{% capture content_api %}{% include contents/home/saas_api.md %}{% endcapture %}
+{% capture content_api_media %}{% include contents/home/saas_api_media.md %}{% endcapture %}
+<section
+  id="saas"
+  class="container-fluid d-flex flex-column justify-content-between hl2-section hl2-90-screen-height"
+>
+  <div class="row hl2-flex-half mb-5">
+    <div class="col-md-6 d-flex flex-column">
+      {{ content_application | markdownify }}
+    </div>
+    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+      <img class="img-fluid hl2-application" src="/img/home/saas/application.svg" alt="Panorama" />
+    </div>
+  </div>
+  <div class="row hl2-flex-half">
+    <div class="col-md-6 d-flex justify-content-center align-items-center flex-last flex-md-first mb-3 mb-sm-0 mt-3 mt-md-0">
+      <div class="hl2-code-block d-flex flex-column">
+        {{ content_api_media | markdownify }}
+      </div>
+    </div>
+    <div class="col-md-6 d-flex flex-column justify-content-start flex-first flex-md-last">
+      {{ content_api | markdownify }}
+    </div>
+  </div>
+</section>

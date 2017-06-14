@@ -1,0 +1,22 @@
+{% capture content_video %}{% include contents/home/video.md %}{% endcapture %}
+<section id="video" class="container-fluid d-flex flex-column justify-content-around hl2-section hl2-90-screen-height">
+  <div class="row">
+    <div class="col">
+      {{ content_video | markdownify }}
+    </div>
+  </div>
+  <div class="row no-gutters">
+    <div class="col-0 col-sm-2"></div>
+    <div class="col-12 col-sm-8 mt-5 mt-sm-0 mb-5 mb-sm-0">
+      <div class="embed-responsive embed-responsive-16by9 rounded">
+        <iframe
+          class="embed-responsive-item"
+          src="https://www.youtube.com/embed/E0Hgz7FIazI?rel=0&showinfo=0"
+          allowfullscreen
+          >
+        </iframe>
+      </div>
+    </div>
+    <div class="col-0 col-sm-2"></div>
+  </div>
+</section>

@@ -1,0 +1,113 @@
+{% assign homePageHref = "/" %}
+{% assign hrefSuffix = "/" %}
+{% if page.url == "/" %}
+  {% assign homePageHref = "#page-top" %}
+  {% assign hrefSuffix = "" %}
+{% endif %}
+<nav
+  class="navbar navbar-toggleable-sm fixed-top navbar-light bg-faded"
+  role="navigation"
+>
+  <button
+    class="navbar-toggler navbar-toggler-right"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a
+    class="navbar-brand"
+    href="{{ homePageHref }}"
+  >
+    <img
+      src="/img/logo.svg"
+      alt=""
+      width="136"
+      height="30"
+    />
+  </a>
+  <div
+    id="navbarSupportedContent"
+    class="collapse navbar-collapse justify-content-end"
+  >
+    <ul
+      class="navbar-nav align-items-sm-end align-items-md-center"
+    >
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="{{ hrefSuffix }}#saas"
+        >
+          Saas
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="{{ hrefSuffix }}#stack"
+        >
+          Stack
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="{{ hrefSuffix }}#operators"
+        >
+          Operators
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="{{ hrefSuffix }}#devices"
+        >
+          Devices
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="{{ hrefSuffix }}#video"
+        >
+          Video
+        </a>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          href="{{ hrefSuffix }}#contact"
+        >
+          Contact
+        </a>
+      </li>
+      <li
+        class="nav-item d-flex mt-2 mt-sm-0"
+      >
+        <a
+          class="btn btn-outline-primary ml-sm-2"
+          href="https://panorama.hl2.com"
+          target="_blank"
+        >
+          Sign in
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

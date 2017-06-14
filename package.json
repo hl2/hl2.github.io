@@ -22,11 +22,13 @@
   "dependencies": {
     "font-awesome": "4.7.0",
     "jquery.easing": "1.4.1",
+    "peacock": "0.3.1",
     "tether": "1.4.0"
   },
   "devDependencies": {
     "bootstrap": "4.0.0-alpha.6",
     "gulp": "3.9.1",
+    "gulp-autoprefixer": "4.0.0",
     "gulp-cssmin": "0.1.7",
     "gulp-inject": "4.2.0",
     "gulp-rename": "1.2.2",

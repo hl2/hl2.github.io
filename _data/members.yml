@@ -1,3 +1,7 @@
+- name: Didier Longueville
+  pic: didier-longueville.jpg
+  position: CTO and co-founder
+
 - name: Florent Agneray
   pic: florent-agneray.jpg
   position: Chairman
@@ -5,10 +9,6 @@
 - name: Mickaël Bosch
   pic: mickael-bosch.jpg
   position: Hardware tech lead
-
-- name: Sophie Roubertie
-  pic: sophie-roubertie.jpg
-  position: Communication
 
 - name: Kevin Pollet
   pic: kevin-pollet.jpg

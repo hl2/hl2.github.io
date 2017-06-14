@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="386"
+   height="19.077429"
+   viewBox="0 0 100% 38px"
+   id="svg4640"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="browser_header_md.svg">
+  <metadata
+     id="metadata4661">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>header-browser</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1461"
+     inkscape:window-height="741"
+     id="namedview4659"
+     showgrid="false"
+     inkscape:zoom="1.28"
+     inkscape:cx="294.202"
+     inkscape:cy="32.585631"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4640"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <title
+     id="title4642">header-browser</title>
+  <defs
+     id="defs4644">
+    <path
+       d="M 0,8 C 0,3.58 3.58,0 8.01,0 L 461.99,0 C 466.414,0 470,3.574 470,8 L 470,60 0,60 0,8 Z"
+       id="header-siteweb-h"
+       inkscape:connector-curvature="0" />
+  </defs>
+  <use
+     xlink:href="#header-siteweb-h"
+     id="use4651"
+     style="fill:#d0d0d0;fill-rule:evenodd"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     transform="scale(0.8212766,0.31795716)" />
+  <circle
+     cx="10.810544"
+     cy="6.3591442"
+     id="ellipse4653"
+     style="opacity:0.3;fill:#63605d;fill-rule:evenodd"
+     r="3.1795716" />
+  <circle
+     cx="23.528831"
+     cy="6.3591442"
+     id="ellipse4655"
+     style="opacity:0.3;fill:#63605d;fill-rule:evenodd"
+     r="3.1795716" />
+  <circle
+     cx="36.247116"
+     cy="6.3591442"
+     id="ellipse4657"
+     style="opacity:0.3;fill:#63605d;fill-rule:evenodd"
+     r="3.1795716" />
+</svg>

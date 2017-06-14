@@ -9,6 +9,7 @@ html {
 
 body {
   -webkit-tap-highlight-color: $brand-primary;
+  margin: 0;
 
   & ::selection,
     ::-moz-selection {
@@ -32,8 +33,69 @@ body {
     height: 100%;
   }
 
+  // Navigation
+
   & > header {
     padding-top: $spacer-y * 7 !important;
+  }
+
+  // block height
+
+  & > header,
+  & > section {
+
+    &.hl2-90-screen-height {
+      min-height: 90vh;
+    }
+
+    &.hl2-70-screen-height {
+      min-height: 70vh;
+    }
+  }
+
+  & > section {
+
+    &.hl2-section {
+
+      & > .row {
+        z-index: 2;
+      }
+
+      &.bg-primary {
+
+        &:before {
+          background-color: $brand-primary;
+        }
+
+        &:after {
+          background-color: lighten($brand-primary, 7%);
+        }
+      }
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        clip-path: ellipse(65% 27% at 50% 73%);
+        width: 100%;
+        height: 100%;
+        background-color: $body-bg;
+        z-index: 1;
+      }
+
+      &:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: '';
+        clip-path: polygon(100% 100%, 100% 0%, 50% 100%);
+        min-height: 25%;
+        width: 100%;
+        background-color: darken($body-bg, 10%);
+        z-index: 0;
+      }
+    }
   }
 
   & > header,
@@ -41,7 +103,12 @@ body {
 
     &.hl2-section {
       padding: ($spacer-x * 3 )($spacer-x * 5);
-      min-height: 90vh;
+
+      @include media-breakpoint-down(xs) {
+        &.hl2-section {
+          padding: ($spacer-x * 1 )($spacer-x * 3);
+        }
+      }
 
       & .hl2-flex-full {
         flex: 1;
@@ -52,19 +119,44 @@ body {
       }
 
       & h2 {
-          padding-bottom: 1rem;
-        }
+        padding-bottom: 1rem;
+      }
     }
   }
 
-  a {
-    @include transition($transition-fade);
-    color: $brand-primary;
+  // Navbar
+  //
+  // Provide a static navbar from which we expand to create full-width, fixed, and
+  // other navbar variations.
 
-    &:focus,
-    &:hover {
-      color: darken($brand-primary, 10%);
+  .navbar {
+    text-transform: uppercase;
+  }
+
+  // Navbar nav
+  //
+  // Custom navbar navigation (doesn't require `.nav`, but does make use of `.nav-link`).
+
+  .navbar-nav {
+
+    .btn-outline-primary,
+    .nav-link {
+      font-weight: $font-weight-bold;
     }
+  }
+
+  //
+  // Links
+  //
+
+  & a {
+    @include transition($transition-fade);
+  }
+
+  // Contextual colors
+
+  .text-primary {
+    color: $brand-primary;
   }
 }
 

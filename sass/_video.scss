@@ -1,17 +1,15 @@
-.bg-primary {
-  & .hl2-btn {
-    color: $brand-primary;
+#video {
+
+  // block height
+
+  &.hl2-90-screen-height {
+    min-height: 90vh;
   }
-}
 
-.hl2-list {
-  display: flex;
-  align-items: center;
+  @include media-breakpoint-down(sm) {
 
-  & .hl2-btn {
-    padding: 0 0.25rem;
-    font-size: 2rem;
-    border-style: none;
-    line-height: 1.75rem;
+    &.hl2-90-screen-height {
+      min-height: inherit;
+    }
   }
 }
