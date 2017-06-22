@@ -1,39 +1,22 @@
-# Website HL2 Group
+hl2.com
+=======
 
-## Synopsis
+This is the repository of the website [hl2.com](http://hl2.com). It is hosted directly from the repository as a GitHub Pages website.
 
-This project handle the code of the HL2 group website.
+Getting started
+---------------
 
-This project is based on Jekyll implementation of the [Creative Theme](http://startbootstrap.com/template-overviews/creative/) template by [Start Bootstrap](http://startbootstrap.com).
+1. Install project dependencies with `npm install`
+2. Start Jekyll server with `npm run start`
+3. Browse [http://localhost:4000](http://localhost:4000)
 
-Creative is a one page Bootstrap theme for creatives, small businesses, and other multipurpose uses.
-The theme includes a number of rich features and plugins that you can use as a great boilerplate for your next Jekyll project!
+License
+-------
 
-See it live in action at <https://volny.github.io/creative-theme-jekyll/>
+### Copyright (C) HL2 group
 
-## Installation
-
-Follow the online documentation of [Jekyll](https://jekyllrb.com/docs/quickstart/)
-
-## Get started
-
-From the root project :
-```
-npm i
-npm start
-```
-
-## Todos
-
-- You must launch `npm run build` twice on adding a new dependency
-- ~~use `font-awesome` as dependency~~
-
-## License
-
-Copyright (C) HL2 group
-
-All rights reserved
-contact@hl2.com
+#### All rights reserved
+#### contact@hl2.com
 
 All information contained herein is, and remains the property of
 HL2 group and its suppliers, if any. The intellectual and technical
