@@ -111,11 +111,15 @@ body {
       }
 
       & .hl2-flex-full {
-        flex: 1;
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: auto;
       }
 
       & .hl2-flex-half {
-        flex: 0.5;
+        flex-grow: 0.5;
+        flex-shrink: 0;
+        flex-basis: auto;
       }
 
       & h2 {
@@ -145,6 +149,11 @@ body {
     }
   }
 
+  // image
+  .img-fluid-fix-ie11 {
+    width: 100%;
+  }
+
   //
   // Links
   //
@@ -157,14 +166,5 @@ body {
 
   .text-primary {
     color: $brand-primary;
-  }
-}
-
-// Skills
-.hl2-skill {
-  opacity: 0.5;
-
-  &:hover {
-    opacity: 1;
   }
 }

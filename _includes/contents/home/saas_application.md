@@ -1,6 +1,6 @@
 ## HL2 Panorama
 
-Our SaaS solution allows for **quick** application development through an **intuitive** graphical user interface:
+Our SaaS platform allows for **quick** application development through an **intuitive** graphical user interface:
 - connect and manage your devices
 - create application dashboards with the provided visualization widgets
 - define shared or specific products (data models).
