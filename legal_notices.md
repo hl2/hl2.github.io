@@ -11,7 +11,7 @@ In accordance with the laws governing literary, artistic, and industrial propert
 HL2 group SAS
 
 **HL2 group SAS**  
-A French "Société par Actions Simplifiée" with share capital of 497 423 €
+A French "Société par Actions Simplifiée" with share capital of 497 423 €  
 Registered office:  
 Futuropolis 5, Teleport 4,  
 Avenue Thomas Edison,  
