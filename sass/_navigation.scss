@@ -1,0 +1,31 @@
+/**
+ * Navigation styling
+ */
+
+ // Navbar themes
+ //
+ // Styles for switching between navbars with light or dark background.
+
+ // Dark links against a light background
+ .navbar-light {
+
+   .navbar-nav {
+     .nav-link {
+
+       @include hover-focus {
+         color: $navbar-light-color;
+       }
+
+       @include hover {
+         color: $navbar-light-hover-color;
+       }
+     }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $navbar-light-active-color !important;
+    }
+   }
+ }
