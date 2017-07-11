@@ -6,9 +6,11 @@ This is the repository of the website [hl2.com](http://hl2.com). It is hosted di
 Getting started
 ---------------
 
-1. Install project dependencies with `npm install`
-2. Start Jekyll server with `npm run start`
-3. Browse [http://localhost:4000](http://localhost:4000)
+1. Install [Jekyll](https://jekyllrb.com) if you haven't. `gem install jekyll`
+2. Clone this repo.
+3. Install project dependencies with `npm install`
+4. Start Jekyll server with `npm run start`
+5. Browse [http://localhost:4000](http://localhost:4000)
 
 License
 -------
