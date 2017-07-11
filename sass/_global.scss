@@ -33,16 +33,10 @@ body {
     height: 100%;
   }
 
-  // Navigation
-
-  & > header {
-    padding-top: $spacer-y * 7 !important;
-  }
-
   // block height
 
-  & > header,
-  & > section {
+  & header,
+  & section {
 
     &.hl2-90-screen-height {
       min-height: 90vh;
@@ -53,26 +47,28 @@ body {
     }
   }
 
-  & > section {
+  & section {
 
     &.hl2-section {
+      position: relative;
 
       & > .row {
+        position: relative;
         z-index: 2;
       }
 
       &.bg-primary {
 
-        &:before {
+        &::before {
           background-color: $brand-primary;
         }
 
-        &:after {
+        &::after {
           background-color: lighten($brand-primary, 7%);
         }
       }
 
-      &:before {
+      &::before {
         position: absolute;
         top: 0;
         left: 0;
@@ -84,7 +80,7 @@ body {
         z-index: 1;
       }
 
-      &:after {
+      &::after {
         position: absolute;
         left: 0;
         bottom: 0;
@@ -98,8 +94,8 @@ body {
     }
   }
 
-  & > header,
-  & > section {
+  & header,
+  & section {
 
     &.hl2-section {
       padding: ($spacer-x * 3 )($spacer-x * 5);
@@ -107,6 +103,14 @@ body {
       @include media-breakpoint-down(xs) {
         &.hl2-section {
           padding: ($spacer-x * 1 )($spacer-x * 3);
+        }
+      }
+
+      & > .row {
+
+        & > .col,
+        & > [class*="col-"] {
+          padding: ($spacer-x * 0 )($spacer-x * 0.7);
         }
       }
 

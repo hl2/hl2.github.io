@@ -1,5 +1,5 @@
 body {
-  & > header {
+  & header {
     &.hl2-section {
       &.bg-primary {
         background: linear-gradient(135deg, $brand-primary 0%, lighten($brand-primary, 7%) 100%);

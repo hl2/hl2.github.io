@@ -6,9 +6,11 @@
 <body id="page-top">
 
   {% include templates/navigation.html %}
-  {% include templates/home/home.html %}
-  {{ content }}
-  {% include templates/contact.html %}
+  <div class="container-fluid">
+    {% include templates/home/home.html %}
+    {{ content }}
+    {% include templates/contact.html %}
+  </div>
 
 </body>
 
