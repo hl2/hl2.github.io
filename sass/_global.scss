@@ -150,6 +150,9 @@ body {
   }
 
   // image
+  .img-border-fix-ie10 {
+    border-style: none;
+  }
   .img-fluid-fix-ie11 {
     width: 100%;
   }
