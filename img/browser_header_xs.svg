@@ -8,7 +8,7 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="478.99997"
+   width="447"
    height="23.673805"
    viewBox="0 0 100% 38px"
    id="svg4640"
@@ -42,7 +42,7 @@
      showgrid="false"
      inkscape:zoom="1.28"
      inkscape:cx="294.202"
-     inkscape:cy="32.585632"
+     inkscape:cy="32.585631"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -68,23 +68,26 @@
      y="0"
      width="100%"
      height="100%"
-     transform="scale(1.0191489,0.39456341)" />
-  <circle
-     cx="13.415156"
+     transform="scale(0.95106383,0.39456341)" />
+  <ellipse
+     cx="12.518946"
      cy="7.8912692"
      id="ellipse4653"
      style="opacity:0.3;fill:#63605d;fill-rule:evenodd"
-     r="3.9456341" />
-  <circle
-     cx="29.197693"
+     rx="3.6820428"
+     ry="3.9456341" />
+  <ellipse
+     cx="27.247118"
      cy="7.8912692"
      id="ellipse4655"
      style="opacity:0.3;fill:#63605d;fill-rule:evenodd"
-     r="3.9456341" />
-  <circle
-     cx="44.980228"
+     rx="3.6820428"
+     ry="3.9456341" />
+  <ellipse
+     cx="41.975288"
      cy="7.8912692"
      id="ellipse4657"
      style="opacity:0.3;fill:#63605d;fill-rule:evenodd"
-     r="3.9456341" />
+     rx="3.6820428"
+     ry="3.9456341" />
 </svg>
