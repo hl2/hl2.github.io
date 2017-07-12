@@ -11,6 +11,10 @@ body {
   -webkit-tap-highlight-color: $brand-primary;
   margin: 0;
 
+  & > .container-fluid {
+    padding-top: 3.5rem;
+  }
+
   & ::selection,
     ::-moz-selection {
     background: $brand-primary;
@@ -98,7 +102,7 @@ body {
   & section {
 
     &.hl2-section {
-      padding: ($spacer-x * 3 )($spacer-x * 5);
+      padding: ($spacer-x * 3 )($spacer-x * 2);
 
       @include media-breakpoint-down(xs) {
         &.hl2-section {
@@ -110,7 +114,7 @@ body {
 
         & > .col,
         & > [class*="col-"] {
-          padding: ($spacer-x * 0 )($spacer-x * 0.7);
+          padding: ($spacer-x * 0 )($spacer-x * 1);
         }
       }
 
