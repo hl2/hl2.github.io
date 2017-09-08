@@ -10,3 +10,10 @@ production_url : //hl2.com
 
 twitter_username: hl2group
 facebook_username: hl2group
+
+# Build settings
+exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "LICENSE.md", "package.json", "README.md", "gulpfile.js"]
+plugins:
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from
