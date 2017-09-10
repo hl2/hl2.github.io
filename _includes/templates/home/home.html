@@ -1,22 +1,5 @@
-{% capture content_home %}{% include contents/home/home.md %}{% endcapture %}
 <header
-  class="d-flex flex-column justify-content-between bg-primary text-white hl2-section hl2-70-screen-height"
+  class="d-flex bg-primary text-white hl2-section hl2-70-screen-height"
 >
-  <div class="row text-white text-center align-items-strech hl2-flex-full">
-    <div class="col-md-6 d-flex flex-column justify-content-center">
-      {{ content_home | markdownify }}
-      <span>
-        <a
-        class="btn btn-outline-white"
-        href="https://panorama.hl2.com"
-        target="_blank"
-        >
-        Sign in
-      </a>
-      </span>
-    </div>
-    <div class="col-md-6 d-flex justify-content-center align-items-center mt-3 mt-md-0">
-      <img class="img-fluid hl2-img-fluid-fix-ie11" src="/img/home/home/panorama.png" alt="Panorama example" />
-    </div>
-  </div>
+  {% include templates/home/carousel/index.html %}
 </header>
