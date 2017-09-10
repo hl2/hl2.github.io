@@ -1,0 +1,95 @@
+/*!
+ * All information contained herein is, and remains the property of
+ * HL2 group and its suppliers, if any. The intellectual and technical
+ * concepts contained herein are proprietary to HL2 group and its suppliers
+ * and may be covered by foreign patents, patents in process, and are
+ * protected by trade secret or copyright law. Dissemination of this
+ * information or reproduction of this material is strictly forbidden unless
+ * prior written permission is obtained from HL2 group.
+ */
+
+// block height
+
+header {
+  &.hl2-70-screen-height {
+    & .carousel-item {
+      min-height: 70vh;
+
+      .carousel-caption.hl2-carousel-caption {
+        top: 30%;
+      }
+
+      @include media-breakpoint-down(xs) {
+        .carousel-caption.hl2-carousel-caption {
+          top: 15%;
+        }
+      }
+
+      & .hl2-embed-responsive {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        & video {
+          height: auto;
+          width: auto;
+          min-width: 100%;
+          min-height: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+        }
+      }
+
+      & .hl2-carousel-html-slide {
+        padding: 0 $carousel-control-width;
+      }
+
+      @include media-breakpoint-down(xs) {
+        & .hl2-carousel-html-slide {
+          padding: 0 ($carousel-control-width / 2);
+        }
+      }
+    }
+
+    @include media-breakpoint-down(xs) {
+      & .carousel-item {
+        height: 830px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: $carousel-control-width / 2;
+  }
+
+  .carousel-indicators {
+    margin-right: $carousel-control-width / 2;
+    margin-left: $carousel-control-width / 2;
+  }
+}
+
+// Contextual colors
+
+.hl2-text-kickstarter {
+  color: $btn-kickstarter-color !important;
+}
+
+.btn-kickstarter {
+  @include button-variant($white, $btn-kickstarter-color, $btn-kickstarter-color);
+}
+
+.hl2-backdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $black;
+  opacity: $carousel-control-opacity;
+}

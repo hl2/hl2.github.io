@@ -1,0 +1,98 @@
+/*!
+ * All information contained herein is, and remains the property of
+ * HL2 group and its suppliers, if any. The intellectual and technical
+ * concepts contained herein are proprietary to HL2 group and its suppliers
+ * and may be covered by foreign patents, patents in process, and are
+ * protected by trade secret or copyright law. Dissemination of this
+ * information or reproduction of this material is strictly forbidden unless
+ * prior written permission is obtained from HL2 group.
+ */
+
+#saas {
+
+  // spacing
+
+  .hl2-application {
+    width: 70%;
+  }
+
+  @include media-breakpoint-up(lg) {
+
+    .hl2-application {
+      width: 60%;
+    }
+  }
+
+  $browser_header-height: 24px;
+
+  .hl2-code-block {
+    background-image: url('/img/browser_header_xs.svg');
+    background-repeat: no-repeat;
+    box-shadow: 0 ($spacer-y * 3) ($spacer-y * 2) ($spacer-y * -1.7) darken($body-bg, 20%);
+    width: 100%;
+    max-width: 625px;
+    padding-bottom: $browser_header-height;
+
+    & > .highlight {
+      position: relative;
+      top: $browser_header-height;
+      height: 200px;
+      overflow: auto;
+      margin: 0 0 0;
+      @include border-bottom-radius($border-radius);
+    }
+  }
+
+
+  @include media-breakpoint-up(sm) {
+    $browser_header-height: 30px;
+
+    .hl2-code-block {
+      background-image: url('/img/browser_header_sm.svg');
+      padding-bottom: $browser_header-height;
+
+      & > .highlight {
+        top: $browser_header-height;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    $browser_header-height: 19px;
+
+    .hl2-code-block {
+      background-image: url('/img/browser_header_md.svg');
+      padding-bottom: $browser_header-height;
+
+      & > .highlight {
+        top: $browser_header-height;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    $browser_header-height: 24px;
+
+    .hl2-code-block {
+      background-image: url('/img/browser_header_lg.svg');
+      padding-bottom: $browser_header-height;
+
+      & > .highlight {
+        top: $browser_header-height;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    $browser_header-height: 31px;
+
+    .hl2-code-block {
+      background-image: url('/img/browser_header_xl.svg');
+      padding-bottom: $browser_header-height;
+
+      & > .highlight {
+        top: $browser_header-height;
+      }
+    }
+  }
+}

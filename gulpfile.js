@@ -54,7 +54,7 @@ gulp.task('inject-dependencies', function() {
 });
 
 gulp.task('build-css-sass', function() {
-  return gulp.src(['./sass/main.scss'])
+  return gulp.src(['./_sass/main.scss'])
     .pipe(sass({
       importer: moduleImporter()
     }).on('error', sass.logError))
