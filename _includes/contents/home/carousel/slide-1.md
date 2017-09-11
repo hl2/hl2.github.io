@@ -1,1 +1,1 @@
-## Our crowdfunding campaign is launched!
+## Our Kickstarter campaign is launched!
