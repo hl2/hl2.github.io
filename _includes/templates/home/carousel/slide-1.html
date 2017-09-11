@@ -1,3 +1,4 @@
+{% assign kickstarter_url = 'https://www.kickstarter.com/projects/hl2/pld-hl2-panorama-sigfox-lorawan-iot-device-saas-pl?ref=signature-email' %}
 {% capture content_slide %}{% include contents/home/carousel/slide-1.md %}{% endcapture %}
 <div class="row justify-content-between mw-100 text-white text-center align-items-strech hl2-flex-full">
   <div class="col-md-6 d-flex flex-column justify-content-center">
@@ -7,7 +8,7 @@
     >
       <a
         class="btn btn-outline-white"
-        href="https://www.kickstarter.com/projects/hl2/pld-hl2-panorama-sigfox-lorawan-iot-device-saas-pl?ref=signature-email"
+        href="{{ kickstarter_url }}"
         target="_blank"
       >
         Go
@@ -15,6 +16,8 @@
     </span>
   </div>
   <div class="col-md-6 d-flex justify-content-center align-items-center mt-3 mt-md-0">
-    <img class="img-fluid hl2-img-fluid-fix-ie11 rounded" src="/img/home/carousel/crowdfunding.jpg" alt="crowdfunding image">
+    <a href="{{ kickstarter_url }}">
+      <img class="img-fluid hl2-img-fluid-fix-ie11 rounded" src="/img/home/carousel/crowdfunding.jpg" alt="crowdfunding image">
+    </a>
   </div>
 </div>
