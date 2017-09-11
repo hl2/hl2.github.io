@@ -8,25 +8,5 @@
  * prior written permission is obtained from HL2 group.
  */
 
-#stack {
-
-  // spacing
-
-  .hl2-space-rocket {
-    width: 65%;
-  }
-
-  @include media-breakpoint-down(sm) {
-
-    .hl2-space-rocket {
-      width: 30%;
-    }
-  }
-
-  @include media-breakpoint-up(xl) {
-
-    .hl2-space-rocket {
-      width: 40%;
-    }
-  }
-}
+// Colors
+$kickstarter-primary: #2bde73;

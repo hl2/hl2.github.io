@@ -16,7 +16,7 @@ body {
   }
 
   & ::selection,
-    ::-moz-selection {
+  & ::-moz-selection {
     background: $brand-primary;
     color: $white;
   }
@@ -41,18 +41,20 @@ body {
 
   & header,
   & section {
-
     &.hl2-90-screen-height {
       min-height: 90vh;
     }
 
     &.hl2-70-screen-height {
       min-height: 70vh;
+
+      & .carousel-item {
+        height: 70vh;
+      }
     }
   }
 
   & section {
-
     &.hl2-section {
       position: relative;
 
@@ -62,7 +64,6 @@ body {
       }
 
       &.bg-primary {
-
         &::before {
           background-color: $brand-primary;
         }
@@ -100,7 +101,6 @@ body {
 
   & header,
   & section {
-
     &.hl2-section {
       padding: ($spacer-x * 3 )($spacer-x * 2);
 
@@ -111,7 +111,6 @@ body {
       }
 
       & > .row {
-
         & > .col,
         & > [class*="col-"] {
           padding: ($spacer-x * 0 )($spacer-x * 1);
@@ -119,15 +118,11 @@ body {
       }
 
       & .hl2-flex-full {
-        flex-grow: 1;
-        flex-shrink: 0;
-        flex-basis: auto;
+        flex: 1 0 auto;
       }
 
       & .hl2-flex-half {
-        flex-grow: 0.5;
-        flex-shrink: 0;
-        flex-basis: auto;
+        flex: 0.5 0 auto;
       }
 
       & h2 {
@@ -150,7 +145,6 @@ body {
   // Custom navbar navigation (doesn't require `.nav`, but does make use of `.nav-link`).
 
   .navbar-nav {
-
     .btn-outline-primary,
     .nav-link {
       font-weight: $font-weight-bold;
@@ -161,9 +155,11 @@ body {
   .hl2-img-border-fix-ie10 {
     border-style: none;
   }
+
   .hl2-img-fluid-fix-ie11 {
     width: 100%;
   }
+
   .hl2-img-fluid-fix-ie11-200 {
     width: 150px;
   }
