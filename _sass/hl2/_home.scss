@@ -20,7 +20,7 @@ body {
 
     & .hl2-bg-kickstarter {
       & .btn-outline-white {
-        @include button-outline-variant($white, $kickstarter-primary);
+        @include button-outline-variant($kickstarter-text, $kickstarter-primary);
       }
     }
   }
