@@ -8,8 +8,30 @@
  * prior written permission is obtained from HL2 group.
  */
 
-.hl2-carousel-html-slide {
-  padding: 0 $carousel-control-width;
+// block height
+
+header {
+  &.hl2-70-screen-height {
+    & .carousel-item {
+      min-height: 70vh;
+
+      & .hl2-carousel-html-slide {
+        padding: 0 $carousel-control-width;
+      }
+
+      @include media-breakpoint-down(md) {
+        & .hl2-carousel-html-slide {
+          min-height: 790px;
+        }
+      }
+
+      @include media-breakpoint-down(xs) {
+        & .hl2-carousel-html-slide {
+          min-height: 850px;
+        }
+      }
+    }
+  }
 }
 
 // Contextual colors
