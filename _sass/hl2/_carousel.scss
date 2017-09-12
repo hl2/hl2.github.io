@@ -15,20 +15,16 @@ header {
     & .carousel-item {
       min-height: 70vh;
 
+      & .embed-responsive {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+
       & .hl2-carousel-html-slide {
         padding: 0 $carousel-control-width;
-      }
-
-      @include media-breakpoint-down(md) {
-        & .hl2-carousel-html-slide {
-          min-height: 790px;
-        }
-      }
-
-      @include media-breakpoint-down(xs) {
-        & .hl2-carousel-html-slide {
-          min-height: 850px;
-        }
       }
     }
   }
