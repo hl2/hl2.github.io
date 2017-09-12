@@ -10,7 +10,7 @@
 
 body {
   & header {
-    & .bg-primary {
+    &.bg-primary {
       background-color: linear-gradient(135deg, $brand-primary 0%, lighten($brand-primary, 7%) 100%);
 
       & .btn-outline-white {

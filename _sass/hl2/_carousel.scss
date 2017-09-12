@@ -54,7 +54,7 @@ header {
       }
     }
 
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       & .carousel-item {
         height: 830px;
       }
