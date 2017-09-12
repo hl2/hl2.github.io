@@ -53,3 +53,9 @@ header {
 .carousel-caption.hl2-carousel-caption {
   top: 30%;
 }
+
+@include media-breakpoint-down(xs) {
+  .carousel-caption.hl2-carousel-caption {
+    top: 5%;
+  }
+}
