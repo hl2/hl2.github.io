@@ -15,12 +15,22 @@ header {
     & .carousel-item {
       min-height: 70vh;
 
-      & .embed-responsive {
+      & .hl2-embed-responsive {
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
+
+        & video {
+          height: auto;
+          width: auto;
+          min-width: 100%;
+          min-height: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+        }
       }
 
       & .hl2-carousel-html-slide {
