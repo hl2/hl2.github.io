@@ -2,7 +2,11 @@
 title: HL2 Group
 defaultDescription: Ultra fast prototyping of industrial IoT applications
 email: contact@hl2.com
-address: HL2 group<br /> Futuropolis 5, Teleport 4 <br />Avenue Thomas Edison <br />86960 Futuroscope Chasseneuil - FRANCE
+address:
+  line_1: HL2 group
+  line_2: Futuropolis 5, Teleport 4,
+  line_3: Avenue Thomas Edison
+  line_4: 86960 Futuroscope Chasseneuil - France
 gmap_parameters: ?q=46.669933,0.363042&ll=46.669933,0.363042&z=19&t=h
 gtm_id: GTM-55HF8C3
 url: "" # the base hostname & protocol for your site
