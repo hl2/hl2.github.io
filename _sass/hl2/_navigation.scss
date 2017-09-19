@@ -8,9 +8,9 @@
  * prior written permission is obtained from HL2 group.
  */
 
-/**
- * Navigation styling
- */
+.navbar.fixed-top + .hl2-fixed-header {
+  padding-top: 3.5rem;
+}
 
  // Navbar themes
  //
