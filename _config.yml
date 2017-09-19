@@ -25,4 +25,3 @@ whitelist:
 # Collections
 collections:
   events:
-    output: true
