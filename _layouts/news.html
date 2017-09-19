@@ -1,31 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
+---
+layout: default
+---
 
-<body id="page-top">
-  {% include templates/navigation.html %}
-  <div class="container-fluid">
-    <section class="hl2-section">
-      <div class="row justify-content-center">
-        <div class="col text-center">
-          <img class="img-fluid" src="{{ page.image }}" alt="">
-          <h3 class="p-5 text-muted">
-            {{ page.title }}
-          </h3>
-        </div>
-      </div>
-      <div class="row justify-content-start">
-        <div class="col">
-          {{ page.content }}
-          <small>{{ page.date | date_to_string }}</small>
-        </div>
-      </div>
-    </section>
-    {% include templates/contact.html %}
+<section class="hl2-section">
+  <div class="row justify-content-center">
+    <div class="col text-center">
+      <img class="img-fluid" src="{{ page.image }}" alt="">
+      <h3 class="p-5 text-muted">
+        {{ page.title }}
+      </h3>
+    </div>
   </div>
-</body>
-
-{% include scripts.html %}
-{% include gtm.html %}
-
-</html>
+  <div class="row justify-content-start">
+    <div class="col">
+      {{ content }}
+      <small>{{ page.date | date_to_string }}</small>
+    </div>
+  </div>
+</section>
+{% include templates/contact.html %}
