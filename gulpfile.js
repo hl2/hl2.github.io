@@ -80,5 +80,5 @@ gulp.task(
 
 // watch for file changes, then run tasks assigned
 gulp.task('watch', function() {
-  gulp.watch('./css/bootstrap/*.scss', ['build-css-sass']);
+  gulp.watch('./_sass/**/*.scss', ['build-css-sass']);
 });

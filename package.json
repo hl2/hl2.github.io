@@ -16,7 +16,7 @@
   "scripts": {
     "build": "gulp",
     "prestart": "npm run build",
-    "start": "bundle exec jekyll serve --host=0.0.0.0"
+    "start": "bundle exec jekyll serve --host=0.0.0.0 & gulp watch"
   },
   "dependencies": {
     "bootstrap": "4.0.0-alpha.6",
