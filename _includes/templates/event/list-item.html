@@ -1,0 +1,15 @@
+<a class="media rounded mb-3 p-4 hl2-event" href="{{ include.event.website }}" target="_blank">
+  <div class="d-flex align-self-center mr-3 p-3 bg-primary hl2-event-date">
+    <span class="hl2-event-month">{{ include.event.monthDate }}</span>
+    <span class="hl2-event-day">{{ include.event.dayDate }}</span>
+    <span class="hl2-event-hour">{{ include.event.hourDate }}</span>
+  </div>
+  <div class="media-body p-2">
+    <div class="mt-0 mb-2 hl2-media-body-title">
+      <i class="fa fa-address-card-o fa-2x text-primary" aria-hidden="true"></i>
+      <h5 class="pl-3 mb-0">{{ include.event.title }}</h5>
+    </div>
+    {% include templates/tagsNcategories.html categories=include.event.categories tags=include.event.tags  %}
+    {{ include.event.excerpt | markdownify }}
+  </div>
+</a>

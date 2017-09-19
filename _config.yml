@@ -21,3 +21,8 @@ plugins:
   - jekyll-redirect-from
 whitelist:
   - jekyll-redirect-from
+
+# Collections
+collections:
+  events:
+    output: true

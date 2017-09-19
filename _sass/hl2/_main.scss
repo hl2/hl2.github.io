@@ -98,14 +98,6 @@ body {
   & header,
   & section {
     &.hl2-section {
-      padding: ($spacer-x * 3 )($spacer-x * 2);
-
-      @include media-breakpoint-down(xs) {
-        &.hl2-section {
-          padding: ($spacer-x * 1 )($spacer-x * 3);
-        }
-      }
-
       & > .row {
         & > .col,
         & > [class*="col-"] {

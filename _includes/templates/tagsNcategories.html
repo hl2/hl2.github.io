@@ -1,0 +1,8 @@
+<div class="mb-2">
+{% for category in include.categories %}
+  <span class="badge badge-primary">{{ category }}</span>
+{% endfor %}
+{% for tag in include.tags %}
+  <span class="badge badge-default">{{ tag }}</span>
+{% endfor %}
+</div>
