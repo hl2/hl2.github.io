@@ -3,6 +3,43 @@
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
 
+// Table of Contents
+//
+// Colors
+// Options
+// Spacing
+// Body
+// Links
+// Grid breakpoints
+// Grid containers
+// Grid columns
+// Fonts
+// Components
+// Tables
+// Buttons
+// Forms
+// Dropdowns
+// Z-index master list
+// Navbar
+// Navs
+// Pagination
+// Jumbotron
+// Form states and alerts
+// Cards
+// Tooltips
+// Popovers
+// Badges
+// Modals
+// Alerts
+// Progress bars
+// List group
+// Image thumbnails
+// Figures
+// Breadcrumbs
+// Carousel
+// Close
+// Code
+
 // Colors
 $blue: #21589c;
 $gray-light: #63605d;
@@ -28,6 +65,9 @@ $brand-inverse: darken($body-bg, 10%);
 $link-color: $gray-light;
 $link-hover-color: darken($link-color, 15%);
 
+// Components
+$component-active-bg: $brand-primary;
+
 // Grid columns
 $grid-gutter-width-base: 0;
 $grid-gutter-widths: (
@@ -39,12 +79,37 @@ $grid-gutter-widths: (
 );
 
 // Buttons
+$btn-focus-box-shadow: 0 0 0 2px rgba($brand-primary, 0.25);
+
 $btn-primary-bg: $brand-primary;
-$btn-primary-border-color: $btn-primary-bg;
+$btn-primary-border: $btn-primary-bg;
 $btn-secondary-color: $gray-light;
 
+// Forms
+$input-border-focus: lighten($brand-primary, 25%);
+$input-box-shadow-focus: $input-box-shadow, rgba($input-border-focus, 0.6);
+
+$custom-control-checked-indicator-bg: $brand-primary;
+
+$custom-checkbox-indeterminate-bg: $brand-primary;
+
+$custom-select-focus-border-color: lighten($brand-primary, 25%);
+$custom-select-focus-box-shadow: inset 0 1px 2px rgba($black, 0.075), 0 0 5px rgba($custom-select-focus-border-color, 0.5);
+
+$custom-file-focus-box-shadow: 0 0 0 0.075rem $white, 0 0 0 0.2rem $brand-primary;
+
+// Dropdowns
+$dropdown-link-active-bg: $component-active-bg;
+
 // Navbar
-$navbar-light-color: rgba($blue,.5);
+$navbar-light-color: rgba($blue, 0.5);
+
+// Navs
+$nav-pills-active-link-bg: $component-active-bg;
+
+// Pagination
+$pagination-active-bg: $brand-primary;
+$pagination-active-border: $brand-primary;
 
 // Cards
 $card-bg: transparent;
@@ -54,6 +119,21 @@ $card-deck-margin: ($grid-gutter-width-base / 2);
 
 // Popovers
 $popover-title-bg: darken($gray-lightest, 3%);
+
+// Badges
+$badge-primary-bg: $brand-primary;
+
+// Progress bars
+$progress-bar-bg: $brand-primary;
+
+// List group
+$list-group-bg: $body-bg;
+
+$list-group-hover-bg: $gray-lighter;
+$list-group-active-bg: $component-active-bg;
+
+$list-group-link-color: $gray-light;
+$list-group-link-hover-color: $list-group-link-color;
 
 // Image thumbnails
 $thumbnail-bg: $body-bg;
