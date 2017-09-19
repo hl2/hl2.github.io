@@ -8,9 +8,10 @@ Getting started
 
 1. Install [Jekyll](https://jekyllrb.com) if you haven't. `gem install jekyll`
 2. Clone this repo.
-3. Install project dependencies with `npm install`
-4. Start Jekyll server with `npm run start`
-5. Browse [http://localhost:4000](http://localhost:4000)
+3. Install project dependencies with `gem update`
+4. Install project dependencies with `npm install`
+5. Start Jekyll server with `npm run start`
+6. Browse [http://localhost:4000](http://localhost:4000)
 
 License
 -------
