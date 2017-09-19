@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var clean = require('gulp-rimraf');
 var inject = require('gulp-inject');
 var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
@@ -6,7 +7,13 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var moduleImporter = require('sass-module-importer');
 
-gulp.task('copy-css-vendor', function() {
+gulp.task('clean', function() {
+  return gulp
+    .src("./assets/js/vendor/*", { read: false })
+    .pipe(clean());
+});
+
+gulp.task('copy-css-vendor', [ 'clean' ], function() {
   return gulp
     .src([
       './node_modules/peacock/styles/manni.css',
@@ -16,7 +23,7 @@ gulp.task('copy-css-vendor', function() {
     );
 });
 
-gulp.task('copy-js-vendor', function() {
+gulp.task('copy-js-vendor', [ 'clean' ], function() {
   return gulp
     .src([
       './node_modules/jquery/dist/jquery.min.js',
@@ -29,7 +36,7 @@ gulp.task('copy-js-vendor', function() {
     );
 });
 
-gulp.task('inject-dependencies', function() {
+gulp.task('inject-dependencies', [ 'copy-css-vendor', 'copy-js-vendor' ], function() {
   return gulp
     .src('./_includes/{head,scripts}.html')
     .pipe(
@@ -72,6 +79,7 @@ gulp.task('build-css-sass', function() {
 gulp.task(
   'default', [
     'build-css-sass',
+    'clean',
     'copy-css-vendor',
     'copy-js-vendor',
     'inject-dependencies',
