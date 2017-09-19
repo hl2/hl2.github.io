@@ -26,7 +26,7 @@
   $browser_header-height: 24px;
 
   .hl2-code-block {
-    background-image: url('/img/browser_header_xs.svg');
+    background-image: url('/assets/img/browser_header_xs.svg');
     background-repeat: no-repeat;
     box-shadow: 0 ($spacer-y * 3) ($spacer-y * 2) ($spacer-y * -1.7) darken($body-bg, 20%);
     width: 100%;
@@ -48,7 +48,7 @@
     $browser_header-height: 30px;
 
     .hl2-code-block {
-      background-image: url('/img/browser_header_sm.svg');
+      background-image: url('/assets/img/browser_header_sm.svg');
       padding-bottom: $browser_header-height;
 
       & > .highlight {
@@ -61,7 +61,7 @@
     $browser_header-height: 19px;
 
     .hl2-code-block {
-      background-image: url('/img/browser_header_md.svg');
+      background-image: url('/assets/img/browser_header_md.svg');
       padding-bottom: $browser_header-height;
 
       & > .highlight {
@@ -74,7 +74,7 @@
     $browser_header-height: 24px;
 
     .hl2-code-block {
-      background-image: url('/img/browser_header_lg.svg');
+      background-image: url('/assets/img/browser_header_lg.svg');
       padding-bottom: $browser_header-height;
 
       & > .highlight {
@@ -87,7 +87,7 @@
     $browser_header-height: 31px;
 
     .hl2-code-block {
-      background-image: url('/img/browser_header_xl.svg');
+      background-image: url('/assets/img/browser_header_xl.svg');
       padding-bottom: $browser_header-height;
 
       & > .highlight {

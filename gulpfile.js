@@ -19,7 +19,7 @@ gulp.task('copy-css-vendor', [ 'clean' ], function() {
       './node_modules/peacock/styles/manni.css',
     ])
     .pipe(
-      gulp.dest('./css/vendor')
+      gulp.dest('./assets/css/vendor')
     );
 });
 
@@ -32,7 +32,7 @@ gulp.task('copy-js-vendor', [ 'clean' ], function() {
       './node_modules/jquery.easing/jquery.easing.min.js',
     ])
     .pipe(
-      gulp.dest('./js/vendor')
+      gulp.dest('./assets/js/vendor')
     );
 });
 
@@ -43,11 +43,11 @@ gulp.task('inject-dependencies', [ 'copy-css-vendor', 'copy-js-vendor' ], functi
       inject(
         gulp.src(
           [
-            './css/vendor/*.css',
-            './js/vendor/jquery.min.js',
-            './js/vendor/tether.min.js',
-            './js/vendor/bootstrap.min.js',
-            './js/vendor/jquery.easing.min.js',
+            './assets/css/vendor/*.css',
+            './assets/js/vendor/jquery.min.js',
+            './assets/js/vendor/tether.min.js',
+            './assets/js/vendor/bootstrap.min.js',
+            './assets/js/vendor/jquery.easing.min.js',
           ],
           {
             read: false
@@ -73,7 +73,7 @@ gulp.task('build-css-sass', function() {
     .pipe(rename({
       extname: '.min.css'
     }))
-    .pipe(gulp.dest('./css/'));
+    .pipe(gulp.dest('./assets/css/'));
 });
 
 gulp.task(
