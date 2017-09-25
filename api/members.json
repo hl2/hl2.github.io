@@ -1,0 +1,4 @@
+---
+title: Get members
+---
+{{ site.data.members | jsonify }}

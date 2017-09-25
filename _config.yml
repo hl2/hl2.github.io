@@ -1,6 +1,7 @@
 # Site settings
 title: HL2 Group
-defaultDescription: Ultra fast prototyping of industrial IoT applications
+author: HL2 Group
+description: Ultra fast prototyping of industrial IoT applications
 email: contact@hl2.com
 address:
   line_1: HL2 group
@@ -15,8 +16,31 @@ production_url : //hl2.com
 twitter_username: hl2group
 facebook_username: hl2group
 
+openGrapType: website
+openGrapImg:
+  alt: HL2 group logo
+  height: 630
+  type: image/jpeg
+  url: https://static.hl2.com/images/social_networks/hl2-group.jpg
+  width: 1200
+
+# Serving
+host: 0.0.0.0
+
 # Build settings
-exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "LICENSE.md", "package.json", "README.md", "gulpfile.js"]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - LICENSE.md
+  - node_modules
+  - package-lock.json
+  - package.json
+  - README.md
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 plugins:
   - jekyll-redirect-from
 whitelist:
