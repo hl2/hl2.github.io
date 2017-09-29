@@ -4,7 +4,8 @@
 <meta property="og:url" content="{{ site.url | append: page.url }}" />
 {% endif %}
 <meta property="og:type" content="{{ page.openGrapType | default: site.openGrapType }}" />
-<meta property="og:title" content="{{ page.title | default: site.title }}" />
+{% assign title = page.ogTitle | default: page.title  %}
+<meta property="og:title" content="{{ title | default: site.title }}" />
 {% assign description = page.description | default: page.excerpt %}
 <meta property="og:description" content="{{ description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
 <meta property="og:image:url" content="{{ page.openGrapImg.url | default: site.openGrapImg.url }}" />
