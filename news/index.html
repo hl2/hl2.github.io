@@ -1,0 +1,12 @@
+---
+title: News
+layout: margin
+---
+
+<ul class="list-unstyled">
+  {% for post in site.posts %}
+    <li>
+      {% include templates/post/list-item.html post=post %}
+    </li>
+  {% endfor %}
+</ul>

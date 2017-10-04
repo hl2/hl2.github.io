@@ -4,5 +4,10 @@
 <meta name="twitter:title" content="{{ title | default: site.title }}">
 {% assign description = page.description | default: page.excerpt %}
 <meta name="twitter:description" content="{{ description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-<meta name="twitter:image" content="{{ page.openGrapImg.url | default: site.openGrapImg.url }}">
+{% if jekyll.environment == 'production' and page.openGrapImg.path %}
+  {% assign url = site.production_url | append: page.openGrapImg.path  %}
+{% else %}
+  {% assign url = page.openGrapImg.url  %}
+{% endif %}
+<meta name="twitter:image" content="{{ url | default: site.openGrapImg.url }}">
 <meta property="twitter:image:alt" content="{{ page.openGrapImg.alt | default: site.openGrapImg.alt }}" />

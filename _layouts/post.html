@@ -1,0 +1,56 @@
+---
+layout: margin
+---
+{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+
+<div class="row">
+  <div class="col-sm-8" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="row pt-2 pb-2">
+      <div class="col">
+        <img class="img-fluid rounded" src="{{ page.img.src }}" alt="{{ page.img.alt }}" itemprop="image">
+      </div>
+    </div>
+
+    <div class="row pt-2 pb-2">
+      <div class="col d-flex justify-content-between">
+        <span>
+          <i class="fa fa-calendar-o" aria-label="Date"></i>
+          <time class="text-muted" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {{ page.date | date: date_format }}
+          </time>
+        </span>
+        <span>
+          {% for authorKey in page.authors %}
+          {% assign author = site.data.authors[authorKey] %}
+          <span class="mr-1 hl2-avatar" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            {% if author.avatar %}
+            <img class="rounded" itemprop="image" src="{{ author.avatar | relative_url }}" alt="{{ author.name }} image">
+            {% else %}
+            <i class="fa fa-user" aria-label="Author"></i>
+            {% endif %}
+            <span itemprop="name">{{ author.name | default: authorKey }}</span>
+          </span>
+          {% endfor %}
+        </span>
+      </div>
+    </div>
+
+    <div class="row pt-2">
+      <div class="col" itemprop="articleBody">
+        {{ content }}
+      </div>
+    </div>
+
+    <div class="row p-2">
+      <div class="col">
+        {% include templates/tagsNcategories.html documentationVersionKeys=page.categories topicKeys=page.tags  %}
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-sm-4">
+    {% include templates/post/post_aside.menu.html %}
+  </div>
+</div>

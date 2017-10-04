@@ -11,7 +11,7 @@ address:
 gmap_parameters: ?q=46.669933,0.363042&ll=46.669933,0.363042&z=19&t=h
 googleTagManager: GTM-55HF8C3
 url: "" # the base hostname & protocol for your site
-production_url : //hl2.com
+production_url : http://hl2.com
 
 twitter_username: hl2group
 facebook_username: hl2group
@@ -42,10 +42,26 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 plugins:
+  - jekyll-feed
   - jekyll-redirect-from
 whitelist:
   - jekyll-redirect-from
 
+# defaults variables
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+      author: 'HL2 group'
+      layout: 'post'
+      openGrapType: article
+      permalink: /:categories/:year/:month/:day/:title/
+
 # Collections
 collections:
   events:
+
+# Posts
+excerpt_separator: <!--more-->
