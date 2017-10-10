@@ -1,0 +1,19 @@
+---
+layout: primary
+---
+<div class="row p-5">
+  <div class="col">
+    {{ content }}
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <ul class="list-unstyled">
+    {% for post in site.posts %}
+      <li>
+        {% include templates/post/list-item.html post=post %}
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>
