@@ -8,16 +8,6 @@
  * prior written permission is obtained from HL2 group.
  */
 
-@import "variables";
-@import "utilities";
-@import "layouts";
-@import "main";
-@import "header";
-@import "home";
-@import "carousel";
-@import "saas";
-@import "stack";
-@import "video";
-@import "team";
-@import "contact";
-@import "event";
+.hl2-primary-header {
+  height: 200px;
+}
