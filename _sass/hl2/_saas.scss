@@ -9,6 +9,17 @@
  */
 
 #saas {
+  // spacing
+  .hl2-application {
+    width: 70%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .hl2-application {
+      width: 60%;
+    }
+  }
+
   $browser_header-height: 24px;
 
   .hl2-code-block {
