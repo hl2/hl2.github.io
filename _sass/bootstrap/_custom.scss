@@ -62,16 +62,6 @@ $link-hover-color: darken($link-color, 15%);
 // Components
 $component-active-bg: $brand-primary;
 
-// Grid columns
-$grid-gutter-width-base: 0;
-$grid-gutter-widths: (
-  xs: $grid-gutter-width-base,
-  sm: $grid-gutter-width-base,
-  md: $grid-gutter-width-base,
-  lg: $grid-gutter-width-base,
-  xl: $grid-gutter-width-base
-);
-
 // Buttons
 $btn-focus-box-shadow: 0 0 0 2px rgba($brand-primary, 0.25);
 
@@ -109,7 +99,6 @@ $pagination-active-border: $brand-primary;
 $card-bg: transparent;
 $card-border-width: 0;
 $card-cap-bg: transparent;
-$card-deck-margin: ($grid-gutter-width-base / 2);
 
 // Popovers
 $popover-title-bg: darken($gray-lightest, 3%);
