@@ -98,11 +98,11 @@ body {
 
   & .hl2-section-home {
     padding: ($spacer-y * 3 ) 0;
-  
+
     & .row {
       & > .col,
       & > [class*="col-"] {
-        padding: 0 ($spacer-x * 1);
+        padding: 0 ($spacer-x * 2);
       }
     }
 
