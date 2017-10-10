@@ -7,7 +7,7 @@ layout: primary
   </div>
 </div>
 <div class="row">
-  <div class="col">
+  <div class="col-sm-8">
     <ul class="list-unstyled">
     {% for post in site.posts %}
       <li>
@@ -15,5 +15,9 @@ layout: primary
       </li>
     {% endfor %}
     </ul>
+  </div>
+
+  <div class="col-sm-4">
+    {% include templates/post/post_aside.menu.html %}
   </div>
 </div>
