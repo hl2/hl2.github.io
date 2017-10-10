@@ -1,5 +1,5 @@
 ---
-title: 'Predictive maintenance: ENGIE Axima and HL2 group sign a partnership contract to reduce the industrial risks of air handling units'
+title: 'ENGIE Axima and HL2 group sign a partnership contract'
 categories: news
 img:
   src: /assets/img/posts/engie-axima-logo-330.jpg
