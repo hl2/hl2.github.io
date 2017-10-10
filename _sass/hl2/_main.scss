@@ -46,12 +46,12 @@ body {
     }
   }
 
-  & .hl2-section {
+  & .hl2-wave {
     position: relative;
-    padding: ($spacer-y * 3 ) 0;
+    padding: 0 0 ($spacer-y * 3 );
 
     @include media-breakpoint-down(xs) {
-      &.hl2-section {
+      &.hl2-wave {
         padding: ($spacer-y * 1 ) 0;
       }
     }
@@ -96,11 +96,13 @@ body {
     }
   }
 
-  & .hl2-section {
+  & .hl2-section-home {
+    padding: ($spacer-y * 3 ) 0;
+  
     & .row {
       & > .col,
       & > [class*="col-"] {
-        padding: ($spacer-x * 0 )($spacer-x * 1);
+        padding: 0 ($spacer-x * 1);
       }
     }
 
