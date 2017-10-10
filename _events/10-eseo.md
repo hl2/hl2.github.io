@@ -4,6 +4,6 @@ monthDate: oct
 dayDate: 25
 categories: IoT
 tags: LPWAN
-excerpt: Didier & Florent will speak about availables features with an connected object.
+excerpt: Didier & Florent will demonstrate all the possibilities of connected objects.
 website: http://www.eseo.fr/iotcolloque
 ---
