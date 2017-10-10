@@ -1,6 +1,6 @@
 ---
 title: Legal notices
-layout: margin
+layout: classic
 permalink: /legal_notices/
 ---
 
