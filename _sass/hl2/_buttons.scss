@@ -8,17 +8,20 @@
  * prior written permission is obtained from HL2 group.
  */
 
-@import "variables";
-@import "utilities";
-@import "layouts";
-@import "main";
-@import "header";
-@import "buttons";
-@import "home";
-@import "carousel";
-@import "saas";
-@import "stack";
-@import "video";
-@import "team";
-@import "contact";
-@import "event";
+.btn.btn-primary:focus {
+  $active-background: darken($btn-primary-bg, 10%);
+  $active-border: darken($btn-primary-border, 12%);
+  @include hover-focus {
+    color: $btn-primary-color;
+    background-color: $active-background;
+    border-color: $active-border;
+  }
+}
+
+.btn.btn-outline-primary {
+  @include hover-focus {
+    color: #fff;
+    background-color: $btn-primary-bg;
+    border-color: $btn-primary-bg;
+  }
+}
