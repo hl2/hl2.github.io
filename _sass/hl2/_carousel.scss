@@ -59,6 +59,11 @@ header {
         }
       }
     }
+    @include media-breakpoint-down(sm) {
+      & .carousel-item {
+        min-height: 80vh;
+      }
+    }
   }
 }
 
