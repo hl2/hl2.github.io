@@ -11,7 +11,7 @@
 // block height
 
 header {
-  &.hl2-70-screen-height {
+  &.hl2-carousel {
     & .carousel-item {
       min-height: 70vh;
 
@@ -22,12 +22,9 @@ header {
       @include media-breakpoint-down(xs) {
         .carousel-caption.hl2-carousel-caption {
           top: 5%;
-        }
-      }
-
-      @include media-breakpoint-down(sm) {
-        &.hl2-slide-meeting {
-          background-image: url('/assets/img/home/carousel/salon.jpg');
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
         }
       }
 
@@ -36,6 +33,12 @@ header {
         top: 0;
         left: 0;
         right: 0;
+      }
+
+      @include media-breakpoint-down(sm) {
+        &.hl2-slide-meeting {
+          background-image: url('/assets/img/home/carousel/salon.jpg');
+        }
       }
 
       & .hl2-embed-responsive {
@@ -55,22 +58,6 @@ header {
           display: block;
         }
       }
-
-      & .hl2-carousel-html-slide {
-        padding: 0 $carousel-control-width;
-      }
-
-      @include media-breakpoint-down(xs) {
-        & .hl2-carousel-html-slide {
-          padding: 0 ($carousel-control-width / 2);
-        }
-      }
-    }
-
-    @include media-breakpoint-down(sm) {
-      & .carousel-item {
-        height: 830px;
-      }
     }
   }
 }
@@ -85,16 +72,6 @@ header {
     margin-right: $carousel-control-width / 2;
     margin-left: $carousel-control-width / 2;
   }
-}
-
-// Contextual colors
-
-.hl2-text-kickstarter {
-  color: $btn-kickstarter-color !important;
-}
-
-.btn-kickstarter {
-  @include button-variant($white, $btn-kickstarter-color, $btn-kickstarter-color);
 }
 
 .hl2-backdrop {
