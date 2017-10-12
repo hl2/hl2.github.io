@@ -9,11 +9,6 @@
  */
 
 body {
-  & .hl2-container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   & header {
     &.bg-primary {
       background-color: linear-gradient(135deg, $brand-primary 0%, lighten($brand-primary, 7%) 100%);

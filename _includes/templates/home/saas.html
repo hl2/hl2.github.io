@@ -3,24 +3,26 @@
 {% capture content_api_media %}{% include contents/home/saas_api_media.md %}{% endcapture %}
 <section
   id="saas"
-  class="d-flex flex-column justify-content-between hl2-section-home hl2-wave hl2-90-screen-height"
+  class="row justify-content-between hl2-section-home hl2-wave hl2-90-screen-height"
 >
-  <div class="row hl2-flex-half mb-5">
-    <div class="col-md-6 d-flex flex-column">
-      {{ content_application | markdownify }}
-    </div>
-    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
-      <img class="m-3 img-fluid hl2-application" src="/assets/img/home/saas/panorama.png" alt="Panorama example" />
-    </div>
-  </div>
-  <div class="row hl2-flex-half">
-    <div class="col-md-6 d-flex justify-content-center align-items-center flex-last flex-md-first mb-3 mb-sm-0 mt-3 mt-md-0">
-      <div class="hl2-code-block d-flex flex-column">
-        {{ content_api_media | markdownify }}
+  <div class="col">
+    <div class="row hl2-flex-half mb-5">
+      <div class="col-md-6 d-flex flex-column">
+        {{ content_application | markdownify }}
+      </div>
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+        <img class="m-3 img-fluid hl2-application" src="/assets/img/home/saas/panorama.png" alt="Panorama example" />
       </div>
     </div>
-    <div class="col-md-6 d-flex flex-column justify-content-start flex-first flex-md-last">
-      {{ content_api | markdownify }}
+    <div class="row hl2-flex-half">
+      <div class="col-md-6 d-flex justify-content-center align-items-center flex-last flex-md-first mb-3 mb-sm-0 mt-3 mt-md-0">
+        <div class="hl2-code-block d-flex flex-column">
+          {{ content_api_media | markdownify }}
+        </div>
+      </div>
+      <div class="col-md-6 d-flex flex-column justify-content-start flex-first flex-md-last">
+        {{ content_api | markdownify }}
+      </div>
     </div>
   </div>
 </section>

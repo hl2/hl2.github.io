@@ -1,40 +1,42 @@
-<section id="team" class="no-pt bg-inverse">
-  <div class="row justify-content-center">
-    <div class="col">
-      <h2 class="text-center p-5">
-				Meet the team
-			</h2>
-    </div>
-  </div>
-  <div class="row justify-content-around">
-    {% for member in site.data.members %}
-    <div class="col-6 col-sm-4 col-md-3 card">
-      <img
-        class="rounded-circle mx-auto img-fluid hl2-img-fluid-fix-ie11-200"
-        src="/assets/img/home/members/{{ member.pic }}"
-        alt="{{ member.name }} image"
-      />
-      <div class="card-block text-center">
-        <h5 class="card-title hl2-font-size-l">{{ member.name }}</h5>
-        <p class="card-text text-muted">
-          <span>{{ member.position }}</span>
-          {% if member.social | size %}
-          <ul class="list-inline social-buttons">
-            {% for network in member.social %}
-            <li>
-              <a href="{{ network.url }}" target="_blank">
-                <span class="fa-stack-1x">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-stack-1x fa-{{ network.title }} fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            {% endfor %}
-          </ul>
-          {% endif %}
-        </p>
+<section id="team" class=" row no-pt bg-inverse">
+  <div class="col">
+    <div class="row justify-content-center">
+      <div class="col">
+        <h2 class="text-center p-5">
+  				Meet the team
+  			</h2>
       </div>
     </div>
-    {% endfor %}
+    <div class="row justify-content-around">
+      {% for member in site.data.members %}
+      <div class="col-6 col-sm-4 col-md-3 card">
+        <img
+          class="rounded-circle mx-auto img-fluid hl2-img-fluid-fix-ie11-200"
+          src="/assets/img/home/members/{{ member.pic }}"
+          alt="{{ member.name }} image"
+        />
+        <div class="card-block text-center">
+          <h5 class="card-title hl2-font-size-l">{{ member.name }}</h5>
+          <p class="card-text text-muted">
+            <span>{{ member.position }}</span>
+            {% if member.social | size %}
+            <ul class="list-inline social-buttons">
+              {% for network in member.social %}
+              <li>
+                <a href="{{ network.url }}" target="_blank">
+                  <span class="fa-stack-1x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-stack-1x fa-{{ network.title }} fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
