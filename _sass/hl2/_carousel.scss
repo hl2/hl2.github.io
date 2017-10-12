@@ -67,6 +67,13 @@ header {
   }
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  -webkit-tap-highlight-color: transparent;
+  -tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+}
 @include media-breakpoint-down(xs) {
   .carousel-control-prev,
   .carousel-control-next {
