@@ -6,7 +6,8 @@
 <meta property="og:type" content="{{ page.openGrapType | default: site.openGrapType }}" />
 {% assign title = page.ogTitle | default: page.title  %}
 <meta property="og:title" content="{{ title | default: site.title }}" />
-{% assign description = page.description | default: page.excerpt %}
+{% assign description = page.content | default: page.excerpt | markdownify %}
+{% assign description = description | default: page.description %}
 <meta property="og:description" content="{{ description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
 {% if jekyll.environment == 'production' and page.openGrapImg.path %}
   {% assign url = site.production_url | append: page.openGrapImg.path  %}
