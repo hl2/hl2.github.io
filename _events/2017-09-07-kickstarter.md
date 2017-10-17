@@ -1,5 +1,6 @@
 ---
 title: Kickstarter
+yearDate: 2017
 monthDate: sep-oct
 dayDate: 07-07
 categories: crowdfunding

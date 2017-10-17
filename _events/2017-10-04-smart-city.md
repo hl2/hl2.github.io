@@ -1,5 +1,6 @@
 ---
 title: Smart city & grid
+yearDate: 2017
 monthDate: oct
 dayDate: 04-05
 categories: IoT
