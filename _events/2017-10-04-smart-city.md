@@ -1,7 +1,7 @@
 ---
 title: Smart city & grid
 monthDate: oct
-dayDate: 4-5
+dayDate: 04-05
 categories: IoT
 tags: Arduino LPWAN Sigfox LoRaWAN
 excerpt: Meet us in booth **H11**.

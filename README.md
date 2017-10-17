@@ -13,6 +13,14 @@ Getting started
 5. Start Jekyll server with `npm run start`
 6. Browse [http://localhost:4000](http://localhost:4000)
 
+Getting started
+---------------
+
+### Writing an EVENT
+
+Add a markdown file into `./events` with a filename following the format: `YEAR-MONTH-DAY-title.md` (with initial zero)
+> see the [Jekyll doc](//jekyllrb.com/docs/posts/)
+
 License
 -------
 
