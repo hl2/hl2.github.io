@@ -8,7 +8,8 @@
  * prior written permission is obtained from HL2 group.
  */
 
-.btn.btn-primary:focus {
+// Fix Bootstrap button with the CSS focus selector for primary style only
+.btn.btn-primary {
   $active-background: darken($btn-primary-bg, 10%);
   $active-border: darken($btn-primary-border, 12%);
   @include hover-focus {
@@ -18,6 +19,7 @@
   }
 }
 
+// Fix Bootstrap button with the CSS focus selector for primary style only
 .btn.btn-outline-primary {
   @include hover-focus {
     color: #fff;

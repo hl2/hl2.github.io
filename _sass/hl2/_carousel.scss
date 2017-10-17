@@ -67,6 +67,7 @@ header {
   }
 }
 
+// Fix background color appear on touch for digital screen
 .carousel-control-prev,
 .carousel-control-next {
   -webkit-tap-highlight-color: transparent;
@@ -74,6 +75,7 @@ header {
   -moz-tap-highlight-color: transparent;
   -webkit-appearance: none;
 }
+
 @include media-breakpoint-down(xs) {
   .carousel-control-prev,
   .carousel-control-next {
