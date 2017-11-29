@@ -9,8 +9,13 @@ layout: primary
 </div>
 <div class="row">
   <div class="col">
-    <ul class="list-unstyled">
+    {% assign events = site.events | where_exp:"event", "event.date > site.time" | sort: 'date' | reverse %}
+
+    {% unless events %}
+    <p class="lead">No events for now. See our archives below?</p>
       {% assign events = site.events | sort: 'date' | reverse %}
+    {% endunless %}
+    <ul class="list-unstyled">
       {% for event in events %}
       <li>
         {% include templates/event/list-item.html event=event %}
