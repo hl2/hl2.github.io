@@ -11,12 +11,6 @@ body {
   -webkit-tap-highlight-color: $brand-primary;
   margin: 0;
 
-  & ::selection,
-  & ::-moz-selection {
-    background: $brand-primary;
-    color: $white;
-  }
-
   & .hl2-font-size-s {
     font-size: $font-size-sm;
   }
@@ -170,4 +164,9 @@ body {
   .text-primary {
     color: $brand-primary;
   }
+}
+
+::selection {
+  background-color: $brand-primary;
+  color: $white;
 }
