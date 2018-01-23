@@ -6,6 +6,7 @@
  */
 
 // Core variables and mixins
+@import "bootstrap/scss/_functions.scss";
 @import "bootstrap/scss/_variables.scss";
 @import "./_custom.scss";
 @import "bootstrap/scss/_mixins.scss";
@@ -39,7 +40,6 @@
 // @import "bootstrap/scss/_progress.scss";
 @import "bootstrap/scss/_media.scss";
 @import "bootstrap/scss/_list-group.scss";
-@import "bootstrap/scss/_responsive-embed.scss";
 @import "bootstrap/scss/_close.scss";
 
 // Components w/ JavaScript

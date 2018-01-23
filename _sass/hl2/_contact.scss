@@ -14,7 +14,7 @@
     & .hl2-contacts {
 
       & > div {
-        margin: 0 ($spacer-x * 0.5);
+        margin: 0 ($spacer * 0.5);
       }
 
       & a.hl2-contact {
@@ -30,7 +30,7 @@
   & .hl2-point-separator {
     & .fa-circle {
       font-size: ($font-size-base * 0.5);
-      padding: 0 ($spacer-x * 0.5);
+      padding: 0 ($spacer * 0.5);
     }
   }
 }

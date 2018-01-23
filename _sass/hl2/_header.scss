@@ -40,10 +40,10 @@
    }
  }
 
- // Generate series of `.navbar-toggleable-*` responsive classes for configuring
+ // Generate series of `.navbar-expand-*` responsive classes for configuring
  // where your navbar collapses.
  // @todo: this is a fix for IE 10 in waiting next version of [Bootstrap v4](https://github.com/twbs/bootstrap/issues/21745)
- .navbar-toggleable {
+ .navbar-expand {
    @each $breakpoint in map-keys($grid-breakpoints) {
      $next: breakpoint-next($breakpoint, $grid-breakpoints);
      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);

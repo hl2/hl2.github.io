@@ -13,7 +13,7 @@
   $active-background: darken($btn-primary-bg, 10%);
   $active-border: darken($btn-primary-border, 12%);
   @include hover-focus {
-    color: $btn-primary-color;
+    color: theme-color("white");
     background-color: $active-background;
     border-color: $active-border;
   }

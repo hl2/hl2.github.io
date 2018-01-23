@@ -19,8 +19,8 @@
   }
 
   &:active {
-    color: $list-group-link-active-color;
-    background-color: $list-group-link-active-bg;
+    color: $list-group-action-active-color;
+    background-color: $list-group-action-active-bg;
   }
 
   & .hl2-event-date {
@@ -37,7 +37,7 @@
     }
 
     & .hl2-event-day {
-      font-size: $font-size-h4;
+      font-size: $h4-font-size;
       font-weight: 600;
     }
   }

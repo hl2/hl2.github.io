@@ -11,13 +11,13 @@
 #team {
   outline: $brand-inverse;
   outline-style: solid;
-  outline-offset: ($spacer-y * -0.13);
+  outline-offset: ($spacer * -0.13);
 
   & > .row {
 
     & > .col,
     & > [class*="col-"] {
-      padding: ($spacer-x * 0 )($spacer-x * 2);
+      padding: ($spacer * 0 )($spacer * 2);
     }
   }
 }

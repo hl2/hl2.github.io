@@ -45,6 +45,33 @@ $blue: #21589c;
 $gray-light: #63605d;
 $brand-primary: $blue;
 
+$colors: (
+  blue: $blue,
+  indigo: $indigo,
+  purple: $purple,
+  pink: $pink,
+  red: $red,
+  orange: $orange,
+  yellow: $yellow,
+  green: $green,
+  teal: $teal,
+  cyan: $cyan,
+  white: $white,
+  gray: $gray-600,
+  gray-dark: $gray-800
+);
+
+$theme-colors: (
+  primary: $blue,
+  secondary: $gray-600,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800
+);
+
 // Fonts
 $font-family-base: 'Open Sans', 'Helvetica Neue', $font-family-sans-serif;
 $font-weight-base: 200;
@@ -101,7 +128,7 @@ $card-border-width: 0;
 $card-cap-bg: transparent;
 
 // Popovers
-$popover-title-bg: darken($gray-lightest, 3%);
+$popover-title-bg: darken($gray-100, 3%);
 
 // Badges
 $badge-primary-bg: $brand-primary;
@@ -112,7 +139,7 @@ $progress-bar-bg: $brand-primary;
 // List group
 $list-group-bg: $body-bg;
 
-$list-group-hover-bg: $gray-lighter;
+$list-group-hover-bg: $gray-100;
 $list-group-active-bg: $component-active-bg;
 
 $list-group-link-color: $gray-light;
