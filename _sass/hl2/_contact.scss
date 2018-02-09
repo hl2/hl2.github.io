@@ -20,7 +20,7 @@
       & a.hl2-contact {
         color: $white;
         @include hover {
-          color: darken($brand-primary, 15%) !important;
+          color: darken(theme-color("primary"), 15%) !important;
         }
         white-space: normal;
       }

@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  -webkit-tap-highlight-color: $brand-primary;
+  -webkit-tap-highlight-color: theme-color("primary");
   margin: 0;
 
   & .hl2-font-size-s {
@@ -57,11 +57,11 @@ body {
 
     &.bg-primary {
       &::before {
-        background-color: $brand-primary;
+        background-color: theme-color("primary");
       }
 
       &::after {
-        background-color: lighten($brand-primary, 7%);
+        background-color: lighten(theme-color("primary"), 7%);
       }
     }
 
@@ -85,7 +85,7 @@ body {
       clip-path: polygon(100% 100%, 100% 0%, 50% 100%);
       min-height: 25%;
       width: 100%;
-      background-color: darken($body-bg, 10%);
+      background-color: theme-color("secondary");
       z-index: 0;
     }
   }
@@ -162,11 +162,11 @@ body {
   // Contextual colors
 
   .text-primary {
-    color: $brand-primary;
+    color: theme-color("primary");
   }
 }
 
 ::selection {
-  background-color: $brand-primary;
+  background-color: theme-color("primary");
   color: $white;
 }

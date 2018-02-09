@@ -43,7 +43,6 @@
 // Colors
 $blue: #21589c;
 $gray-light: #63605d;
-$brand-primary: $blue;
 
 $colors: (
   blue: $blue,
@@ -63,7 +62,7 @@ $colors: (
 
 $theme-colors: (
   primary: $blue,
-  secondary: $gray-600,
+  secondary: darken($white, 13%),
   success: $green,
   info: $cyan,
   warning: $yellow,
@@ -80,34 +79,33 @@ $headings-font-weight: 400;
 // Body
 $body-bg: darken($white, 3%);
 $body-color: $gray-light;
-$brand-inverse: darken($body-bg, 10%);
 
 // Links
 $link-color: $gray-light;
 $link-hover-color: darken($link-color, 15%);
 
 // Components
-$component-active-bg: $brand-primary;
+$component-active-bg: theme-color("primary");
 
 // Buttons
-$btn-focus-box-shadow: 0 0 0 2px rgba($brand-primary, 0.25);
+$btn-focus-box-shadow: 0 0 0 2px rgba(theme-color("primary"), 0.25);
 
-$btn-primary-bg: $brand-primary;
+$btn-primary-bg: theme-color("primary");
 $btn-primary-border: $btn-primary-bg;
 $btn-secondary-color: $gray-light;
 
 // Forms
-$input-border-focus: lighten($brand-primary, 25%);
+$input-border-focus: lighten(theme-color("primary"), 25%);
 $input-box-shadow-focus: $input-box-shadow, rgba($input-border-focus, 0.6);
 
-$custom-control-checked-indicator-bg: $brand-primary;
+$custom-control-checked-indicator-bg: theme-color("primary");
 
-$custom-checkbox-indeterminate-bg: $brand-primary;
+$custom-checkbox-indeterminate-bg: theme-color("primary");
 
-$custom-select-focus-border-color: lighten($brand-primary, 25%);
+$custom-select-focus-border-color: lighten(theme-color("primary"), 25%);
 $custom-select-focus-box-shadow: inset 0 1px 2px rgba($black, 0.075), 0 0 5px rgba($custom-select-focus-border-color, 0.5);
 
-$custom-file-focus-box-shadow: 0 0 0 0.075rem $white, 0 0 0 0.2rem $brand-primary;
+$custom-file-focus-box-shadow: 0 0 0 0.075rem $white, 0 0 0 0.2rem theme-color("primary");
 
 // Dropdowns
 $dropdown-link-active-bg: $component-active-bg;
@@ -119,8 +117,8 @@ $navbar-light-color: rgba($blue, 0.5);
 $nav-pills-active-link-bg: $component-active-bg;
 
 // Pagination
-$pagination-active-bg: $brand-primary;
-$pagination-active-border: $brand-primary;
+$pagination-active-bg: theme-color("primary");
+$pagination-active-border: theme-color("primary");
 
 // Cards
 $card-bg: transparent;
@@ -131,10 +129,10 @@ $card-cap-bg: transparent;
 $popover-title-bg: darken($gray-100, 3%);
 
 // Badges
-$badge-primary-bg: $brand-primary;
+$badge-primary-bg: theme-color("primary");
 
 // Progress bars
-$progress-bar-bg: $brand-primary;
+$progress-bar-bg: theme-color("primary");
 
 // List group
 $list-group-bg: $body-bg;

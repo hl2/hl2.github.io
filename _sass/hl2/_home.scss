@@ -11,10 +11,10 @@
 body {
   & header {
     &.bg-primary {
-      background-color: linear-gradient(135deg, $brand-primary 0%, lighten($brand-primary, 7%) 100%);
+      background-color: linear-gradient(135deg, theme-color("primary") 0%, lighten(theme-color("primary"), 7%) 100%);
 
       & .btn-outline-white {
-        @include button-outline-variant($white, $brand-primary);
+        @include button-outline-variant($white, theme-color("primary"));
       }
     }
 

@@ -9,7 +9,7 @@
  */
 
 #team {
-  outline: $brand-inverse;
+  outline: theme-color("secondary");
   outline-style: solid;
   outline-offset: ($spacer * -0.13);
 
