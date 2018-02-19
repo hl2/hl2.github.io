@@ -6,7 +6,7 @@
     {% for post in site.posts limit:10 %}
       <a
         href="{{ post.url | relative_url }}"
-        class="list-group-item list-group-item-action flex-column align-items-start active"
+        class="list-group-item list-group-item-action d-flex flex-column align-items-start active"
       >
         <h5 class="mb-1">{{ post.title | default: site.noTitle | escape }}</h5>
         <small>{{ post.date | date: date_format }}</small>
@@ -17,7 +17,7 @@
 <div class="row m-0 pt-3">
   <div class="col list-group">
     <a
-      class="list-group-item list-group-item-action flex-nowrap align-items-center"
+      class="list-group-item list-group-item-action d-flex flex-row flex-nowrap align-items-center"
       href="{{ "/feed.xml" | relative_url }}"
       title="Blog RSS"
       aria-label="Blog RSS"

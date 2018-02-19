@@ -10,26 +10,28 @@
         {{ content_hardwares | markdownify }}
       </div>
       <div class="col-sm-6 d-flex flex-wrap justify-content-around align-items-center">
-        <div class="row">
+        <div class="row justify-content-center">
           {% for hardware in site.data.hardwares %}
-          <img
-          class="card-img-top img-fluid mx-auto"
-          src="/assets/img/home/hardwares/{{ hardware.img }}"
-          alt="{{ hardware.name }} image"
-          />
+          <div class="col-xs-4">
+            <img
+              class="card-img-top img-fluid mx-auto"
+              src="/assets/img/home/hardwares/{{ hardware.img }}"
+              alt="{{ hardware.name }} image"
+            />
+          </div>
           {% endfor %}
         </div>
       </div>
     </div>
     <div class="row hl2-flex-half">
-      <div class="col-lg-5 d-flex justify-content-center flex-last flex-lg-first">
+      <div class="col-sm-5 d-flex justify-content-center flex-last flex-sm-first">
         <img
         class="img-fluid"
         src="/assets/img/home/pld/HL2-boitier.png"
         alt="PLD"
         />
       </div>
-      <div class="col-lg-7 d-flex flex-column flex-first flex-lg-last">
+      <div class="col-sm-7 d-flex flex-column flex-first flex-sm-last">
         {{ content_pld | markdownify }}
       </div>
     </div>
