@@ -21,6 +21,10 @@ Getting started
 Add a markdown file into `./events` with a filename following the format: `YEAR-MONTH-DAY-title.md` (with initial zero)
 > see the [Jekyll doc](//jekyllrb.com/docs/posts/)
 
+> ** If you want to show the event its last day add one day in the filename format**.
+> For example, an event ended at february 22nd, 2018 should have a filename: `2018-02-23-event-name.md`.
+> This event will be automatically hidden the february 23nd, 2018 at midnight!
+
 License
 -------
 
