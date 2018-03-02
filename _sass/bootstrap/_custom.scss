@@ -41,34 +41,14 @@
 // Code
 
 // Colors
-$blue: #21589c;
+$primary: #21589c;
 $gray-light: #63605d;
 
-$colors: (
-  blue: $blue,
-  indigo: $indigo,
-  purple: $purple,
-  pink: $pink,
-  red: $red,
-  orange: $orange,
-  yellow: $yellow,
-  green: $green,
-  teal: $teal,
-  cyan: $cyan,
-  white: $white,
-  gray: $gray-600,
-  gray-dark: $gray-800
-);
+$secondary: darken($white, 13%);
 
 $theme-colors: (
-  primary: $blue,
-  secondary: darken($white, 13%),
-  success: $green,
-  info: $cyan,
-  warning: $yellow,
-  danger: $red,
-  light: $gray-100,
-  dark: $gray-800
+  "primary": $primary,
+  "secondary": $secondary
 );
 
 // Fonts
@@ -111,7 +91,7 @@ $custom-file-focus-box-shadow: 0 0 0 0.075rem $white, 0 0 0 0.2rem theme-color("
 $dropdown-link-active-bg: $component-active-bg;
 
 // Navbar
-$navbar-light-color: rgba($blue, 0.5);
+$navbar-light-color: rgba($primary, 0.5);
 
 // Navs
 $nav-pills-active-link-bg: $component-active-bg;
