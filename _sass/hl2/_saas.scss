@@ -10,13 +10,9 @@
 
 #saas {
   // spacing
-  .hl2-application {
-    width: 70%;
-  }
-
-  @include media-breakpoint-up(lg) {
-    .hl2-application {
-      width: 60%;
+  @include media-breakpoint-down(lg) {
+    .hl2-img-fluid-fix-ie11-application {
+      width: 471px;
     }
   }
 
