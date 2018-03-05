@@ -5,15 +5,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-// Core variables and mixins
 @import "bootstrap/scss/_functions.scss";
 @import "bootstrap/scss/_variables.scss";
-@import "bootstrap/scss/_mixins.scss";
 @import "./_custom.scss";
-
-@import "bootstrap/scss/_print.scss";
-
-// Core CSS
+@import "bootstrap/scss/_mixins.scss";
+@import "bootstrap/scss/_root.scss";
 @import "bootstrap/scss/_reboot.scss";
 @import "bootstrap/scss/_type.scss";
 @import "bootstrap/scss/_images.scss";
@@ -22,8 +18,6 @@
 // @import "bootstrap/scss/_tables.scss";
 // @import "bootstrap/scss/_forms.scss";
 @import "bootstrap/scss/_buttons.scss";
-
-// Components
 @import "bootstrap/scss/_transitions.scss";
 // @import "bootstrap/scss/_dropdown.scss";
 @import "bootstrap/scss/_button-group.scss";
@@ -41,12 +35,9 @@
 @import "bootstrap/scss/_media.scss";
 @import "bootstrap/scss/_list-group.scss";
 @import "bootstrap/scss/_close.scss";
-
-// Components w/ JavaScript
 // @import "bootstrap/scss/_modal.scss";
 @import "bootstrap/scss/_tooltip.scss";
 @import "bootstrap/scss/_popover.scss";
 @import "bootstrap/scss/_carousel.scss";
-
-// Utility classes
 @import "bootstrap/scss/_utilities.scss";
+@import "bootstrap/scss/_print.scss";
