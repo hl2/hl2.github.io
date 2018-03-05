@@ -39,25 +39,3 @@
     }
    }
  }
-
- // Generate series of `.navbar-expand-*` responsive classes for configuring
- // where your navbar collapses.
- // @todo: this is a fix for IE 10 in waiting next version of [Bootstrap v4](https://github.com/twbs/bootstrap/issues/21745)
- .navbar-expand {
-   @each $breakpoint in map-keys($grid-breakpoints) {
-     $next: breakpoint-next($breakpoint, $grid-breakpoints);
-     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-
-     &#{$infix} {
-
-       @include media-breakpoint-up($next) {
-
-         // scss-lint:disable ImportantRule
-         .navbar-collapse {
-           width: inherit;
-           flex: 1 1 auto;
-         }
-       }
-     }
-   }
- }

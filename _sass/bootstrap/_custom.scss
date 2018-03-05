@@ -92,7 +92,7 @@ $custom-file-focus-box-shadow: 0 0 0 0.075rem $white, 0 0 0 0.2rem theme-color("
 $dropdown-link-active-bg: $component-active-bg;
 
 // Navbar
-$navbar-light-color: rgba($primary, 0.5);
+$navbar-light-color: rgba(theme-color("primary"), 0.5);
 
 // Navs
 $nav-pills-active-link-bg: $component-active-bg;
