@@ -14,6 +14,17 @@ Join us in the **Cap'Tronic** village, booth **3F37** and during two 30-minute c
     - Didier LONGUEVILLE, HL2 group CTO & Cofounder
     - Florent GAL, **Eramet group (alloys division)** IT Manager for Purchasing and Maintenance
 
+- Roundtable panel: Predictive maintenance is no longer science fiction!
+    TECHIN France, an association that brings together 400 software and internet solution vendors (Dassault Systèmes, ESI, Microsoft, etc.), has invited Didier LONGUEVILLE (HL2 CTO) to take part in a roundtable panel at the Global Industrie salon (@giparis2018).
+
+    Panellists also include:
+    - Bertrand Wascat, Product Manager for Predictive Maintenance at ACOEM
+    - Darcy Boungou-Tsoumou, General Manager at DI-Analyse Signal
+    - Marc Lejeune, Sales Manager at Engie Axima
+    - Henri Pais, Product Manager for Industrial Big Data Analytics at ESI Group
+    - Mathieu Cula, Co-Founder of Optmistik
+    - Jean-Michel Lefevre, General Manager at ProbaYes
+
 - Conference *La performance opérationnelle mesurée par les IoT* (__March 29, 10.30 am__) conducted by:
     - Didier LONGUEVILLE, HL2 group CTO & Cofounder
     - Marc LEJEUNE, **ENGIE Axima** Purchasing and maintenance departments
