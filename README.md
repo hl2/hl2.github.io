@@ -1,6 +1,17 @@
 hl2.com
 =======
 
+- [Getting started](#getting-started)
+- [License](#license)
+
+Getting started
+---------------
+
+1. Install [Jekyll](https://jekyllrb.com/docs/installation)
+2. Install dependencies with `bundle install`
+3. Start server with `bundle exec jekyll serve`
+4. The website is available at [http://localhost:4000](http://localhost:4000)
+
 License
 -------
 
