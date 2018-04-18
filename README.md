@@ -1,30 +1,6 @@
 hl2.com
 =======
 
-This is the repository of the website [hl2.com](http://hl2.com). It is hosted directly from the repository as a GitHub Pages website.
-
-Getting started
----------------
-
-1. Install [Jekyll](https://jekyllrb.com) if you haven't. `gem install jekyll`
-2. Clone this repo.
-3. Install project dependencies with `gem update`
-4. Install project dependencies with `npm install`
-5. Start Jekyll server with `npm run start`
-6. Browse [http://localhost:4000](http://localhost:4000)
-
-Getting started
----------------
-
-### Writing an EVENT
-
-Add a markdown file into `./events` with a filename following the format: `YEAR-MONTH-DAY-title.md` (with initial zero)
-> see the [Jekyll doc](//jekyllrb.com/docs/posts/)
-
-> ** If you want to show the event its last day add one day in the filename format**.
-> For example, an event ended at february 22nd, 2018 should have a filename: `2018-02-23-event-name.md`.
-> This event will be automatically hidden the february 23nd, 2018 at midnight!
-
 License
 -------
 
