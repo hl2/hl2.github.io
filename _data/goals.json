@@ -1,0 +1,18 @@
+[ 
+    {
+        "image": "goals/unifier.svg",
+        "description": "L’usage des nouveaux réseaux pour objets connectés LPWAN et améliorer la convergence, l’interopérabilité et l’indépendance de vos objets."
+    },
+    {
+        "image": "goals/securiser.svg",
+        "description": "De bout en bout vos communications sur les réseaux LPWAN en préservant, l'intégrité et la confidentialité de vos données."
+    },
+    {
+        "image": "goals/accelerer.svg",
+        "description": "Les déploiements en réduisant les délais, les coûts et les risques liés au développement de solutions IoT."
+    },
+    {
+        "image": "goals/valoriser.svg",
+        "description": "Les données produites par vos objets connectés grâce à l’intelligence embarquée dans nos technologies."
+    }
+]

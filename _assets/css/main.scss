@@ -1,0 +1,42 @@
+@charset 'utf-8';
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import 'bootstrap';
+
+@font-face {
+    font-family: Aeroportal;
+    src: asset_url('Aeroportal.otf') format('opentype');
+}
+
+body {
+    position: relative;
+}
+
+.section-title {
+    font-family: 'Aeroportal';
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    font-family: 'Aeroportal';
+    color: rgb(25, 60, 114);
+}
+
+.jumbotron {
+    background-color: rgb(25, 60, 114);
+    background-image: asset_url('background.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+/* Footer */
+footer {
+    .logo {
+        font-size: 3rem;
+        font-family: 'Aeroportal';    
+    }
+
+    .social-networks {
+        font-size: 3rem;
+    }
+}

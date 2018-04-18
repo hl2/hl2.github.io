@@ -1,0 +1,52 @@
+[ 
+    {
+        "name": "Didier Longueville",
+        "position": "CTO and co-founder",
+        "image": "members/didier-longueville.jpg"
+    },
+    {
+        "name": "Florent Agneray",
+        "position": "Chairman",
+        "image": "members/florent-agneray.jpg"
+    },
+    {
+        "name": "Mickael Bosch",
+        "position": "Hardware tech lead",
+        "image": "members/mickael-bosch.jpg"
+    },
+    {
+        "name": "Kevin Pollet",
+        "position": "Software tech lead",
+        "image": "members/kevin-pollet.jpg"
+    },
+    {
+        "name": "Claude Wesquy",
+        "position": "Business development manager",
+        "image": "members/claude-wesquy.jpg"
+    },
+    {
+        "name": "David Cho-lerat",
+        "position": "Software engineer",
+        "image": "members/david-cho-lerat.jpg"
+    },
+    {
+        "name": "Guillaume Seguin",
+        "position": "Software engineer",
+        "image": "members/guillaume-seguin.jpg"
+    },
+    {
+        "name": "Catherine Lagorre",
+        "position": "Accounting & admin",
+        "image": "members/catherine-lagorre.jpg"
+    },
+    {
+        "name": "Anthony Rabine",
+        "position": "Firmware engineer",
+        "image": "members/anthony-rabine.jpg"
+    },
+    {
+        "name": "Yoann Merceron",
+        "position": "Hardware engineer",
+        "image": "members/yoann-merceron.jpg"
+    }
+]

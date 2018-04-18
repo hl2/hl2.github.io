@@ -1,0 +1,120 @@
+---
+permalink: "/"
+title: Index
+layout: default
+---
+
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="jumbotron jumbotron-fluid col m-0">
+            <div class="text-white p-5 col-sm-8">
+                <h1 class="display-4">Connecter intelligemment les objets est notre raison d’être</h1>
+                <p class="lead">Intégrez nos technologies pour réduire le temps, le coût et les risques liés à la conception d'applications IoT novatrices !</p>
+            </div>  
+        </div>
+    </div>
+    
+    <div class="row p-5 border-bottom">
+        <div class="card-deck col">
+            {% for goal in site.data.goals %}
+                <div class="card shadow-sm p-3">
+                    <img src="{% asset '{{ goal.image }}' @path %}" class="card-img-top" height="100px">
+                    <div class="card-body text-center">
+                        <p class="card-text">{{ goal.description }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <div id="products" class="row bg-light p-5 border-bottom">
+        <h1 class="mx-auto section-title">Nos Produits</h1>
+    
+        <div class="card-deck mt-5">
+            {% for product in site.data.products %}
+                <div class="card shadow-sm p-3">
+                    <img class="card-img-top p-4" src="{% asset '{{ product.image }}' @path %}" height="150px" />
+                    <div class="card-body text-center">
+                        <h5 class="card-title">{{ product.title }}</h5>
+                        <p class="card-text">{{ product.description }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div id="about-us" class="row p-5">
+        <h1 class="mx-auto section-title">Qui sommes-nous ?</h1>
+
+        <div class="row mt-5 justify-content-center">
+            {% for member in site.data.members %}
+                <div class="col-sm-2 mr-1 text-center">
+                    <img src="{% asset '{{ member.image }}' @path %}" class="rounded-circle img-thumbnail w-75">
+                    <p class="mt-2 text-muted" style="font-family: Aeroportal">
+                        {{ member.name }} <br/>
+                        <strong>{{ member.position }}</strong>
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <div class="row p-5">
+        <h1 class="mx-auto section-title border-top pt-5">Prochains Evènements</h1>
+        
+        <div class="card-deck mt-5">
+            {% for event in site.data.events limit:3 %}
+                <div class="card col-sm-4 p-3 shadow-sm">
+                    <div class="row">
+                        <div class="col-sm-3 text-center">
+                            {{ event.startDate | date: "%Y" }}
+                        </div>
+                        <div class="col-sm-9 card-body">
+                            <h5 class="card-title">{{ event.title }}</h5>
+                            <p class="card-text">{{ event.location }}</p>
+                            <a href="{{ event.link }}" class="card-link">En savoir plus</a>
+                            <a href="{{ event.link }}" class="card-link">Site Web</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <div class="row p-5 border-bottom justify-content-center">
+        <div class="pt-5 col-sm-5 border-top text-center">
+        </div>
+    
+        <div class="row justify-content-center">
+            <h1 style="font-family: Aeroportal">Vous êtes intégrateur ou fabricant d'objets connectés ?</h1>
+            <h2 style="font-family: Aeroportal">Vous pouvez dès à présent satisfaire vos partenaires avec des technologies économiquement viables</h2>
+            <h2 style="font-family: Aeroportal">Contactez-nous !</h2>
+        </div>
+        
+        <div class="container-fluid mt-4">
+            <div class="row justify-content-center mt-5">
+                    <div class="card z-depth-5 col-sm-5 shadow-sm">
+                        <div class="card-body">
+                            <div class="card-text">
+                                <form class="lead">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Société</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Société">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Indiquez-nous comment nous pouvons vous aider :</label>
+                                        <textarea class="form-control" style="height:150px;" id="exampleInputPassword1"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
