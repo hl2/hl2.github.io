@@ -1,5 +1,5 @@
 ---
+title: Events
 layout: default
-title: Evènements
-permalink: "/events"
+permalink: /events
 ---
