@@ -3,11 +3,8 @@
   {% include head.html %}  
 
   <body>
-    <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
-      <a class="navbar-brand" href="#">
-        <img src="{% asset logo.png @path %}" height="50">
-      </a>
-
+    <header id="navigation" class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
+   
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -15,26 +12,37 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#products">Nos Produits</a>
+            <a class="nav-link" href="{{ site.url }}/#products">Nos Produits</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about-us">Qui sommes-nous ?</a>
+            <a class="nav-link" href="{{ site.url }}/#about-us">Qui sommes-nous ?</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/events">Evènements</a>
+            <a class="nav-link" href="{{ site.url }}/events">Evènements</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="http://developers.hl2.com">Développeurs</a>
+            <a class="nav-link" target="_blank" href="http://developers.hl2.com">Développeurs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</span></a>
+            <a class="nav-link" href="{{ site.url }}/#contact">Contact</span></a>
           </li>
         </ul>
       </div>
     </header>
 
-    {{ content }}
-    
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="jumbotron jumbotron-fluid col m-0">
+                <div class="text-white p-5 col-sm-8 text-center">
+                    <h1 class="display-4">{{ page.jumboTitle }}</h1>
+                    <p class="lead">{{ page.jumboDescription }}</p>
+                </div>  
+            </div>
+        </div>
+
+        {{ content }}
+    </div>
+
     {% include footer.html %}  
 
     <!-- Optional JavaScript -->
@@ -42,5 +50,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    {% if page.js %}
+      {% asset '{{ page.js }}' %}
+    {% endif %}
   </body>
 </html>

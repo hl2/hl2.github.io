@@ -1,0 +1,17 @@
+---
+title: Events
+layout: default
+permalink: /events
+jumboTitle: Evènements
+jumboDescription: Venez rencontrer et assister aux conférences de nos experts IoT !
+---
+
+<div class="events-page row p-5 justify-content-center">
+
+    {% assign sorted = site.events | sort: 'date' | reverse %}
+    {% for event in sorted %}
+        <div class="row col-sm-9">
+            {% include event-card.html event=event %}
+        </div>
+    {% endfor %}
+</div>

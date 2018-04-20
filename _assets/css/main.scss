@@ -34,6 +34,14 @@ body {
     background-position: right top;
 }
 
+/* Events */
+.events-page .card {
+    &:hover{
+        @extend .shadow;
+        cursor: pointer;
+    }  
+}
+
 /* Footer */
 footer {
     .logo {
