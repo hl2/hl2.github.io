@@ -1,13 +1,17 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-    <title>{{ page.title | append: ' | ' | append: site.title }}</title>
+  {% if jekyll.environment == "production" %}
+    {% gtm head %}
+  {% endif %}  
 
-    <link rel="icon" type="image/png" sizes="32x32" href="{% asset favicon-32x32.png @path %}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{% asset favicon-16x16.png @path %}">
-    <link rel="icon" type="image/x-icon" href="{% asset favicon.ico @path %}">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    {% asset main.css %}
-  </head>
+  <title>{{ page.title | append: ' | ' | append: site.title }}</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="{% asset favicon-32x32.png @path %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% asset favicon-16x16.png @path %}">
+  <link rel="icon" type="image/x-icon" href="{% asset favicon.ico @path %}">
+
+  {% asset main.css %}
+</head>

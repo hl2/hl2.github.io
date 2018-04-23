@@ -8,6 +8,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://hl2.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: hl2_fr
 github_username:  hl2
+google:
+  tag_manager:
+    container_id: GTM-55HF8C3
 
 # Build settings
 markdown: kramdown

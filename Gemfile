@@ -7,6 +7,7 @@ group :jekyll_plugins do
   gem "jekyll-assets", "~> 3.0.11"
   gem "font-awesome-sass", "~> 5.0.9"
   gem "jekyll-sitemap", "~> 1.2.0"
+  gem 'jekyll-google-tag-manager', "~> 1.0.1"
 end
 
 # Performance-booster for watching directories on Windows
