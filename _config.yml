@@ -3,8 +3,8 @@ email: contact@hl2.com
 description: >-
   HL2 group est une start-up dédiée à l'Internet des Objets industriel, 
   utilisant les nouvelles technologies LPWAN comme Sigfox™ et LoRaWAN™
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://hl2.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "http://hl2.com"
 twitter_username: hl2_fr
 github_username:  hl2
 
@@ -35,13 +35,9 @@ collections:
     permalink: /:path
 
 # Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
 exclude:
+  - .gitignore
+  - README.md
+  - LICENSE.md
   - Gemfile
   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
