@@ -12,10 +12,9 @@ body {
     position: relative;
 }
 
-.navbar-brand {
-    font-size: 1.7rem;
+/* Newsletter */
+.newsletter-subscription h3 {
     font-family: 'Aeroportal';
-    color: rgb(25, 60, 114);
 }
 
 /* Home */
@@ -28,7 +27,7 @@ body {
 }
 
 .jumbotron {
-    background-color: rgb(25, 60, 114);
+    background-color: #193c72;
     background-image: asset_url('background.svg');
     background-repeat: no-repeat;
     background-position: right top;
