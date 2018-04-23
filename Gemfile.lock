@@ -106,6 +106,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails (~> 8.3.0)
   bootstrap (~> 4.1.0)
   font-awesome-sass (~> 5.0.9)
   jekyll (~> 3.7.3)
