@@ -21,7 +21,7 @@ assets:
 # Build settings
 markdown: kramdown
 sass:
-    sass_dir: _sass
+    sass_dir: _assets/
 plugins:
   - bootstrap
   - font-awesome-sass
