@@ -2,16 +2,16 @@
     {
         "image": "products/circuit.svg",
         "title": "Technologie d'intelligence Embarqueé",
-        "description": "Ajoutez de l'intelligence à vos objets ! Notre librairie vous permez de mettre en place rapidement de l'analyse des signatures acoustiques, vibratoires et des algorithmes avancés."
+        "description": "Ajoutez de l'intelligence à vos objets ! Notre librairie vous permet de mettre en place rapidement de l'analyse des signatures acoustiques, vibratoires et des algorithmes avancés."
     },
     {
         "image": "products/building.svg",
         "title": "Technologie de communication Réseau",
-        "description": "Notre stack réseau SCAP / LTP vous permez d’améliorer de la qualité de service des réseaux LPWAN, d’augmenter la taille des données métiers et de sécuriser les échanges."
+        "description": "Notre stack réseau SCAP / LTP vous permet d’améliorer de la qualité de service des réseaux LPWAN, d’augmenter la taille des données métiers et de sécuriser les échanges."
     },
     {
         "image": "products/analytics.svg",
         "title": "Technologie de collecte de données",
-        "description": "Notre plateforme IoT HL2 Panorama scalable et intéroperable vous permez de collecter simplement et rapidement les données des opérateurs (Sigfox™ et LoRaWAN™)."
+        "description": "Notre plateforme IoT HL2 Panorama scalable et intéroperable vous permet de collecter simplement et rapidement les données des opérateurs (Sigfox™ et LoRaWAN™)."
     }
 ]
