@@ -47,7 +47,7 @@ defaults:
       path: ""
     values:
       image:
-        path: https://static.hl2.com/images/social_networks/hl2.jpg
+        path: https://static.hl2.com/images/social_networks/hl2.png
         height: 600
         width: 600
 
