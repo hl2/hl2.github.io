@@ -6,7 +6,7 @@ jumboTitle: Evènements
 jumboDescription: Venez nous rencontrer et assister aux conférences de nos experts IoT !
 ---
 
-<div class="events-page row p-5 justify-content-center">
+<div class="events-page row p-5 justify-content-center" id="accordion">
 
     {% assign sorted = site.events | sort: 'date' | reverse %}
     {% for event in sorted %}
