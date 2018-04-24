@@ -16,6 +16,7 @@
         <div class="col-sm-3 m-2 rounded text-white d-flex flex-column justify-content-center align-items-center" style="background-color: rgb(25, 60, 114);">
             <div class="display-4">{{ include.event.date | date: "%d" }}</div>
             <div class="text-uppercase">{{ site.data.fr.months[startKeyMonth] }}</div>
+            <div>{{ include.event.date | date: "%Y" }}</div>
         </div>
         <div class="col-sm-8 card-body">
             <h5 class="card-title">{{ include.event.title }}</h5>
