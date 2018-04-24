@@ -12,5 +12,9 @@
   <link rel="icon" type="image/x-icon" href="{% asset favicon.ico @path %}">
 
   {% asset main.css %}
+  {% capture seo %}
   {% seo %}
+  {% endcapture %}
+
+  {{ seo | replace: "summary_large_image", "summary" }}
 </head>
