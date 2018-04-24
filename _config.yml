@@ -1,12 +1,26 @@
+image: https://static.hl2.com/images/social_networks/hl2.jpg
 title: HL2
 email: contact@hl2.com
 description: >-
   HL2 group est une start-up dédiée à l'Internet des Objets industriel, 
   utilisant les nouvelles technologies LPWAN comme Sigfox™ et LoRaWAN™
 baseurl: ""
-url: "http://hl2.com"
-twitter_username: hl2_fr
-github_username:  hl2
+url: "http://hl2.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter:
+  username: hl2_fr
+github:
+  username:  hl2
+facebook:
+  app_id: 1320729961397318
+social:
+  name: HL2
+  links:
+    - https://twitter.com/hl2_fr
+    - https://www.facebook.com/hl2group
+    - https://www.linkedin.com/company/25071905
+    - https://github.com/hl2
+google_site_verification: GL1ohfgaVRoTO5RAzqJfG9o6KHdeuJqY2QlA-ooVcJA
+lang: fr_FR
 
 google:
   tag_manager:
@@ -27,6 +41,7 @@ plugins:
   - font-awesome-sass
   - autoprefixer-rails
   - jekyll-assets
+  - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-google-tag-manager
 
