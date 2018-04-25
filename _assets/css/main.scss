@@ -13,9 +13,15 @@ body {
     position: relative;
 }
 
-/* Newsletter */
-.newsletter-subscription h3 {
-    font-family: $hl2-font-family;
+/* Jumbotron */
+.jumbotron {
+    background-color: #193c72;
+
+    @include media-breakpoint-up(lg) {
+        background-image: asset_url('background.svg');
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
 }
 
 /* Home */
@@ -27,12 +33,7 @@ body {
     font-family: $hl2-font-family;
 }
 
-.jumbotron {
-    background-color: #193c72;
-    background-image: asset_url('background.svg');
-    background-repeat: no-repeat;
-    background-position: right top;
-}
+
 
 /* Events */
 .events-page .card {
