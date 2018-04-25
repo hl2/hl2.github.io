@@ -1,60 +1,67 @@
-<footer class="row bg-light border-top justify-content-center">
-    <div class="row p-5 col-sm-12">
-        <div class="col-sm-2">
-            <h5>Adresse</h5>
-            <address class="mt-2">
-                HL2 group <br/>
-                Futuropolis 5, Teleport 4 <br/>
-                Avenue Thomas Edison <br/>
-                86960 Futuroscope Chasseneuil, France <br/>
-            </address>
+<footer class="row section bg-light border-top">
+    <div class="col">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col">
+                        <h5>Liens</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="{{ site.url }}">Accueil</a></li>
+                            <li><a href="{{ site.url }}/#newsletter">Newsletter</a></li>
+                            <li><a href="{{ site.url }}/#products">Nos Produits</a></li>
+                            <li><a href="{{ site.url }}/#about-us">Qui sommes-nous ?</a></li>
+                            <li><a href="{{ site.url }}/events">Evènements</a></li>
+                            <li><a href="http://developers.hl2.com">Développeurs</a></li>
+                            <li><a href="{{ site.url }}/#contact">Contact</a></li>
+                            <li><a href="{{ site.url }}/legal-notices">Mentions Légales</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="row h-100">
+                            <div class="col">
+                                <h5>Contact</h5>
+                                <p><i class="far fa-envelope"></i> <a href="mailto:contact@hl2.com">contact@hl2.com</a></p>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col">
+                                <h5>Adresse</h5>
+                                <address>
+                                    HL2 group <br/>
+                                    Futuropolis 5, Teleport 4 <br/>
+                                    Avenue Thomas Edison <br/>
+                                    86960 Futuroscope Chasseneuil, France <br/>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <iframe class="h-100 w-100"
+                        frameborder="0"
+                        src="http://www.google.com/maps/embed/v1/place?q=HL2
+                        &zoom=15
+                        &key=AIzaSyCgWrkc9EP9LwpHK0E1nwmnbeSil8mPhR8">
+                </iframe>
+            </div>
         </div>
-
-        <div class="col-sm-2">
-            <h5>Contact</h5>
-            <ul class="m-0 mt-2 list-unstyled">
-                <li>
-                    <i class="far fa-envelope"></i> <a href="mailto:contact@hl2.com">contact@hl2.com</a>
-                </li>
-            </ul>        
-        </div>
-
-        <div class="col-sm-2">
-            <h5>Liens</h5>
-            <ul class="m-0 list-unstyled mt-2">
-                <li><a href="{{ site.url }}">Accueil</a></li>
-                <li><a href="{{ site.url }}/#newsletter">Newsletter</a></li>
-                <li><a href="{{ site.url }}/#products">Nos Produits</a></li>
-                <li><a href="{{ site.url }}/#about-us">Qui sommes-nous ?</a></li>
-                <li><a href="{{ site.url }}/events">Evènements</a></li>
-                <li><a href="http://developers.hl2.com">Développeurs</a></li>
-                <li><a href="{{ site.url }}/#contact">Contact</a></li>
-                <li><a href="{{ site.url }}/legal-notices">Mentions Légales</a></li>
-            </ul>
-        </div>
-
-        <iframe id="map" frameborder="0" class="col-sm-6" src="http://www.google.com/maps/embed/v1/place?q=HL2
-            &zoom=15
-            &key=AIzaSyCgWrkc9EP9LwpHK0E1nwmnbeSil8mPhR8">
-        </iframe>
-    </div>
-
-    <div class="row p-3 pl-5 pr-5 col-sm-12 border-top align-items-center">
-        <div class="col">
-            © 2018 - HL2 group
-        </div>
-        <div class="col">
-            <ul class="list-inline m-0 p-0 text-right">
-                <li class="list-inline-item">
-                    <a class="h3" href="https://github.com/{{ site.github.username }}" target="_blank"><i class="fab fa-github"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="h3"  href="https://twitter.com/{{ site.twitter.username }}" target="_blank"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="h3" href="https://www.linkedin.com/company/{{ site.linkedin.username }}" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </li>
-            </ul>
+        <div class="row border-top mt-2">
+            <div class="col my-auto">
+                <span>© 2018 - HL2 group</span>
+            </div>
+            <div class="col my-auto">
+                <ul class="list-inline m-0 p-0 text-right">
+                    <li class="list-inline-item">
+                        <a class="h3" href="https://github.com/{{ site.github.username }}" target="_blank"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="h3"  href="https://twitter.com/{{ site.twitter.username }}" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="h3" href="https://www.linkedin.com/company/{{ site.linkedin.username }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </footer>
