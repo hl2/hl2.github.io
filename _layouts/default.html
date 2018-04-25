@@ -43,8 +43,20 @@
         <div class="container-fluid text-white text-center">
           <div class="row">
             <div class="col-12 col-lg-7">
-              <h1 class="display-4">{{ page.jumboTitle }}</h1>
-              <p class="lead">{{ page.jumboDescription }}</p>
+              <h1 class="display-4">
+                {% if page.jumboTitle %}
+                  {{ page.jumboTitle }}
+                {% else %}  
+                  {{ page.title }}
+                {% endif %} 
+              </h1>
+              <p class="lead">
+                  {% if page.jumboDescription %}
+                    {{ page.jumboDescription }}
+                  {% else %}  
+                    {{ page.description }}
+                  {% endif %} 
+              </p>
             </div>  
           </div>
         </div>
