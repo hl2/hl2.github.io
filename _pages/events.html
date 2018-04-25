@@ -5,12 +5,11 @@ layout: default
 permalink: /events
 ---
 
-<div class="events-page row p-5 justify-content-center" id="accordion">
-
+<div class="row section">
     {% assign sorted = site.events | sort: 'date' | reverse %}
     {% for event in sorted %}
-        <div class="col-sm-9">
-            {% include event-card.html event=event %}
-        </div>
+
+    {% include event-card.html event=event %}
+        
     {% endfor %}
 </div>

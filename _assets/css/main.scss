@@ -31,7 +31,7 @@ body {
 
 /* Home */
 .hl2-logo {
-    font-family: $hl2-font-family;
+    font-family: Aeroportal, Open Sans, Arial, sans-serif;
     font-weight: $font-weight-bold;
 }
 
@@ -47,13 +47,18 @@ body {
     }
 }
 
-/* Events */
-.events-page .card {
+/* Event Card */
+.event-card {
+    .event-date {
+        background-color: $primary;
+    }
+
+    li {
+        @extend .p-1;
+    }
+
     &:hover{
         @extend .shadow;
         cursor: pointer;
-    }
-    &.card-link {
-        color: inherit;
     }
 }

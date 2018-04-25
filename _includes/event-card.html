@@ -1,54 +1,64 @@
 {% assign startKeyMonth = include.event.date | date: "%-m" | minus: 1 %}
 
-<div
-    data-start-date="{{ include.event.date }}"
-    class="event-card card col-sm-12 mb-3"
-    id="heading{{ forloop.index }}"
->
-    <div
-        class="row"
-        role="button"
-        data-toggle="collapse"
-        data-target="#collapse{{ forloop.index }}"
-        aria-expanded="{{ forloop.first }}"
-        aria-controls="collapse{{ forloop.index }}"
-    >
-        <div class="col-sm-3 m-2 rounded text-white d-flex flex-column justify-content-center align-items-center" style="background-color: rgb(25, 60, 114);">
-            <div class="display-4">{{ include.event.date | date: "%d" }}</div>
-            <div class="text-uppercase">{{ site.data.fr.months[startKeyMonth] }}</div>
-            <div>{{ include.event.date | date: "%Y" }}</div>
-        </div>
-        <div class="col-sm-8 card-body">
-            <h5 class="card-title">{{ include.event.title }}</h5>
-            <p class="card-text">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <i class="far fa-calendar-alt"></i> Du {{ include.event.date | date: "%d/%m/%Y" }} au {{ include.event.endDate | date: "%d/%m/%Y" }}
-                    </div>
-                    <div class="col-sm-12 mt-2">
-                        {% if include.event.address %}
-                            <i class="fas fa-map-marker-alt"></i> {{ include.event.address }}
-                        {% endif %}
-                    </div>
-                    <div class="col-sm-12 mt-2">
-                        {% if include.event.booth %}
-                            <i class="fas fa-home"></i> {{ include.event.booth }}
-                        {% endif %}
-                    </div>
-                    <div class="col-sm-12 mt-2">
-                        <a href="{{ include.event.website }}" target="_blank" class="card-link">
-                            <i class="fas fa-link"></i> Site Web
-                        </a>
+<div class="col-12 m-2" data-start-date="{{ include.event.date }}">
+    <div class="card event-card p-3">
+        <div class="container-fluid">
+            <div class="row"
+                 data-toggle="collapse"
+                 data-target="#collapse{{ forloop.index }}"
+                 aria-expanded="{{ forloop.first }}"
+                 aria-controls="collapse{{ forloop.index }}">
+                 
+                <div class="col-12 col-sm-2 event-date rounded text-white text-center d-flex flex-column justify-content-center align-items-center">
+                    <ul class="list-unstyled">
+                        <li class="display-4">{{ include.event.date | date: "%d" }}</li>
+                        <li class="text-uppercase">{{ site.data.fr.months[startKeyMonth] }}</li>
+                        <li>{{ include.event.date | date: "%Y" }}</li>
+                    </ul>
+                </div>
+
+                <div class="col mt-2">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 class="card-title">{{ include.event.title }}</h5>
+
+                            <ul class="card-text list-unstyled">
+                                <li>
+                                    <i class="far fa-calendar-alt"></i> Du {{ include.event.date | date: "%d/%m/%Y" }} au {{ include.event.endDate | date: "%d/%m/%Y" }}
+                                </li>        
+                                <li>
+                                    {% if include.event.address %}
+                                        <i class="fas fa-map-marker-alt"></i> {{ include.event.address }}        
+                                    {% endif %}
+                                </li>
+                                <li>
+                                    {% if include.event.booth %}
+                                        <i class="far fa-compass"></i> Stand <strong>{{ include.event.booth }}</strong>
+                                    {% endif %}
+                                </li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12">
+                            <a class="btn btn-secondary float-sm-right order-2" href="{{ include.event.website }}" target="_blank">
+                                <i class="fas fa-link"></i> Site Web
+                            </a>
+                            <a class="btn btn-primary float-sm-right mr-sm-2 order-1" href="{{ include.event.website }}" target="_blank">
+                                Détails
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </p>
+            </div>
         </div>
     </div>
+    
 
     <div
         id="collapse{{ forloop.index }}"
         class="collapse{% if forloop.first %} show{% endif %} row"
-        aria-labelledby="heading{{ forloop.index }}"
         data-parent="#accordion"
     >
         <div class="card-body col-sm-12">

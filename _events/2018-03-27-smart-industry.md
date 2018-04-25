@@ -3,8 +3,7 @@ title: Smart Industry
 address: Paris Expo Nord Villepinte
 website: http://www.smart-industries.fr
 endDate: 2018-03-30
-
-booth: 3F37
+booth: 3F37, Village Cap'Tronic
 ---
 
 Rejoignez-nous au village **Cap'Tronic**, stand **3F37** et pendant deux conférences de 30 minutes dans la salle  **Pitch** : le **28 mars à 15h** et le **29 mars à 10h30**.
