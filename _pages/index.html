@@ -1,101 +1,118 @@
 ---
-title: Home
+title: Accueil
 layout: default
 permalink: /
 jumboTitle: Connecter intelligemment les objets est notre raison d’être
 jumboDescription: Intégrez nos technologies pour réduire le temps, le coût et les risques liés à la conception d'applications IoT novatrices !
 ---
 
-<div class="row p-5 border-bottom">
-    <div class="card-deck">
-        {% for goal in site.data.goals %}
-            <div class="card p-3">
+<div class="row section border-bottom">
+    {% for goal in site.data.goals %}
+        <div class="mt-2 mt-lg-0 col-sm-6 col-lg-3">
+            <div class="card h-100 p-3">
                 <img src="{% asset '{{ goal.image }}' @path %}" class="card-img-top" height="100px">
                 <div class="card-body text-center">
                     <p class="card-text">{{ goal.description }}</p>
                 </div>
             </div>
-        {% endfor %}
-    </div>
+        </div>
+    {% endfor %}
 </div>
 
-<div id="products" class="row bg-light p-5 border-bottom">
-    <h1 class="mx-auto section-title">Nos Produits</h1>
+<div id="products" class="row section bg-light border-bottom">
+    <div class="col">
+        <h1 class="text-center">Nos Produits</h1>
 
-    <div class="card-deck mt-5">
-        {% for product in site.data.products %}
-            <div class="card p-3">
-                <img class="card-img-top p-4" src="{% asset '{{ product.image }}' @path %}" height="150px" />
-                <div class="card-body text-center">
-                    <h5 class="card-title">{{ product.title }}</h5>
-                    <p class="card-text">{{ product.description }}</p>
+        <div class="row mt-5 justify-content-center">
+            {% for product in site.data.products %}
+                <div class="mt-2 mt-lg-0 col-sm-6 col-lg-4">
+                    <div class="card h-100 p-3">
+                        <img class="card-img-top p-4" src="{% asset '{{ product.image }}' @path %}" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">{{ product.title }}</h5>
+                            <p class="card-text">{{ product.description }}</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        {% endfor %}
+            {% endfor %}
+        </div>  
     </div>
 </div>
 
-<div id="about-us" class="row p-5">
-    <h1 class="mx-auto section-title">Qui sommes-nous ?</h1>
+<div id="about-us" class="row section">
+    <div class="col">
+        <h1 class="text-center">Qui sommes-nous ?</h1>
 
-    <div class="row mt-5 justify-content-center">
-        {% for member in site.data.members %}
-            <div class="col-sm-2 mr-1 text-center">
-                <img src="{% asset '{{ member.image }}' @path %}" class="rounded-circle img-thumbnail w-75">
-                <p class="member-infos mt-2 text-muted">
-                    {{ member.name }} <br/>
-                    <strong>{{ member.position }}</strong>
-                </p>
-            </div>
-        {% endfor %}
+        <div class="row mt-5 justify-content-center">
+            {% for member in site.data.members %}
+                <div class="p-2 col-6 col-sm-4 col-lg-2 text-center">
+                    <img src="{% asset '{{ member.image }}' @path %}" class="rounded-circle img-thumbnail">
+                    <ul class="mt-2 list-unstyled">
+                        <li class="text-muted">{{ member.name }}</li>
+                        <li>{{ member.position }}</li>
+                    </ul>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 </div>
 
-<div id="contact" class="row p-5">
+<div id="contact" class="row section">
     <div class="mx-auto col-sm-4 border-top"></div>
 
     <div class="row mt-5 justify-content-center">
-        <div class="col-sm-12 text-center section-title">
+        <div class="col text-center">
             <h1>Vous êtes intégrateur ou fabricant d'objets connectés ?</h1>
-            <h3>Vous pouvez dès à présent satisfaire vos partenaires avec des technologies économiquement viables</h3>
-            <h4>Envoyez un email à <a href="mailto:sales@hl2.com">sales@hl2.com</a></h4>
+            <p class="lead">
+                Vous pouvez dès à présent satisfaire vos partenaires avec des technologies économiquement viables <br/>
+                <strong>Envoyez un email à <a href="mailto:sales@hl2.com">sales@hl2.com</a></strong>
+            </p>
         </div>
 
-        <div class="card mt-5 col-sm-5 shadow">
-            <div class="card-body">
-                <div class="card-text">
-                    <form class="lead"action="https://formspree.io/sales@hl2.com" method="POST">
-                        <div class="form-group">
-                            <label for="nameInput">Nom</label>
-                            <input type="text" class="form-control" id="nameInput" name="name" placeholder="Prénom Nom" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="emailInput">Email</label>
-                            <input type="email" class="form-control" id="emailInput" name="email" placeholder="email@example.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="companyInput">Société</label>
-                            <input type="text" class="form-control" id="companyInput" name="company" placeholder="Acme, Inc" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="messageInput">Comment pouvons-nous vous aider ?</label>
-                            <textarea class="form-control" rows="5" id="messageInput" name="message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Envoyer</button>
-                    </form>
+        <div class="w-100 mb-3"></div>
+
+        <div class="col col-sm-8 col-md-7 col-lg-5">
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="card-text">
+                        <form action="https://formspree.io/sales@hl2.com" method="POST">
+                            <div class="form-group">
+                                <label for="nameInput">Nom</label>
+                                <input type="text" class="form-control" id="nameInput" name="name" placeholder="Prénom Nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="emailInput">Email</label>
+                                <input type="email" class="form-control" id="emailInput" name="email" placeholder="email@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="companyInput">Société</label>
+                                <input type="text" class="form-control" id="companyInput" name="company" placeholder="Acme, Inc" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="messageInput">Comment pouvons-nous vous aider ?</label>
+                                <textarea class="form-control" rows="5" id="messageInput" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="row p-5">
-    <h1 class="mx-auto section-title border-top pt-5">Prochains Evènements</h1>
+<div class="row section">
+    <div class="mx-auto col-sm-4 border-top"></div>
 
-    <div class="card-deck mt-5">
-        {% assign sorted = site.events | sort: 'date' | reverse %}
-        {% for event in sorted limit:2 %}
-            {% include event-card.html event=event %}
-        {% endfor %}
+    <div class="row mt-5">
+        <div class="col text-center">
+            <h1>Prochains Evènements</h1>
+            <div class="card-deck mt-5">
+                {% assign sorted = site.events | sort: 'date' | reverse %}
+                {% for event in sorted limit:2 %}
+                    {% include event-card.html event=event %}
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </div>
