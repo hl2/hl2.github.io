@@ -1,6 +1,6 @@
 (function () {
 
-    const showEvents = function (showPastEvents) {
+    /*const showEvents = function (showPastEvents) {
         const now = new Date();
     
         $(".card").each(function () {
@@ -18,7 +18,7 @@
 
         showEvents(!isPressed);
         _this.attr('aria-pressed', !isPressed);
-    });
+    });*/
 
    // showEvents(false);
 })();
