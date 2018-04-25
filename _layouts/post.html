@@ -1,0 +1,8 @@
+---
+layout: default
+---
+
+{% if assets[page.image.path] %}
+<img src="{% asset '{{ page.image.path }}' @path %}" class="img-fluid rounded" alt="{{ page.image.alt }}">
+{% endif %}
+{{ content }}

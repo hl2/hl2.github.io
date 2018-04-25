@@ -57,6 +57,12 @@ defaults:
         path: https://static.hl2.com/images/social_networks/hl2.png
         height: 600
         width: 600
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: 'post'
 
 collections:
   events:
