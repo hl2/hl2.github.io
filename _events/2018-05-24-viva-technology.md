@@ -7,4 +7,4 @@ endDate: 2018-05-26
 booth: K23-004
 ---
 
-Come in booth **K23-004** and chat with one of our IoT experts
+Venez au stand **K23-004** et discutez avec l'un de nos experts IoT.

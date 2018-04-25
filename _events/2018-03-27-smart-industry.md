@@ -7,16 +7,16 @@ endDate: 2018-03-30
 booth: 3F37
 ---
 
-Join us in the **Cap'Tronic** village, booth **3F37** and during two 30-minute conference presentations in the **Pitch** room: **March 28, 3 pm** and **March 29, 10.30 am**.
+Rejoignez-nous au village **Cap'Tronic**, stand **3F37** et pendant deux conférences de 30 minutes dans la salle  **Pitch** : le **28 mars à 15h** et le **29 mars à 10h30**.
 
-- Conference *Expériences IOT avec HL2* (__March 28, 3 pm__, Room __*Espace Pitch, Entrée Hall 5*__) conducted by:
+- Conference *Expériences IOT avec HL2* (le 28 mars à 15h__, Salle __*Espace Pitch, Entrée Hall 5*__) présentée par :
     - Didier LONGUEVILLE, HL2 group CTO & Cofounder
     - Florent GAL, **Eramet group (alloys division)** IT Manager for Purchasing and Maintenance
 
-- Roundtable panel: *Predictive maintenance is no longer science fiction!* (__March 28, 5 pm__, booth **4N100**) conducted by:
-    - **TECHIN France**, an association that brings together 400 software and internet solution vendors (Dassault Systèmes, ESI, Microsoft, etc.), has invited Didier LONGUEVILLE (HL2 CTO) to take part in a roundtable panel at the Global Industrie salon (@giparis2018).
+- Table ronde: *Predictive maintenance is no longer science fiction!* (__le 28 mars à 17h__, stand **4N100**) présentée par :
+    - **TECHIN France** est une association qui apportent 400 solutions logicielles et internet portées par des commerçants tels que Dassault Systèmes, ESI, Microsoft, etc... TECHIN France a invité Didier LONGUEVILLE (HL2 CTO) à prendre part à la table ronde qui se tiendra au salon de l'industrie globale (@giparis2018).
     <br>
-    _Panellists also include:_
+    _Autres participants :_
         - Bertrand Wascat, Product Manager for Predictive Maintenance at ACOEM
         - Darcy Boungou-Tsoumou, General Manager at DI-Analyse Signal
         - Marc Lejeune, Sales Manager at Engie Axima
@@ -24,6 +24,6 @@ Join us in the **Cap'Tronic** village, booth **3F37** and during two 30-minute c
         - Mathieu Cula, Co-Founder of Optmistik
         - Jean-Michel Lefevre, General Manager at ProbaYes
 
-- Conference *La performance opérationnelle mesurée par les IoT* (__March 29, 10.30 am__, Room __*Espace Pitch, Entrée Hall 5*__) conducted by:
+- Conference *La performance opérationnelle mesurée par les IoT* (le 29 mars à 10h30__, Salle __*Espace Pitch, Entrée Hall 5*__) présentée par :
     - Didier LONGUEVILLE, HL2 group CTO & Cofounder
-    - Marc LEJEUNE, **ENGIE Axima** Purchasing and maintenance departments
+    - Marc LEJEUNE, **ENGIE Axima** Purchasing and maintenance departments.

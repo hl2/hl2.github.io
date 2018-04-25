@@ -5,4 +5,4 @@ endDate: 2017-10-07
 
 ---
 
-Our Kickstarter campaign is launched!
+Notre campagne Kickstarter est démarrée !

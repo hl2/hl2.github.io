@@ -9,6 +9,6 @@ excerpt: ENGIE Axima, ENGIE Group's Climate Engineering subsidiary, and HL2 grou
 important: true
 ---
 
-At the Smart City / Smart Grid show, which will be held on October 4 and 5 in Paris - Porte de Versailles, ENGIE Axima, ENGIE Group's Climate Engineering subsidiary, and HL2 group, a start-up company specialized in intelligent industrial connected objects, will announce the signing of a partnership contract to commercialize a connected vibration sensor designed to prevent failures and plan maintenance operations for air handling units.<!--more-->
+C'est à l'assemblée de Smart City / Smart Grid qui s'est tenue entre le 4 et 5 octobre à Paris - Porte de Versailles que ENGIE Axima, filiale du groupe ENGIE dans le cadre du génie climatique et que HL2 group, une start-up spécialisée dans les objets intéligents, connectés et industriels, annoncera la signature d'un contrat de partenariat pour commercialiser des capteurs connectés pour l'analyse vibratoire dans le but d'éviter les pannes et de planifier les opérations de maintenance pour les unités de traitement de l'air.<!--more-->
 
-[Read the press release]({% asset 'posts/ENGIE-Axima_HL2-group_PR-Predictive-maintenance_021017_EN.pdf' @path %}){:target="_blank"}{: .btn}{: .btn-primary}
+[Lire le communiqué de presse]({% asset 'posts/ENGIE-Axima_HL2-group_PR-Predictive-maintenance_021017_EN.pdf' @path %}){:target="_blank"}{: .btn}{: .btn-primary}
