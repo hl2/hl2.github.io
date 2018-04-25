@@ -1,0 +1,16 @@
+---
+title: Actualités
+layout: default
+permalink: /blog
+description: Venez nous rencontrer et assister aux conférences de nos experts IoT !
+---
+
+<div class="row p-5 justify-content-center">
+    <div class="col-sm-9 card-columns events-page">
+
+    {% assign sorted = site.posts | sort: 'date' | reverse %}
+    {% for post in sorted %}
+        {% include post-card.html post=post %}
+    {% endfor %}
+    </div>
+</div>

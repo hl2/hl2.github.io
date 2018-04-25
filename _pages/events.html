@@ -10,7 +10,7 @@ jumboDescription: Venez nous rencontrer et assister aux conférences de nos expe
 
     {% assign sorted = site.events | sort: 'date' | reverse %}
     {% for event in sorted %}
-        <div class="row col-sm-9">
+        <div class="col-sm-9">
             {% include event-card.html event=event %}
         </div>
     {% endfor %}

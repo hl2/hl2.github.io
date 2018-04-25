@@ -1,0 +1,17 @@
+{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+
+<a class="card card-link" href="{{ include.post.url }}">
+{% if assets[include.post.image.path] %}
+    <img class="card-img-top" src="{% asset '{{ include.post.image.path }}' @path %}" alt="{{ include.post.image.alt }}" />
+{% endif %}
+    <div class="card-body">
+        <h5 class="card-title">{{ include.post.title }}</h5>
+        <p class="card-text">{{ include.post.excerpt | markdownify }}</p>
+        <p class="card-text">
+            <i class="far fa-calendar" aria-label="Date"></i>
+            <time class="text-muted" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+              {{ include.post.date | date: date_format }}
+            </time>
+        </p>
+    </div>
+</a>

@@ -40,5 +40,8 @@ body {
     &:hover{
         @extend .shadow;
         cursor: pointer;
-    }  
+    }
+    &.card-link {
+        color: inherit;
+    }
 }
