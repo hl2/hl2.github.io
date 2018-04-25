@@ -13,6 +13,11 @@ body {
     position: relative;
 }
 
+/* Default Layout */
+.section {
+    @extend .p-5;
+}
+
 /* Jumbotron */
 .jumbotron {
     background-color: #193c72;
