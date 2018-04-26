@@ -4,11 +4,6 @@
 @import "font-awesome";
 @import "bootstrap";
 
-@font-face {
-    font-family: Aeroportal;
-    src: asset_url('Aeroportal.otf') format('opentype');
-}
-
 body {
     position: relative;
 }
@@ -20,7 +15,7 @@ body {
 
 /* Jumbotron */
 .jumbotron {
-    background-color: $hl2-blue;
+    background-color: #093C76;
 
     @include media-breakpoint-up(lg) {
         background-image: asset_url('background.svg');
@@ -36,10 +31,11 @@ body {
 }
 
 /* Home */
+.hl2-logo-stamp {
+    border-radius: 1rem !important;
+}
+
 .hl2-logo {
-    font-family: Aeroportal, Open Sans, Arial, sans-serif;
-    font-weight: $font-weight-bold;
-    color: $hl2-blue;
     border-radius: 3rem !important;
     border-color: white;
     border-width: 0.2rem;
