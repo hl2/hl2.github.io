@@ -8,6 +8,11 @@ body {
 	position: relative;
 }
 
+/* Header */
+.header {
+	min-height: 69px;
+}
+
 /* Default Layout */
 .section {
   @extend .pt-5, .pb-5;
