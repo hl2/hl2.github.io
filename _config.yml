@@ -72,8 +72,12 @@ collections:
 
 # Exclude from processing.
 exclude:
+  - vendor
   - .gitignore
+  - .travis.yml
   - README.md
   - LICENSE.md
   - Gemfile
   - Gemfile.lock
+  - _config.yml
+  - _config_development.yml
