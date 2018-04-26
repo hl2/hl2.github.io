@@ -75,10 +75,6 @@ body {
 	#conférences + ul {
 		@extend .list-unstyled;
 	}
-
-	&:hover {
-		@extend .shadow;
-	}
 }
 
 /* Event Card Summary */
