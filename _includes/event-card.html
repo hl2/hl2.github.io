@@ -5,7 +5,6 @@
     <div class="card event-card p-3">
         <div class="container-fluid">
             <div class="row">
-                 
                 <div class="col-12 col-sm-2 event-date rounded text-white text-center d-flex flex-column justify-content-center align-items-center">
                     <ul class="list-unstyled">
                         <li class="display-4">{{ include.event.date | date: "%d" }}</li>
@@ -54,21 +53,20 @@
                             {% endunless %}
                         </div>
                     </div>
-
-                    {% unless content == "" %}
-                        <div class="row">
-                            <div id="collapse{{ forloop.index }}"
-                                class="collapse{% if forloop.first %} show{% endif %} row"
-                                data-parent="#accordion">
-                                
-                                <div class="card-body col-sm-12">
-                                    {{ include.event.content }}
-                                </div>
-                            </div>
-                        </div>
-                    {% endunless %}
                 </div>
             </div>
+
+            {% unless content == "" %}
+                <div class="row">
+                    <div class="offset-sm-2 col">
+                        <div id="collapse{{ forloop.index }}"
+                            class="collapse{% if forloop.first %} show{% endif %} mt-3 card card-body">
+                            
+                            {{ include.event.content }}
+                        </div>
+                    </div>
+                </div>
+            {% endunless %}
         </div>
     </div>
 </div>
