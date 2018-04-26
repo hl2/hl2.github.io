@@ -20,12 +20,18 @@ body {
 
 /* Jumbotron */
 .jumbotron {
-    background-color: #193c72;
+    background-color: $hl2-blue;
 
     @include media-breakpoint-up(lg) {
         background-image: asset_url('background.svg');
         background-repeat: no-repeat;
         background-position: right top;
+    }
+
+    .display-4 {
+        @include media-breakpoint-down(sm) {
+            font-size: 3rem;
+        }
     }
 }
 
@@ -33,6 +39,7 @@ body {
 .hl2-logo {
     font-family: Aeroportal, Open Sans, Arial, sans-serif;
     font-weight: $font-weight-bold;
+    color: $hl2-blue;
 }
 
 #products {
