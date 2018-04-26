@@ -1,0 +1,16 @@
+dist: trusty
+sudo: false
+language: ruby
+rvm:
+  - 2.5.1
+env:
+  - JEKYLL_ENV=production
+script:
+  - "./scripts/build.sh"
+notifications:
+  email: false
+  slack:
+    rooms:
+      secure: P0sFCWI2VHnccuBOjDpvDzbrkrpvfPlsZ854Z2r8P7jvNUUyUOqbqHfnKHCCOJ+c9FhqZjnAAO9mgDneXfeC5graLeg8l4ZXUezkWPIQW2UiTZDXpO9rsinBhwe8Sj+1V4SdhJ8yMYzcHqnkYrKaD81ItON5OD6cXtH1GqoWfZnryEHCvBuNesAPSSNfzrQVYsTWZaikgC7ceQUUk2VU3dzzAYBRNRphtEbBDQFA7NYdsDkZkAC1OXalAjDazKCGSMg4tZNIjAjwD8BkQWYW1vlwUUxrcxYm2CEz9wFC5ExA3faCv4QbAOLVMGKnwUYliwO6iZdKu2nO01KT8pUNC2RrmevZGFQco7ARWp2rzlcRDlfpHmevnkxvQ7LqIEZQTXzNKLtVAPijfH1Des4wtoaEytkYJKz4F8+vfoOaSH0r9Yr0Nz8nhwgkiu5xZy7MZqPjizuGXct1BcdcRYKFSxEloOSsf6wQdFpCfQNOjAy3m19qxNkj2xeMq1z4q5y9LPLJmM8JY5nk56EJso1V1Dv1ONTFSCZIEZbawtlOsJYsi+RvcRwSLf8ynMZeyWODIzU1LphW8vEfTRlIhOZeMvClsEQPRGafRX4amolFlb4IgyyeVGZWsD+HFRP4OVP/f9nmDQVeR9+LXJSgTqQrWmN9ev1V6MLmDawlH2ME+AI=
+    on_success: change
+    on_failure: always
