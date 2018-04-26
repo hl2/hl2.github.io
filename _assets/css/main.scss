@@ -40,6 +40,10 @@ body {
     font-family: Aeroportal, Open Sans, Arial, sans-serif;
     font-weight: $font-weight-bold;
     color: $hl2-blue;
+    border-radius: 3rem !important;
+    border-color: white;
+    border-width: 0.2rem;
+    border-style: solid;
 }
 
 #products {
