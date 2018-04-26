@@ -5,7 +5,7 @@ jumboLogo: true
 description: Intégrez nos technologies pour réduire le temps, le coût et les risques liés à la conception d'applications IoT novatrices !
 layout: default
 permalink: /
-jsarr: 
+jsarr:
     - home.js
 ---
 
@@ -38,7 +38,7 @@ jsarr:
                     </div>
                 </div>
             {% endfor %}
-        </div>  
+        </div>
     </div>
 </div>
 
@@ -62,7 +62,7 @@ jsarr:
 
 <hr class="w-50" />
 
-<div id="contact" class="row section mt-5 justify-content-center">
+<div id="contact" class="row section justify-content-center">
     <div class="col text-center">
         <h1>Vous êtes intégrateur ou fabricant d'objets connectés ?</h1>
         <p class="lead">
@@ -104,13 +104,15 @@ jsarr:
 
 <hr class="w-50" />
 
-<div class="row section mt-5">
-    <div class="col text-center">
-        <h1>Prochains Evènements</h1>
-        <div class="card-deck mt-5">
+<div class="row section">
+    <div class="col">
+        <h1 class="text-center">Prochains Evènements</h1>
+        <div class="row mt-5 justify-content-center">
             {% assign sorted = site.events | sort: 'date' | reverse %}
-            {% for event in sorted limit:2 %}
-                {% include event-card.html event=event %}
+            {% for event in sorted limit:3 %}
+              <div class="col-3">
+                  {% include event-card-summary.html event=event %}
+              </div>
             {% endfor %}
         </div>
     </div>

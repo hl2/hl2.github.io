@@ -80,3 +80,34 @@ body {
 		@extend .shadow;
 	}
 }
+
+/* Event Card Summary */
+.event-card-summary {
+  color: black;
+
+  &:hover {
+    cursor: pointer;
+    @extend .shadow;
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+
+
+	.event-date {
+		background-color: $primary;
+  }
+
+
+
+	li {
+		@extend .p-1;
+	}
+
+	#ateliers + ul,
+	#conférences + ul {
+		@extend .list-unstyled;
+	}
+}

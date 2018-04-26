@@ -1,7 +1,7 @@
 {% assign content = include.event.content | strip_newlines %}
 {% assign startKeyMonth = include.event.date | date: "%-m" | minus: 1 %}
 
-<div class="col-12 m-2" data-start-date="{{ include.event.date }}">
+<div id="{{ include.event.slug }}" class="col-12 m-2" data-start-date="{{ include.event.date }}">
     <div class="card event-card p-3">
         <div class="container-fluid">
             <div class="row">
@@ -21,10 +21,10 @@
                             <ul class="card-text list-unstyled">
                                 <li>
                                     <i class="far fa-calendar-alt"></i> Du {{ include.event.date | date: "%d/%m/%Y" }} au {{ include.event.endDate | date: "%d/%m/%Y" }}
-                                </li>        
+                                </li>
                                 <li>
                                     {% if include.event.address %}
-                                        <i class="fas fa-map-marker-alt"></i> {{ include.event.address }}        
+                                        <i class="fas fa-map-marker-alt"></i> {{ include.event.address }}
                                     {% endif %}
                                 </li>
                                 <li>
@@ -35,7 +35,7 @@
                                 <li>
                                     <a href="{{ include.event.website }}" target="_blank">
                                         <i class="fas fa-link"></i> Site Web
-                                    </a>        
+                                    </a>
                                 </li>
                             </ul>
                         </div>
