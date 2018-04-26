@@ -16,9 +16,6 @@
 
       <ul class="card-text list-unstyled">
           <li>
-              <i class="far fa-calendar-alt"></i> Du {{ include.event.date | date: "%d/%m/%Y" }} au {{ include.event.endDate | date: "%d/%m/%Y" }}
-          </li>
-          <li>
               {% if include.event.address %}
                   <i class="fas fa-map-marker-alt"></i> {{ include.event.address }}
               {% endif %}
