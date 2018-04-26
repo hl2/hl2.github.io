@@ -5,7 +5,7 @@ image:
   alt: Engie Axima logo
   height: 200
   width: 330
-excerpt: ENGIE Axima, ENGIE Group's Climate Engineering subsidiary, and HL2 group will announce the signing of a partnership contract
+excerpt: ENGIE Axima, filiale du groupe ENGIE et HL2 group, une start-up spécialisée dans les objets connectés annoncera la signature d'un contrat de partenariat
 important: true
 ---
 

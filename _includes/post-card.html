@@ -1,4 +1,7 @@
-{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+{% assign startKeyMonth = include.post.date  | date: "%-m" | minus: 1 %}
+{% assign day = include.post.date | date: "%d" %}
+{% assign year = include.post.date | date: "%Y" %}
+{% assign date = day | append: ' ' | append: site.data.fr.months[startKeyMonth] | append: ' ' | append: year %}
 
 <a
     class="card card-link{% if include.post.important %} bg-primary text-white{% endif %}"
@@ -10,11 +13,11 @@
     <div class="card-body">
         <h5 class="card-title">{{ include.post.title }}</h5>
         <p class="card-text">{{ include.post.excerpt | markdownify }}</p>
-        <p class="card-text {% if include.post.important %}text-dark{% else %}text-muted{% endif %}">
-            <i class="far fa-calendar" aria-label="Date"></i>
-            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-              {{ include.post.date | date: date_format }}
-            </time>
-        </p>
+    </div>
+    <div class="card-footer {% if include.post.important %}text-white{% else %}text-muted{% endif %}">
+        <i class="far fa-calendar" aria-label="Date"></i>
+        <time datetime="{{ include.post.date | date_to_xmlschema }}">
+            {{ date }}
+        </time>
     </div>
 </a>

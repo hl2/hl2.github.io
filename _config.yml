@@ -62,6 +62,7 @@ defaults:
       type: posts
     values:
       layout: post
+      jumboTitle: Actualités
 
 collections:
   events:
