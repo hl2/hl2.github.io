@@ -95,19 +95,11 @@ body {
     text-decoration: none;
   }
 
-
 	.event-date {
 		background-color: $primary;
   }
 
-
-
 	li {
 		@extend .p-1;
-	}
-
-	#ateliers + ul,
-	#conférences + ul {
-		@extend .list-unstyled;
 	}
 }

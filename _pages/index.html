@@ -110,7 +110,7 @@ jsarr:
         <div class="row mt-5 justify-content-center">
             {% assign sorted = site.events | sort: 'date' | reverse %}
             {% for event in sorted limit:3 %}
-              <div class="col-3">
+              <div class="col-12 col-sm-4 col-lg-3">
                   {% include event-card-summary.html event=event %}
               </div>
             {% endfor %}
