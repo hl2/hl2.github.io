@@ -60,62 +60,58 @@ jsarr:
     </div>
 </div>
 
-<div id="contact" class="row section">
-    <div class="mx-auto col-sm-4 border-top"></div>
+<hr class="w-50" />
 
-    <div class="row mt-5 justify-content-center">
-        <div class="col text-center">
-            <h1>Vous êtes intégrateur ou fabricant d'objets connectés ?</h1>
-            <p class="lead">
-                Vous pouvez dès à présent satisfaire vos partenaires avec des technologies économiquement viables <br/>
-                <strong>Envoyez un email à <a href="mailto:sales@hl2.com">sales@hl2.com</a></strong>
-            </p>
-        </div>
+<div id="contact" class="row section mt-5 justify-content-center">
+    <div class="col text-center">
+        <h1>Vous êtes intégrateur ou fabricant d'objets connectés ?</h1>
+        <p class="lead">
+            Vous pouvez dès à présent satisfaire vos partenaires avec des technologies économiquement viables <br/>
+            <strong>Envoyez un email à <a href="mailto:sales@hl2.com">sales@hl2.com</a></strong>
+        </p>
+    </div>
 
-        <div class="w-100 mb-3"></div>
+    <div class="w-100 mb-3"></div>
 
-        <div class="col col-sm-8 col-md-7 col-lg-5">
-            <div class="card shadow">
-                <div class="card-body">
-                    <div class="card-text">
-                        <form action="https://formspree.io/sales@hl2.com" method="POST">
-                            <div class="form-group">
-                                <label for="nameInput">Nom</label>
-                                <input type="text" class="form-control" id="nameInput" name="name" placeholder="Prénom Nom" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="emailInput">Email</label>
-                                <input type="email" class="form-control" id="emailInput" name="email" placeholder="email@example.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="companyInput">Société</label>
-                                <input type="text" class="form-control" id="companyInput" name="company" placeholder="Acme, Inc" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="messageInput">Comment pouvons-nous vous aider ?</label>
-                                <textarea class="form-control" rows="5" id="messageInput" name="message" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Envoyer</button>
-                        </form>
-                    </div>
+    <div class="col col-sm-8 col-md-7 col-lg-5">
+        <div class="card shadow">
+            <div class="card-body">
+                <div class="card-text">
+                    <form action="https://formspree.io/sales@hl2.com" method="POST">
+                        <div class="form-group">
+                            <label for="nameInput">Nom</label>
+                            <input type="text" class="form-control" id="nameInput" name="name" placeholder="Prénom Nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailInput">Email</label>
+                            <input type="email" class="form-control" id="emailInput" name="email" placeholder="email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="companyInput">Société</label>
+                            <input type="text" class="form-control" id="companyInput" name="company" placeholder="Acme, Inc" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="messageInput">Comment pouvons-nous vous aider ?</label>
+                            <textarea class="form-control" rows="5" id="messageInput" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="row section">
-    <div class="mx-auto col-sm-4 border-top"></div>
+<hr class="w-50" />
 
-    <div class="row mt-5">
-        <div class="col text-center">
-            <h1>Prochains Evènements</h1>
-            <div class="card-deck mt-5">
-                {% assign sorted = site.events | sort: 'date' | reverse %}
-                {% for event in sorted limit:2 %}
-                    {% include event-card.html event=event %}
-                {% endfor %}
-            </div>
+<div class="row section mt-5">
+    <div class="col text-center">
+        <h1>Prochains Evènements</h1>
+        <div class="card-deck mt-5">
+            {% assign sorted = site.events | sort: 'date' | reverse %}
+            {% for event in sorted limit:2 %}
+                {% include event-card.html event=event %}
+            {% endfor %}
         </div>
     </div>
 </div>
