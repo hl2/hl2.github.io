@@ -5,6 +5,8 @@ rvm:
   - 2.5.1
 env:
   - JEKYLL_ENV=production
+before_install:
+  - gem update --system
 script:
   - "./scripts/build.sh"
 notifications:
