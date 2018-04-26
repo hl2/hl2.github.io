@@ -5,70 +5,71 @@
 @import "bootstrap";
 
 body {
-    position: relative;
+	position: relative;
 }
 
 /* Default Layout */
 .section {
-    @extend .p-5;
+	@extend .p-5;
 }
 
 /* Jumbotron */
 .jumbotron {
-    background-color: #093C76;
+	background-color: #093c76;
 
-    @include media-breakpoint-up(lg) {
-        background-image: asset_url('background.svg');
-        background-repeat: no-repeat;
-        background-position: right top;
-    }
+	@include media-breakpoint-up(lg) {
+		background-image: asset_url('background.svg');
+		background-repeat: no-repeat;
+		background-position: right top;
+	}
 
-    .display-4 {
-        @include media-breakpoint-down(sm) {
-            font-size: 3rem;
-        }
-    }
+	.display-4 {
+		@include media-breakpoint-down(sm) {
+			font-size: 3rem;
+		}
+	}
 }
 
 /* Home */
 .hl2-logo-stamp {
-    border-radius: 1rem !important;
+	border-radius: 1rem !important;
 }
 
 .hl2-logo {
-    border-radius: 3rem !important;
-    border-color: white;
-    border-width: 0.2rem;
-    border-style: solid;
+	border-radius: 3rem !important;
+	border-color: white;
+	border-width: 0.2rem;
+	border-style: solid;
 }
 
 #products {
-    img {
-        height: 150px;
-    }
+	img {
+		height: 150px;
+	}
 }
 
 #about-us {
-    img {
-        width: 130px;
-    }
+	img {
+		width: 130px;
+	}
 }
 
 /* Event Card */
 .event-card {
-    .event-date {
-        background-color: $primary;
-    }
+	.event-date {
+		background-color: $primary;
+	}
 
-    li {
-        @extend .p-1;
-    }
+	li {
+		@extend .p-1;
+	}
 
-    #ateliers+ul, #conférences+ul{
-        @extend .list-unstyled;
-    }
+	#ateliers + ul,
+	#conférences + ul {
+		@extend .list-unstyled;
+	}
 
-    &:hover{
-        @extend .shadow;
-    }
+	&:hover {
+		@extend .shadow;
+	}
 }

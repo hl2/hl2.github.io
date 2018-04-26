@@ -73,6 +73,7 @@ collections:
 # Exclude from processing.
 exclude:
   - vendor
+  - .editorconfig
   - .gitignore
   - .travis.yml
   - README.md
