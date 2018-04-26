@@ -6,13 +6,13 @@ endDate: 2018-03-30
 booth: 3F37, Village Cap'Tronic
 ---
 
-#### Conférences
+##### Conférences
 
 - Expériences IOT avec HL2, le 28 mars à 15h, Espace Pitch, Entrée Hall 5
-    - Didier LONGUEVILLE, HL2 group CTO & Cofounder
+    - Didier LONGUEVILLE, HL2 CTO & Cofounder
     - Florent GAL, Eramet group (alloys division) IT Manager for Purchasing and Maintenance
 
-- Table ronde : Predictive maintenance is no longer science fiction!, le 28 mars à 17h, Stand 4N100
+- Table ronde : La maintenance prédictive n'est plus de la science-fiction !, le 28 mars à 17h, Stand 4N100
     - **TECHIN France** est une association qui apportent 400 solutions logicielles et internet portées par des commerçants tels que Dassault Systèmes, ESI, Microsoft, etc... TECHIN France a invité Didier LONGUEVILLE (HL2 CTO) à prendre part à la table ronde qui se tiendra au salon de l'industrie globale (@giparis2018).
     <br>
     _Autres participants :_
@@ -25,4 +25,4 @@ booth: 3F37, Village Cap'Tronic
 
 - La performance opérationnelle mesurée par les IoT, le 29 mars à 10h30, Espace Pitch, Entrée Hall 5
     - Didier LONGUEVILLE, HL2 group CTO & Cofounder
-    - Marc LEJEUNE, **ENGIE Axima** Purchasing and maintenance departments.
+    - Marc LEJEUNE, ENGIE Axima Purchasing and maintenance departments.

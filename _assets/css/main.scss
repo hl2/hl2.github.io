@@ -64,6 +64,10 @@ body {
         @extend .p-1;
     }
 
+    #ateliers+ul, #conférences+ul{
+        @extend .list-unstyled;
+    }
+
     &:hover{
         @extend .shadow;
     }
