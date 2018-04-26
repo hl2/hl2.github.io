@@ -10,7 +10,7 @@
     <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
       {% unless page.jumboLogo %}
       <a class="navbar-brand" href="/">
-        <img src="{% asset 'hl2.jpg' @path %}" width="60" class="d-inline-block align-top hl2-logo-stamp" alt="">
+        <img src="{% asset 'hl2.svg' @path %}" width="60" class="d-inline-block align-top hl2-logo-stamp" alt="">
       </a>
       {% endunless %}
 
@@ -50,7 +50,7 @@
           <div class="row">
             <div class="col-12 col-lg-7">
               {% if page.jumboLogo %}
-              <img src="{% asset 'hl2.jpg' @path %}" width="217" class="img-fluid m-3 hl2-logo" alt="" />
+              <img src="{% asset 'hl2.svg' @path %}" width="217" class="img-fluid m-3 hl2-logo" alt="" />
               {% endif %}
               <h1 class="display-4">
                   {{ page.jumboTitle | default: page.title }}
