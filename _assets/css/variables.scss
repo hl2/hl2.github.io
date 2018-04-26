@@ -1,2 +1,12 @@
 // Bootstrap
 $primary: #5594da;
+
+//HL2
+$spacer: 1rem;
+$hl2-spacers: (
+  xs: 0,
+  sm: ($spacer * 0.25),
+  md: ($spacer * 0.5),
+  lg: $spacer,
+  xl: ($spacer * 1.5)
+) !default;

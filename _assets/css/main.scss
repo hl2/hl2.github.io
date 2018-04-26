@@ -10,7 +10,14 @@ body {
 
 /* Default Layout */
 .section {
-	@extend .p-5;
+	@extend .pt-5, .pb-5;
+
+	@each $breakpoint, $length in $hl2-spacers {
+		@include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+			padding-right: $length;
+			padding-left: $length;
+		}
+	}
 }
 
 /* Jumbotron */
