@@ -1,13 +1,10 @@
+{% assign content = include.event.content | strip_newlines %}
 {% assign startKeyMonth = include.event.date | date: "%-m" | minus: 1 %}
 
 <div class="col-12 m-2" data-start-date="{{ include.event.date }}">
     <div class="card event-card p-3">
         <div class="container-fluid">
-            <div class="row"
-                 data-toggle="collapse"
-                 data-target="#collapse{{ forloop.index }}"
-                 aria-expanded="{{ forloop.first }}"
-                 aria-controls="collapse{{ forloop.index }}">
+            <div class="row">
                  
                 <div class="col-12 col-sm-2 event-date rounded text-white text-center d-flex flex-column justify-content-center align-items-center">
                     <ul class="list-unstyled">
@@ -45,24 +42,33 @@
                             <a class="btn btn-secondary float-sm-right order-2" href="{{ include.event.website }}" target="_blank">
                                 <i class="fas fa-link"></i> Site Web
                             </a>
-                            <a class="btn btn-primary float-sm-right mr-sm-2 order-1" href="{{ include.event.website }}" target="_blank">
-                                Détails
-                            </a>
+                            {% unless content == "" %}
+                                <button class="btn btn-primary float-sm-right mr-sm-2 order-1"
+                                        data-toggle="collapse"
+                                        data-target="#collapse{{ forloop.index }}"
+                                        aria-expanded="{{ forloop.first }}"
+                                        aria-controls="collapse{{ forloop.index }}">
+
+                                    Détails
+                                </button>
+                            {% endunless %}
                         </div>
                     </div>
+
+                    {% unless content == "" %}
+                        <div class="row">
+                            <div id="collapse{{ forloop.index }}"
+                                class="collapse{% if forloop.first %} show{% endif %} row"
+                                data-parent="#accordion">
+                                
+                                <div class="card-body col-sm-12">
+                                    {{ include.event.content }}
+                                </div>
+                            </div>
+                        </div>
+                    {% endunless %}
                 </div>
             </div>
-        </div>
-    </div>
-    
-
-    <div
-        id="collapse{{ forloop.index }}"
-        class="collapse{% if forloop.first %} show{% endif %} row"
-        data-parent="#accordion"
-    >
-        <div class="card-body col-sm-12">
-            {{ include.event.content }}
         </div>
     </div>
 </div>
