@@ -1,10 +1,9 @@
 {% assign startKeyMonth = include.event.date | date: "%-m" | minus: 1 %}
 
-<a class="event-card-summary card p-3 h-100"
-   data-start-date="{{ include.event.date }}"
+<a class="event-card event-card-summary card p-3 h-100"
    href="{{ site.url }}/events#{{ include.event.slug }}">
 
-   <div class="event-date card-image-top text-center text-white">
+   <div class="event-date card-image-top text-center text-white rounded">
       <ul class="list-unstyled">
           <li class="display-4">{{ include.event.date | date: "%d" }}</li>
           <li class="text-uppercase">{{ site.data.fr.months[startKeyMonth] }}</li>
@@ -16,15 +15,20 @@
 
       <ul class="card-text list-unstyled">
           <li>
-              {% if include.event.address %}
-                  <i class="fas fa-map-marker-alt"></i> {{ include.event.address }}
-              {% endif %}
+              <i class="far fa-calendar-alt"></i> {{ include.event.date | date: "%d/%m/%Y" }} au {{ include.event.endDate | date: "%d/%m/%Y" }}
           </li>
-          <li>
-              {% if include.event.booth %}
-                  <i class="far fa-compass"></i> Stand <strong>{{ include.event.booth }}</strong>
-              {% endif %}
-          </li>
+
+          {% if include.event.address %}
+            <li>
+              <i class="fas fa-map-marker-alt"></i> {{ include.event.address }}
+            </li>
+          {% endif %}
+
+          {% if include.event.booth %}
+            <li>
+              <i class="far fa-compass"></i> Stand <strong>{{ include.event.booth }}</strong>
+            </li>
+          {% endif %}
       </ul>
   </div>
 </a>

@@ -5,11 +5,12 @@ layout: default
 permalink: /events
 ---
 
-<div class="row section">
-    {% assign sorted = site.events | sort: 'date' | reverse %}
-    {% for event in sorted %}
+{% assign sorted = site.events | sort: 'date' | reverse %}
 
-    {% include event-card.html event=event %}
-        
+<div class="row section">
+    {% for event in sorted %}
+      <div id="{{ event.slug }}" class="p-2 col-12">
+        {% include event-card.html event=event %}
+      </div>
     {% endfor %}
 </div>

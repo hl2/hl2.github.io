@@ -1,57 +1,58 @@
 {% assign content = include.event.content | strip_newlines %}
 {% assign startKeyMonth = include.event.date | date: "%-m" | minus: 1 %}
 
-<div id="{{ include.event.slug }}" class="col-12 m-2" data-start-date="{{ include.event.date }}">
-    <div class="card event-card p-3">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-sm-2 event-date rounded text-white text-center d-flex flex-column justify-content-center align-items-center">
-                    <ul class="list-unstyled">
-                        <li class="display-4">{{ include.event.date | date: "%d" }}</li>
-                        <li class="text-uppercase">{{ site.data.fr.months[startKeyMonth] }}</li>
-                        <li>{{ include.event.date | date: "%Y" }}</li>
-                    </ul>
-                </div>
+<div class="card event-card p-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-2 event-date rounded text-white text-center d-flex flex-column justify-content-center align-items-center">
+                <ul class="list-unstyled">
+                    <li class="display-4">{{ include.event.date | date: "%d" }}</li>
+                    <li class="text-uppercase">{{ site.data.fr.months[startKeyMonth] }}</li>
+                    <li>{{ include.event.date | date: "%Y" }}</li>
+                </ul>
+            </div>
 
-                <div class="col mt-2">
-                    <div class="row">
-                        <div class="col-12">
-                            <h5 class="card-title">{{ include.event.title }}</h5>
+            <div class="col mt-2">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="card-title">{{ include.event.title }}</h5>
 
-                            <ul class="card-text list-unstyled">
-                                <li>
-                                    <i class="far fa-calendar-alt"></i> Du {{ include.event.date | date: "%d/%m/%Y" }} au {{ include.event.endDate | date: "%d/%m/%Y" }}
-                                </li>
-                                <li>
-                                    {% if include.event.address %}
-                                        <i class="fas fa-map-marker-alt"></i> {{ include.event.address }}
-                                    {% endif %}
-                                </li>
-                                <li>
-                                    {% if include.event.booth %}
-                                        <i class="far fa-compass"></i> Stand <strong>{{ include.event.booth }}</strong>
-                                    {% endif %}
-                                </li>
-                                <li>
-                                    <a href="{{ include.event.website }}" target="_blank">
-                                        <i class="fas fa-link"></i> Site Web
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="card-text list-unstyled">
+                            <li>
+                                <i class="far fa-calendar-alt"></i> Du {{ include.event.date | date: "%d/%m/%Y" }} au {{ include.event.endDate | date: "%d/%m/%Y" }}
+                            </li>
+
+                            {% if include.event.address %}
+                              <li>
+                                <i class="fas fa-map-marker-alt"></i> {{ include.event.address }}
+                              </li>
+                            {% endif %}
+
+                            {% if include.event.booth %}
+                              <li>
+                                <i class="far fa-compass"></i> Stand <strong>{{ include.event.booth }}</strong>
+                              </li>
+                            {% endif %}
+
+                            <li>
+                                <a href="{{ include.event.website }}" target="_blank">
+                                    <i class="fas fa-link"></i> Site Web
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        </div>
 
-            {% unless content == "" %}
-                <div class="row">
-                    <div class="offset-sm-2 col">
-                        <div class="mt-3">
-                            {{ include.event.content }}
-                        </div>
+        {% unless content == "" %}
+            <div class="row">
+                <div class="offset-sm-2 col">
+                    <div class="mt-3">
+                        {{ include.event.content }}
                     </div>
                 </div>
-            {% endunless %}
-        </div>
+            </div>
+        {% endunless %}
     </div>
 </div>
