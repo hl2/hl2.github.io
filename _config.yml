@@ -39,7 +39,9 @@ assets:
 # Build settings
 markdown: kramdown
 sass:
+    style: compressed
     sass_dir: _assets/
+
 plugins:
   - bootstrap
   - font-awesome-sass
