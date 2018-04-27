@@ -9,7 +9,7 @@ permalink: /
 
 <div class="row section border-bottom">
     {% for goal in site.data.goals %}
-        <div class="mt-2 mt-lg-0 col-sm-6 col-lg-3">
+        <div class="p-2 col-sm-6 col-lg-3">
             <div class="card h-100 p-3">
                 <img src="{% asset '{{ goal.image }}' @path %}" class="card-img-top" height="100px">
                 <div class="card-body text-center">
@@ -27,7 +27,7 @@ permalink: /
 
         <div class="row mt-5 justify-content-center">
             {% for product in site.data.products %}
-                <div class="mt-2 mt-lg-0 col-sm-6 col-lg-4">
+                <div class="p-2 col-sm-6 col-lg-4">
                     <div class="card h-100 p-3">
                         <img class="card-img-top p-4" src="{% asset '{{ product.image }}' @path %}" />
                         <div class="card-body text-center">
@@ -109,7 +109,7 @@ permalink: /
         <div class="row mt-5 justify-content-center">
             {% assign sorted = site.events | sort: 'date' | reverse %}
             {% for event in sorted limit:3 %}
-              <div class="col-12 col-sm-4 col-lg-3">
+              <div class="p-2 col-12 col-sm-4 col-lg-3">
                   {% include event-card-summary.html event=event %}
               </div>
             {% endfor %}
