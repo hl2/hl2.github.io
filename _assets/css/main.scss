@@ -54,41 +54,36 @@ body {
 	}
 }
 
+#upcoming-events {
+  display: none;
+
+  .event-card-col {
+    display: none;
+  }
+}
+
 /* Event Card */
 .event-card {
-	.event-date {
-		background-color: $primary;
-	}
-
-	li {
-		@extend .p-1;
-	}
+  .event-date {
+    background-color: $primary;
+  }
 
 	#ateliers + ul,
 	#conférences + ul {
 		@extend .list-unstyled;
-	}
+  }
+
+  li {
+		@extend .p-1;
+  }
 }
 
-/* Event Card Summary */
 .event-card-summary {
   color: black;
 
   &:hover {
-    cursor: pointer;
     @extend .shadow;
+    cursor: pointer;
     text-decoration: none;
   }
-
-  &:visited {
-    text-decoration: none;
-  }
-
-	.event-date {
-		background-color: $primary;
-  }
-
-	li {
-		@extend .p-1;
-	}
 }
