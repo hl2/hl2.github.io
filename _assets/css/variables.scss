@@ -1,12 +1,10 @@
-// Bootstrap
-$primary: #5594da;
-
 //HL2
-$spacer: 1rem;
+$hl2-navbar-height: 69px;
+
 $hl2-spacers: (
   xs: 0,
-  sm: ($spacer * 0.5),
+  sm: $spacer * 0.5,
   md: $spacer,
-  lg: ($spacer * 1.5),
-  xl: ($spacer * 3)
-) !default;
+  lg: $spacer * 1.5,
+  xl: $spacer * 3
+);

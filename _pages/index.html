@@ -21,7 +21,8 @@ permalink: /
     {% endfor %}
 </div>
 
-<div id="products" class="row section bg-light border-bottom">
+<span id="products" class="anchor"></span>
+<div class="row section bg-light border-bottom">
     <div class="col">
         <h1 class="text-center">Nos Produits</h1>
 
@@ -29,7 +30,7 @@ permalink: /
             {% for product in site.data.products %}
                 <div class="p-2 col-sm-6 col-lg-4">
                     <div class="card h-100 p-3">
-                        <img class="card-img-top p-4" src="{% asset '{{ product.image }}' @path %}" />
+                        <img class="card-img-top product-img p-4" src="{% asset '{{ product.image }}' @path %}" />
                         <div class="card-body text-center">
                             <h5 class="card-title">{{ product.title }}</h5>
                             <p class="card-text">{{ product.description }}</p>
@@ -41,14 +42,15 @@ permalink: /
     </div>
 </div>
 
-<div id="about-us" class="row section">
+<span id="about-us" class="anchor"></span>
+<div class="row section">
     <div class="col">
         <h1 class="text-center">Qui sommes-nous ?</h1>
 
         <div class="row mt-5 justify-content-center">
             {% for member in site.data.members %}
                 <div class="p-2 col-6 col-sm-4 col-lg-2 text-center">
-                    <img src="{% asset '{{ member.image }}' @path %}" class="rounded-circle img-thumbnail">
+                    <img class="rounded-circle img-thumbnail member-img" src="{% asset '{{ member.image }}' @path %}">
                     <ul class="mt-2 list-unstyled">
                         <li class="text-muted">{{ member.name }}</li>
                         <li>{{ member.position }}</li>
@@ -61,7 +63,8 @@ permalink: /
 
 <hr class="w-50" />
 
-<div id="contact" class="row section justify-content-center">
+<span id="contact" class="anchor"></span>
+<div class="row section justify-content-center">
     <div class="col text-center">
         <h1>Vous êtes intégrateur ou fabricant d'objets connectés ?</h1>
         <p class="lead">

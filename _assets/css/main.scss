@@ -1,18 +1,35 @@
 @charset "utf-8";
-@import "./variables.scss";
+@import "custom.scss";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "bootstrap";
+@import "variables.scss";
 
 body {
-	position: relative;
+  padding-top: $hl2-navbar-height;
 }
 
 /* Default Layout */
+.navbar {
+  min-height: $hl2-navbar-height;
+}
+
+.navbar-toggler {
+  margin-top: 2px;
+  padding: 9px 10px !important;
+}
+
+.anchor{
+  display: block;
+  height: $hl2-navbar-height;
+  margin-top: -$hl2-navbar-height;
+  visibility: hidden;
+}
+
 .section {
   @extend .pt-5, .pb-5;
 
-  &#newsletter {
+  &.newsletter-section {
     @extend .pt-3, .pb-3;
   }
 
@@ -24,7 +41,6 @@ body {
   }
 }
 
-/* Jumbotron */
 .jumbotron {
 	background-color: #093c76;
 
@@ -42,16 +58,12 @@ body {
 }
 
 /* Home */
-#products {
-	img {
-		height: 150px;
-	}
+.product-img {
+  height: 150px;
 }
 
-#about-us {
-	img {
-		width: 130px;
-	}
+.member-img {
+  width: 130px;
 }
 
 #upcoming-events {
@@ -83,6 +95,7 @@ body {
 
   &:hover {
     @extend .shadow;
+
     cursor: pointer;
     text-decoration: none;
   }

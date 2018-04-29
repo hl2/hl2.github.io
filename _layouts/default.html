@@ -7,7 +7,7 @@
       {% gtm body %}
     {% endif %}
 
-    <header class="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom">
+    <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -64,7 +64,8 @@
     </div>
 
     <div class="container-fluid">
-      <div id="newsletter" class="row section bg-light border-bottom">
+      <span id="newsletter" class="anchor"></span>
+      <div class="row section newsletter-section bg-light border-bottom">
           <div class="col-md m-1">
               <span class="h4">S'abonner à notre newsletter</span>
           </div>
@@ -87,7 +88,7 @@
               </div>
             </form>
           </div>
-        </div>
+      </div>
 
         {{ content }}
 
