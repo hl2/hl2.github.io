@@ -55,7 +55,7 @@ defaults:
       path: ""
     values:
       image:
-        path: /assets/hl2-f3bda365ac7ede3a4765b6cb894602cf1db1360e73d358d0e62ec4811206c277.png
+        path: /assets/hl2-bee3e52425e07ba84cf32ff0c7a13ec14830f65604dcbb9e057845738e191f49.png
         alt: HL2 logo
         height: 600
         width: 600
