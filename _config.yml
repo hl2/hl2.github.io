@@ -2,10 +2,10 @@ lang: fr_FR
 title: HL2
 email: contact@hl2.com
 description: >-
-  HL2 group est une start-up dédiée à l'Internet des Objets industriel,
+  HL2 est une start-up dédiée à l'Internet des Objets industriel,
   utilisant les nouvelles technologies LPWAN comme Sigfox™ et LoRaWAN™
 baseurl: ""
-url: http://hl2.com
+url: https://hl2.com
 
 social:
   name: HL2
