@@ -30,7 +30,7 @@ linkedin:
 
 assets:
   precompile:
-    - hl2.png
+    - hl2-og.png
   raw_precompile:
     - src: posts/*.jpg
       dst: posts
@@ -59,7 +59,7 @@ defaults:
       path: ""
     values:
       image:
-        path: /assets/hl2-bee3e52425e07ba84cf32ff0c7a13ec14830f65604dcbb9e057845738e191f49.png
+        path: /assets/hl2-og-c5488429a1228e1828bdabfe33ec0f5e2d79d5e323b5cd5e533dee29fd52c58e.png
         alt: HL2 logo
   - scope:
       path: ""
