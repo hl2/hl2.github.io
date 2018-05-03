@@ -1,10 +1,8 @@
 ---
 title: 'ENGIE Axima and HL2 group sign a partnership contract'
 image:
-  path: posts/engie-axima-logo-330.jpg
+  path: /assets/posts/engie-axima-logo-330.jpg
   alt: Engie Axima logo
-  height: 200
-  width: 330
 excerpt: ENGIE Axima, filiale du groupe ENGIE et HL2 group, une start-up spécialisée dans les objets connectés annoncera la signature d'un contrat de partenariat
 important: true
 ---

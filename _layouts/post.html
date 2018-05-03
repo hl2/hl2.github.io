@@ -9,8 +9,8 @@ layout: default
 <div class="row section justify-content-center">
     <div class="col-8">
         <h2>{{ page.title }}</h2>
-        {% if assets[page.image.path] %}
-        <img src="{% asset '{{ page.image.path }}' @path %}" class="img-fluid rounded m-2" alt="{{ page.image.alt }}">
+        {% if page.image %}
+        <img src="{{ page.image.path | default: page.image }}" class="img-fluid rounded m-2" alt="{{ page.image.alt }}">
         {% endif %}
         <div class="m-2">
             <i class="far fa-calendar" aria-label="Date"></i>

@@ -29,7 +29,11 @@ linkedin:
   username: hl2-group
 
 assets:
-  precompile: ["hl2.png"]
+  precompile:
+    - hl2.png
+  raw_precompile:
+    - src: posts/*.jpg
+      dst: posts
   autoprefixer:
     browsers:
       - "last 2 versions"
@@ -57,8 +61,6 @@ defaults:
       image:
         path: /assets/hl2-bee3e52425e07ba84cf32ff0c7a13ec14830f65604dcbb9e057845738e191f49.png
         alt: HL2 logo
-        height: 600
-        width: 600
   - scope:
       path: ""
       type: posts
