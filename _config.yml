@@ -86,4 +86,3 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - _config.yml
-  - _config_development.yml
