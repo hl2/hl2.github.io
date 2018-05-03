@@ -12,10 +12,5 @@
   <link rel="icon" type="image/x-icon" href="{% asset favicon.ico @path %}">
 
   {% asset main.css %}
-  {% capture seo %}
   {% seo %}
-  {% endcapture %}
-
-  {{ seo | replace: "summary_large_image", "summary" }}
-  <meta property="twitter:image" content="{% asset hl2-twitter.png @path %}">
 </head>
