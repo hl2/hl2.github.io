@@ -34,11 +34,13 @@
                               </li>
                             {% endif %}
 
-                            <li>
-                                <a href="{{ include.event.website }}" target="_blank">
-                                    <i class="fas fa-link"></i> Site Web
-                                </a>
-                            </li>
+                            {% if include.event.website %}
+                              <li>
+                                  <a href="{{ include.event.website }}" target="_blank">
+                                      <i class="fas fa-link"></i> Site Web
+                                  </a>
+                              </li>
+                            {% endif %}
                         </ul>
                     </div>
                 </div>

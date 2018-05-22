@@ -13,7 +13,6 @@
     */
     const upcomingEventCards = $(".event-card-col").filter(function() {
       const endDate = moment( $(this).attr("data-end-date") );
-      console.log(endDate);
       return moment().isBefore( endDate.endOf("day") );
     });
 

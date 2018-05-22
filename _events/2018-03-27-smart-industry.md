@@ -24,5 +24,5 @@ booth: 3F37, Village Cap'Tronic
         - Jean-Michel Lefevre, General Manager at ProbaYes
 
 - La performance opérationnelle mesurée par les IoT, le 29 mars à 10h30, Espace Pitch, Entrée Hall 5
-    - Didier LONGUEVILLE, HL2 group CTO & Cofounder
+    - Didier LONGUEVILLE, HL2 CTO & Cofounder
     - Marc LEJEUNE, ENGIE Axima Purchasing and maintenance departments.
