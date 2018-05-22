@@ -9,7 +9,8 @@ permalink: /events
 
 <div class="row section">
     {% for event in sorted %}
-      <div id="{{ event.slug }}" class="p-2 col-12">
+      <div class="col-12 p-2">
+        <span id="{{ event.slug }}" class="anchor"></span>
         {% include event-card.html event=event %}
       </div>
     {% endfor %}
