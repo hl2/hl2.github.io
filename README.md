@@ -1,6 +1,11 @@
 hl2.com
 =======
 
+[![Build Status](https://travis-ci.com/hl2/hl2.com.svg?branch=master)](https://travis-ci.com/hl2/hl2.com)
+
+Contents
+--------
+
 - [Getting started](#getting-started)
 - [License](#license)
 
