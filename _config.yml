@@ -1,14 +1,14 @@
 lang: fr_FR
-title: HL2
+title: hl2
 email: contact@hl2.com
 description: >-
-  HL2 est une start-up dédiée à l'Internet des Objets industriel,
+  hl2 est une start-up dédiée à l'Internet des Objets industriel,
   utilisant les nouvelles technologies LPWAN comme Sigfox™ et LoRaWAN™
 baseurl: ""
 url: https://hl2.com
 
 social:
-  name: HL2
+  name: hl2
   links:
     - https://twitter.com/hl2_fr
     - https://www.facebook.com/hl2group
@@ -60,7 +60,7 @@ defaults:
     values:
       image:
         path: /assets/hl2-dd5bd4aa99c3bf8366ba295c77b512c52416595e67d769a00f7c1f72db76cbb0.png
-        alt: HL2 logo
+        alt: hl2 logo
   - scope:
       path: ""
       type: posts
