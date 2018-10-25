@@ -41,6 +41,18 @@
                                   </a>
                               </li>
                             {% endif %}
+
+                            {% if include.event.email %}
+                              <li>
+                                <a href="mailto:{{ include.event.email }}"><i class="fas fa-at"></i>&nbsp;{{ include.event.email }}</a>
+                              </li>
+                            {% endif %}
+
+                            {% if include.event.phone and include.event.phoneRef %}
+                              <li>
+                                <a href="tel:{{ include.event.phoneRef }}"><i class="fas fa-phone"></i></i>&nbsp;{{ include.event.phone }}</a>
+                              </li>
+                            {% endif %}
                         </ul>
                     </div>
                 </div>
