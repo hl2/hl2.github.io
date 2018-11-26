@@ -19,7 +19,7 @@
 
                         <ul class="card-text list-unstyled">
                             <li>
-                                <i class="far fa-calendar-alt"></i> Du {{ include.event.date | date: "%d/%m/%Y" }} au {{ include.event.endDate | date: "%d/%m/%Y" }}
+                                <i class="far fa-calendar-alt"></i> Du {{ include.event.date | date: "%d/%m/%Y" }} au {{ include.event.endDate | date: "%d/%m/%Y" }}  {{ include.event.period }}
                             </li>
 
                             {% if include.event.address %}
