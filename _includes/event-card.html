@@ -1,5 +1,7 @@
 {% assign content = include.event.content | strip_newlines %}
 {% assign startKeyMonth = include.event.date | date: "%-m" | minus: 1 %}
+{% assign tsDate = include.event.date | date: "%s" %}
+{% assign tsDay = include.event.date | date: "%Y-%m-%d" | date: "%s" %}
 
 <div class="card event-card p-3">
     <div class="container-fluid">
@@ -19,7 +21,10 @@
 
                         <ul class="card-text list-unstyled">
                             <li>
-                                <i class="far fa-calendar-alt"></i> Du {{ include.event.date | date: "%d/%m/%Y" }} au {{ include.event.endDate | date: "%d/%m/%Y" }}  {{ include.event.period }}
+                                <i class="far fa-calendar-alt"></i> Du {{ include.event.date | date: "%d/%m/%Y" }} au {{ include.event.endDate | date: "%d/%m/%Y" }}
+                                {% if tsDate > tsDay %}
+                                  de {{ include.event.date | date: "%R" }} à {{ include.event.endDate | date: "%R" }}
+                                {% endif %}
                             </li>
 
                             {% if include.event.address %}
@@ -48,9 +53,9 @@
                               </li>
                             {% endif %}
 
-                            {% if include.event.phone and include.event.phoneRef %}
+                            {% if include.event.phone %}
                               <li>
-                                <a href="tel:{{ include.event.phoneRef }}"><i class="fas fa-phone"></i></i>&nbsp;{{ include.event.phone }}</a>
+                                <a href="tel:{{ include.event.phone.first }}"><i class="fas fa-phone"></i></i>&nbsp;{{ include.event.phone.last }}</a>
                               </li>
                             {% endif %}
                         </ul>

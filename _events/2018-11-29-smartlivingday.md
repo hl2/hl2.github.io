@@ -1,8 +1,8 @@
 ---
 title: Forum "Smart Living Day"
 address: Parc d'Ester, 1 Avenue d'Ester, 87280 LIMOGES, France
-endDate: 2018-11-29
-period: de 9h à 17h
+date: 2018-11-29 09:00
+endDate: 2018-11-29 17:00
 website: www.smartlivingday.com
 ---
 
