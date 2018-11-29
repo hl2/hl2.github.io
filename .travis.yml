@@ -2,27 +2,23 @@ dist: trusty
 sudo: false
 language: ruby
 rvm:
-  - 2.5.1
-
+- 2.5.1
 env:
-  - JEKYLL_ENV=production
-
+- JEKYLL_ENV=production
 script:
-  - "./scripts/build.sh"
-
+- "./scripts/build.sh"
 deploy:
   provider: pages
   local-dir: _site
   skip-cleanup: true
   target-branch: gh-pages
-  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  github-token: "$GITHUB_TOKEN"
   on:
     branch: master
-
 notifications:
   email: false
   slack:
-    rooms:
-      secure: P0sFCWI2VHnccuBOjDpvDzbrkrpvfPlsZ854Z2r8P7jvNUUyUOqbqHfnKHCCOJ+c9FhqZjnAAO9mgDneXfeC5graLeg8l4ZXUezkWPIQW2UiTZDXpO9rsinBhwe8Sj+1V4SdhJ8yMYzcHqnkYrKaD81ItON5OD6cXtH1GqoWfZnryEHCvBuNesAPSSNfzrQVYsTWZaikgC7ceQUUk2VU3dzzAYBRNRphtEbBDQFA7NYdsDkZkAC1OXalAjDazKCGSMg4tZNIjAjwD8BkQWYW1vlwUUxrcxYm2CEz9wFC5ExA3faCv4QbAOLVMGKnwUYliwO6iZdKu2nO01KT8pUNC2RrmevZGFQco7ARWp2rzlcRDlfpHmevnkxvQ7LqIEZQTXzNKLtVAPijfH1Des4wtoaEytkYJKz4F8+vfoOaSH0r9Yr0Nz8nhwgkiu5xZy7MZqPjizuGXct1BcdcRYKFSxEloOSsf6wQdFpCfQNOjAy3m19qxNkj2xeMq1z4q5y9LPLJmM8JY5nk56EJso1V1Dv1ONTFSCZIEZbawtlOsJYsi+RvcRwSLf8ynMZeyWODIzU1LphW8vEfTRlIhOZeMvClsEQPRGafRX4amolFlb4IgyyeVGZWsD+HFRP4OVP/f9nmDQVeR9+LXJSgTqQrWmN9ev1V6MLmDawlH2ME+AI=
     on_success: change
     on_failure: always
+    rooms:
+      secure: YuZEixi8zEFJtaD2HfatSsKDpZaoo068k89DoJKEvXjAz5sbob21ihC1C4fq0Df1rVthd1Py5+01FrAHBrHTy5mG+MdlOCYo7bpJTikEB/pqkX0t90bCnJwjv9BDht7VuJblCGZGhj+SW45H0sF2U5r0cEBfWoM6qHDyJJYl5nGteQOw1Q68VEximxseylbRQkFbJfK7X43MiD5XMdcEayCr3/bkax3CyClgF1iNcS+12z6sob+ULiQBgo5E/E05Ygbj8K0Dt6Fc3UqLiBSbB9MD1aKB4ZBlXvrE7Mmk8TG/m4fmf2/vYQx7bN7MSQWxGI25yzIKD56PWTsncKpEj7M0V09uhe1etrQhycBjIIe3aucEy7TATG41WdguhL69tS2F4iZTKZCmttU5t56kzHesbSDxwNnKv1IcomINTUTTdZYyeB7acz2kb9lYL9sYLtoIO+zzweAaHWmRUJ1hZlSHC5wfXVOlHL0LTPMJsNXl0TDIAWbT9O4edWKcXXbfp32Q3b5fG02s1ejV510byS3NSIg1UKrXIpWM6i/MUejCD9MsmQKjS4H/nymRp/yXSxUfwyjAkPgjI4AeuV90F1cvUxjESgx7KrlcbxHfk7TvOrvPi6zJQCPh9yIMbKv+yqR/uafQ4mLf+Ab5NwLJg0g/3EOzmVLdO+MzjrkAL5g=
