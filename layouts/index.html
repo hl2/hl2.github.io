@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<div class="jumbotron jumbotron-fluid mb-0 text-white d-flex">
+  <div class="container d-flex flex-fill">
+    <div class="row flex-fill align-items-center">
+      <div class="col-2">
+        <img class="img-fluid" src="/images/logo.svg" />
+      </div>
+      <div class="offset-1 col-9">
+        <h1 class="display-4">
+          Connectez simplement vos objets
+        </h1>
+        <p class="lead">
+          L'intégration de nos produits vous permet de réduire le temps, le coût
+          et les risques liés à la conception d'applications IoT !
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ partial "home/products" . }}
+
+{{ partial "home/use-cases" . }}
+
+{{ partial "home/team" . }}
+
+{{ end }}

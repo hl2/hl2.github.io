@@ -1,0 +1,58 @@
+<footer class="bg-dark text-white">
+  <div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-2">
+        <h5 class="text-monospace">{{ .Site.Title }}</h5>
+        <p class="text-muted">&copy; {{ now.Format "2006"}}</p>
+      </div>
+      <div class="col-5 col-md-2 mt-3 mt-md-0">
+        <h6 class="text-monospace">{{ i18n "company" }}</h6>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="{{ "/#products" | relLangURL }}">{{ i18n "products" }}</a>
+          </li>
+          <li>
+            <a class="text-muted" href="{{ "/#use-cases" | relLangURL }}">{{ i18n "use-cases" }}</a>
+          </li>
+          <li>
+            <a class="text-muted" href="{{ "/events" | relLangURL }}">{{ i18n "events" }}</a>
+          </li>
+          <li>
+            <a class="text-muted" href="{{ .Site.Params.developersWebsiteURL }}">{{ i18n "developers" }}</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:{{ .Site.Params.salesEmail }}">{{ i18n "sales" }}</a>
+          </li>
+          <li>
+            <a class="text-muted" href="{{ .Site.Params.gitHubURL }}">GitHub</a>
+          </li>
+          <li>
+            <a class="text-muted" href="{{ .Site.Params.twitterURL }}">Twitter</a>
+          </li>
+          <li>
+            <a class="text-muted" href="{{ .Site.Params.linkedInURL }}">LinkedIn</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/legal-notices">{{ i18n "legal-notices" }}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-7 col-md-3 mt-3 mt-md-0">
+        <h6 class="text-monospace">{{ i18n "address" }}</h6>
+        <address class="text-muted">
+          {{ replace .Site.Params.Address "," "<br/>" | safeHTML }}
+        </address>
+      </div>
+      <div class="col-12 col-md-5 mt-3 mt-md-0">
+        <iframe
+          class="h-100 w-100"
+          frameborder="0"
+          src="https://www.google.com/maps/embed/v1/place?q=hl2%20%20Futuropolis%205%2C%20Teleport%204%20%20Avenue%20Thomas%20Edison%20%2086960%20Futuroscope%20Chasseneuil%2C%20France
+          &zoom=15
+          &key=AIzaSyCgWrkc9EP9LwpHK0E1nwmnbeSil8mPhR8"
+        >
+        </iframe>
+      </div>
+    </div>
+  </div>
+</footer>

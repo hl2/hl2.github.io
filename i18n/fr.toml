@@ -1,0 +1,47 @@
+[address]
+other = "Adresse"
+
+[company]
+other = "Entreprise"
+
+[contact]
+other = "Contact"
+
+[developers]
+other = "Développeurs"
+
+[events]
+other = "Evènements"
+
+[home]
+other = "Accueil"
+
+[language]
+other = "Langue"
+
+[more-details]
+other = "Plus de détails"
+
+[legal-notices]
+other = "Mentions légales"
+
+[newsletter]
+other = "Ne manquez pas une actualité, souscrivez à notre newsletter!"
+
+[products]
+other = "Produits"
+
+[sales]
+other = "Ventes"
+
+[subscribe]
+other = "S'abonner"
+
+[team]
+other = "Equipe"
+
+[use-cases]
+other = "Cas d'utilisation"
+
+[website]
+other = "Site Web"

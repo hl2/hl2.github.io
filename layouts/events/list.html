@@ -1,0 +1,77 @@
+{{ define "main" }}
+
+<div class="container mt-5 mb-5">
+  <h1>{{ i18n "events" }}</h1>
+
+  <div class="row">
+    {{ range.Pages }}
+    <div class="col-4 mt-5">
+      <div class="shadow-sm rounded-0 card h-100">
+        <img
+          src="{{ with.Params.Image }} {{ . }}
+        {{ else }} https://source.unsplash.com/K5u3jBp-VKA {{ end }}"
+          class="card-img-top w-100 rounded-0"
+          style="height: 15vw; object-fit: cover;"
+        />
+        <div class="card-body">
+          <h6 class="card-title">{{ .Title }}</h6>
+          <div class="card-text">
+            <ul class="list-unstyled">
+              <li class="text-muted">
+                <div class="row">
+                  <div class="col-1">
+                    <i class="far fa-calendar-alt"></i>
+                  </div>
+                  <div class="col">
+                    {{ .Date.Format "January 2, 2006" }}
+                  </div>
+                </div>
+              </li>
+              {{ with.Params.Address }}
+              <li class="text-muted">
+                <div class="row">
+                  <div class="col-1">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="col">
+                    {{ . | safeHTML }}
+                  </div>
+                </div>
+              </li>
+              {{ end }}
+              {{ with.Params.Booth }}
+              <li class="text-muted">
+                <div class="row">
+                  <div class="col-1">
+                    <i class="fas fa-home"></i>
+                  </div>
+                  <div class="col">Booth {{ . | safeHTML }}</div>
+                </div>
+              </li>
+              {{ end }}
+            </ul>
+            <p>{{ .Description }}</p>
+          </div>
+        </div>
+        <div class="card-footer border-0 bg-transparent">
+            <a
+            href="{{ .Permalink }}"
+            class="card-link"
+            >{{ i18n "more-details" }}</a
+          >
+          {{ with.Params.WebsiteURL }}
+          <a
+            href="{{ . }}"
+            target="_blank"
+            class="card-link"
+            >{{ i18n "website" }}</a
+          >
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+
+{{ end }}

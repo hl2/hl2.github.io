@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+<div class="container mt-5 mb-5">
+ <h1>{{ .Title }}</h1>
+ <p class="lead">{{ .Description }}</p>
+ <div>
+  <ul class="list-unstyled">
+    <li class="d-flex flex-row">
+      <span class="mr-3"><i class="feather-icon" data-feather="calendar"></i></span>
+      <span>{{ .Date.Format "January 2, 2006" }}</span>
+    </li>
+
+    {{ with.Params.Booth }}
+    <li class="d-flex flex-row">
+      <span class="mr-3"><i class="feather-icon" data-feather="home"></i></span>
+      <span>Booth {{ . | safeHTML }}</span>
+    </li>
+    {{ end}}
+
+    {{ with.Params.Address }}
+    <li class="d-flex flex-row">
+      <span class="mr-3"><i class="feather-icon" data-feather="map-pin"></i></span>
+      <span>{{ . | safeHTML }}</span>
+    </li>
+    {{ end }}
+ </div>
+ <article id="content" class="mt-5">
+  {{ .Content }}
+ </article>
+</div>
+
+{{ end }}

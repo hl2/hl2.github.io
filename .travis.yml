@@ -1,23 +1,10 @@
-dist: trusty
-sudo: false
-language: ruby
-rvm:
-- 2.5.1
-env:
-- JEKYLL_ENV=production
+language: bash
+before_install:
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_0.53_Linux-64bit.deb
+  - sudo dpkg -i hugo*.deb
 script:
-- "./scripts/build.sh"
-deploy:
-  provider: pages
-  local-dir: _site
-  skip-cleanup: true
-  target-branch: gh-pages
-  github-token: "$GITHUB_TOKEN"
-  on:
-    branch: master
+  - hugo
 notifications:
-  on_success: change
-  on_failure: always
   email: false
   slack:
-    secure: QSBzDgbhp+5beTtXrczYjPdzlXSdnFJEMHMuRy24hZbB/Eaojna9ZmP/hjdYYShT9ta6MdL7bqmu8Hcm2uP6D9Dx4pffCMb02RVOE5OliEX7VUlKge3YG/qiLgtA839bFDJbRMrnUszIO/PX2/QRHSGj+5kscEcuVsBI+lgY7kFdlRAdSsx2TXC5pXvzuwUhiBxE2rwQSd8EzlqJVOfeebH6oWxtCjgpjUfydALO83q+rJ8t5Pqh06e5af+DMJO7LK9+t32QQQmsiS4UqmicgijzMsMQycDxOZQjWTMCsSspwMGxO2ALL1Qfr36yfKhCX1jJ5kJehtVmXWUn/QF8fTuIHKjE5kLDyjjhZ8pDOYcQdys6aEQk8IeVeBEc4TkqMnYHv6Mxu9cQOKdBUorU0DQuW4BURz+wHpNegXnUq3XBhcMBT7c2o8I8gZEdtNtODG5qaiinAH0jFJrcdDivQd2nfirQUCFCJmYep87X+wlPZYxdiYW2VNgFnPX/nRYfnhpeliMO85CzimyxDoK7QZRmRYQGGVzaK46R/6F79n5MRV8vzJcLvGTfDX1+W3H3AnMEiEh4TliaXN8i84YcdEGbFzWiyoARKeHEB/V16cF5q1vg+afOf29dzytwHWACcceIBrMueInQ4hn3ot3m1lO7zmZ45wpiOodhMwtczno=
+    secure: Qb64ao8qyLV3+0rwt8W9K9RdDoSjJZkbVeBmw6bS0jTDar6WPxTseFz30K9ct72X60bn79wrGdXZ4aqCIBdDfxw8oSKqdu/xpl5St/mniWFkRs2q/U6YycC3hFHQeXrAkYv6YVhcs6Dq5dOREJkWsG/+jtkA9LFmY6ooP+ccMBDuelugzT9ujlD3Gg5K7e/h3+xd/HoaNl9+Lzha3Je1XK3OosSIUgKiuJ+/WC3NMSBGK3QfK2/tivjoyZ2samodSDKLFoahw7qAkJ4pN8eIWbxaE5pGKCdVerky+m4+pQHGVpcf334321U1QxhXcGOVHjnxLowLQuMvg2xGQiJiBbM7P82RFZTbDTrsoXNpbeiR9+0s00iUEgVVvoKgKqKAghYNBCtvwV2lPOEwR03NrA0q+/en04r4aMYyBNjB59IvYLh8/YjHYLFLRAsLh6add6IaYTupbzj1/KBJKm4ul7p2KyRyvyuwSlOMVoBcTNvm++OI3cCQn2uZzyH5yBi5H0s2nRPbcRM9s05+gBc6V9f3X+6PFqgukoa2syELwC7VV51CXGBa8cEoM1uVbLhCloIZRcWXBMjqDM6ij5PvtLIqDBqVpNPrRPExGfMi0JYHbRrLljykYVCKlYU0mIrj+K2+m59yPUWm/UWI0Wczwbw8DFU4q8o4xM5hyx0nTcg=

@@ -1,0 +1,20 @@
+title = "hl2"
+baseURL = "https://hl2.com/"
+DefaultContentLanguage = "en"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+  address = "hl2, Futuropolis 5, Teleport 4 Avenue Thomas Edison, 86960 Futuroscope Chasseneuil, France"
+  developersURL = "https://developers.hl2.com/"
+  gitHubURL = "https://github.com/hl2"
+  googleTagManagerID = "GTM-55HF8C3"
+  linkedInURL = "ttps://www.linkedin.com/company/hl2-group"
+  salesEmail = "sales@hl2.com"
+  twitterURL = "https://twitter.com/hl2_fr"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+
+  [languages.fr]
+    languageName = "French"

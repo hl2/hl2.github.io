@@ -1,0 +1,59 @@
+@import url("https://rsms.me/inter/inter.css");
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+:root {
+  --navbar-height: 56px;
+  --main-background-color: #093c76;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.anchor {
+  display: block;
+  height: var(--navbar-height);
+  margin-top: calc(-1 * var(--navbar-height));
+  visibility: hidden;
+}
+
+.feather-icon {
+  height: 1em;
+  margin-top: -4px;
+  pointer-events: none;
+  vertical-align: middle;
+  width: 1em;
+}
+
+.jumbotron {
+  background-color: var(--main-background-color);
+  min-height: 350px;
+}
+
+.mt-for-navbar {
+  margin-top: var(--navbar-height);
+}
+
+.navbar {
+  background-color: var(--main-background-color);
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section h1 {
+  margin-bottom: 100px;
+}

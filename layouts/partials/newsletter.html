@@ -1,0 +1,29 @@
+<div class="bg-light border-top">
+  <div class="container p-3">
+    <div class="row align-items-center">
+      <div class="col-12 col-sm-6 text-center text-sm-right">
+        {{ i18n "newsletter" }}
+      </div>
+      <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+        <form
+          class="input-group"
+          method="POST"
+          action="https://hl2.us15.list-manage.com/subscribe/post?u=d8c14c653ba33a8dedcc09d9f&amp;id=5c319d8ac9"
+          target="_blank"
+        >
+          <input
+            type="email"
+            name="EMAIL"
+            class="form-control"
+            placeholder="your@email.com"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">
+              {{ i18n "subscribe" }}
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
