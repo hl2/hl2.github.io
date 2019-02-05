@@ -1,0 +1,168 @@
+{{ define "main" }}
+
+<div class="jumbotron jumbotron-fluid mb-0 text-white d-flex">
+  <div class="container d-flex flex-fill">
+    <div class="row flex-fill justify-content-center align-items-center">
+      <div class="col-12 text-center">
+        <img class="img-fluid" width="150" src="/images/logo.svg" />
+      </div>
+      <div class="col-12 mt-5 text-center">
+        <h1>Révolutionnez vos objets sans réinventer la roue</h1>
+        <p class="lead">Déployez plus rapidement, plus efficacement, plus sûrement</p>
+        <br/>
+        <h4>hl2, votre fournisseur de technologies IoT</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid border-bottom section">
+  <span id="products" class="anchor"></span>
+
+  <div class="container">
+    <h1 class="text-center">{{ i18n "products" }}</h1>
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body font-weight-light">
+            <h2 class="card-title">hl2 Panorama</h2>
+            <h5 class="card-subtitle font-weight-light text-muted">Gateway IoT scalable et interopérable</h5>
+            <br/>
+            <ul class="card-text list-unstyled">
+              <li class="mt-3">Collectez des données des opérateurs IoT LPWAN (Sigfox, Orange, Objenious, Actility, Loriot, TTN, …)</li>
+              <li class="mt-3">Gestion du roaming national / international opérateurs publics et réseaux privés</li>
+              <li class="mt-3">Enregistrement centralisé des objets (provisioning chez les opérateurs)</li>
+              <li class="mt-3">Mise à disposition des données dans votre application (décodage et encodage des données réseau vers des données métier)</li>
+              <li class="mt-3">Administration simple et efficace de votre flotte d'objets</li>
+              <li class="mt-3">APIs REST fournies pour une intégration rapide des fonctionnalités dans votre application (API commune pour tous les opérateurs)</li>
+            </ul>
+          </div>
+          <div class="card-footer border-0 bg-white">
+            <a href="{{ "/contact" | relLangURL }}" class="btn btn-primary">Contact Sales <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mt-5 col-md-6 mt-md-0">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body font-weight-light">
+            <h2 class="card-title">Stack réseau SCAP / LTP</h2>
+            <h5 class="card-subtitle font-weight-light text-muted">Exploitez pleinement et facilement les réseaux IoT LPWAN</h5>
+            <br/>
+            <ul class="card-text list-unstyled">
+              <li class="mt-3">Création simplifiée d’applications</li>
+              <li class="mt-3">Sécurisation des données depuis l’objet jusqu’à votre application, indépendamment des opérateurs (chiffrement AES-256 GCM, authentification 96-bit et anti-rejeu)</li>
+              <li class="mt-3">Transmission de données métier de taille arbitraire (adaptation dynamique de la taille des paquets en fonction des conditions radio, du réseau IoT et de la taille des données à envoyer)</li>
+              <li class="mt-3">Structuration des données transmises</li>
+              <li class="mt-3">Amélioration de la qualité de service de votre application</li>
+              <li class="mt-3">Supporte de nombreux modems IoT LPWAN (Murrata, Nemeus, Multitech, …)</li>
+            </ul>
+          </div>
+          <div class="card-footer border-0 bg-white">
+            <a href="{{ "/contact" | relLangURL }}" class="btn btn-primary">Contact Sales <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mt-5 col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body font-weight-light">
+            <h2 class="card-title">Objet à personaliser</h2>
+            <h5 class="card-subtitle font-weight-light text-muted">Reference design PLD (Place and Leave Device)</h5>
+            <br/>
+            <ul class="card-text list-unstyled">
+              <li class="mt-3">Intégrez un objet validé et performant prêt à être personnalisé pour vos propres applications</li>
+              <li class="mt-3">Jusqu’à 10 ans d’autonomie grâce un design ultra low-power, une gestion optimisée de l’énergie (LEAF) et une pile haute capacité</li>
+              <li class="mt-3">Architecture électronique modulaire, ajout de fonctionnalités sur cartes d’extension</li>
+              <li class="mt-3">Compatible avec la majorité des capteurs numériques (I2C, SPI, UART, PWM, …)</li>
+              <li class="mt-3">Mécatronique compacte, robuste et étanche</li>
+              <li class="mt-3">Communication sur les réseaux IoT Sigfox et LoRaWAN (ETSI & FCC) et SCAP / LTP</li>
+              <li class="mt-3">Framework LEAF open source permettant la création rapide et simplifiée d’une application industrielle IoT (gestion de l’énergie, gestion des tâches, gestion des périphériques, communication IoT, …)</li>
+            </ul>
+          </div>
+          <div class="card-footer border-0 bg-white">
+            <a href="{{ "/contact" | relLangURL }}" class="btn btn-primary">Contact Sales <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mt-5 col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body font-weight-light">
+            <h2 class="card-title">SDK Edge Computing</h2>
+            <h5 class="card-subtitle font-weight-light text-muted">&nbsp;</h5>
+            <br/>
+            <ul class="card-text list-unstyled">
+              <li class="mt-3">Ajoutez de l'intelligence à votre objet au plus près de la mesure</li>
+              <li class="mt-3">Amélioration de la résilience et de la réactivité de vos applications</li>
+              <li class="mt-3">Réduction du coût d’exploitation de vos applications</li>
+              <li class="mt-3">Conçu spécifiquement pour l’IoT, se satisfait de très faibles ressources (calcul, mémoire, énergie)</li>
+              <li class="mt-3">Conversion des mesures en information métier de haut niveau et à forte valeur ajoutée</li>
+              <li class="mt-3">Modules métiers intégrant des algorithmes avancés, adaptés à l’analyse vibratoire, l’analyse acoustique, la prédiction par analyse de tendance</li>
+              <li class="mt-3">Large éventail de fonctions statistiques, de modélisation et de traitement des signaux</li>
+            </ul>
+          </div>
+          <div class="card-footer border-0 bg-white">
+            <a href="{{ "/contact" | relLangURL }}" class="btn btn-primary">Contact Sales <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-light border-bottom section">
+  <span id="use-cases" class="anchor bg-light"></span>
+
+  <div class="container">
+    <h1 class="text-center">{{ i18n "use-cases" }}</h1>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body font-weight-light">
+            <h2 class="card-title font-weight-light">Système IoT d’analyse prédictive pour machines tournantes</h2>
+            <br/>
+            <p>
+              Ce système d’analyse vibratoire produit des données métiers conventionnelles et prédit l’apparition de défauts grâce à
+              des algorithmes exécutés au plus près de la mesure (Edge Computing). Ces informations vous permettront facilement et
+              rapidement de progresser depuis la maintenance préventive vers la maintenance prédictive.
+            </p>
+            <p>
+              Traitement embarqué conventionnel : vitesse de rotation, température, RMS, NGV, NGA, amplitude de fréquences
+              caractéristiques (basses fréquences), amplitudes par bandes de fréquences, dépassement de seuils ISO 10816 / ISO 2372
+              Analyse prédictive embarquée (expérimentale) : typage des défauts, dérives d’énergie vibratoire par bandes de fréquence
+              (auto-apprentissage), estimation de la durée d'utilisation avant dépassement de seuil (arbitraire ou ISO).
+            </p>
+          </div>
+          <div class="card-footer border-0 bg-white">
+            <a href="{{ "/contact" | relLangURL }}" class="btn btn-primary">Contact Sales <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mt-5 col-md-6 mt-md-0">
+        <div class="card shadow-sm h-100">
+          <div class="card-body font-weight-light">
+            <h2 class="card-title font-weight-light">Système autonome de détection de coups de feu</h2>
+            <br/>
+            <p>
+              Fondé sur l’analyse des signaux acoustiques, ce reference design permet la détection d'événements sonores et leur
+              filtrage de manière à discriminer efficacement les sons produits par une arme à feu de tout autre son similaire. Un
+              algorithme breveté par hl2 (en cours d’instruction) est mis en oeuvre et intégré dans l’objet de manière
+              à garantir des temps de réaction extrêmement courts et un taux de fiabilité élevé.
+            </p>
+            <p>
+              Les données sont et transmises de manière sécurisée sur les réseaux IoT LPWAN. Ainsi, le destinataire du message peut
+              savoir à quel endroit, à quel moment une agression à eu lieu et une arme à feu a été utilisée et de quel type d’arme il
+              s’agit de manière à pouvoir cibler efficacement la réaction qui s’impose.
+            </p>
+          </div>
+          <div class="card-footer border-0 bg-white">
+            <a href="{{ "/contact" | relLangURL }}" class="btn btn-primary">Contact Sales <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ partial "home/team" . }}
+
+{{ end }}

@@ -1,0 +1,83 @@
+{{ define "main" }}
+
+<div class="container mt-5 mb-5">
+  <h1>{{ i18n "events" }}</h1>
+
+  <div class="row">
+    {{ range (.Pages.ByParam "startDate").Reverse }}
+    <div class="col-12 col-sm-6 col-md-4 mt-5">
+      <div class="shadow-sm rounded-0 card h-100">
+        <img
+          src="{{ .Params.Image }}"
+          class="card-img-top rounded-0"
+        />
+        <div class="card-body">
+          <h6 class="card-title">{{ .Title }}</h6>
+          <div class="card-text">
+            <ul class="list-unstyled">
+              {{ with.Params.StartDate }}
+              <li class="text-muted">
+                <div class="row">
+                  <div class="col-1">
+                    <i class="far fa-calendar-alt"></i>
+                  </div>
+                  <div class="col">
+                    {{ if eq $.Page.Language.LanguageName "French" }}
+                      {{ (dateFormat "2" .) }}
+                      {{ humanize (index $.Site.Data.mois (dateFormat "1" .)) }}
+                      {{ (dateFormat "2006" .) }}
+                    {{ else }}
+                      {{ dateFormat "January 2, 2006" . }}
+                    {{ end }}
+                  </div>
+                </div>
+              </li>
+              {{ end }}
+              {{ with.Params.Address }}
+              <li class="text-muted">
+                <div class="row">
+                  <div class="col-1">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="col">
+                    {{ . | safeHTML }}
+                  </div>
+                </div>
+              </li>
+              {{ end }}
+              {{ with.Params.Booth }}
+              <li class="text-muted">
+                <div class="row">
+                  <div class="col-1">
+                    <i class="fas fa-home"></i>
+                  </div>
+                  <div class="col">Booth {{ . | safeHTML }}</div>
+                </div>
+              </li>
+              {{ end }}
+            </ul>
+            <p>{{ .Description }}</p>
+          </div>
+        </div>
+        <div class="card-footer border-0 bg-transparent">
+            <a
+            href="{{ .Permalink }}"
+            class="card-link"
+            >{{ i18n "more-details" }}</a
+          >
+          {{ with.Params.Website }}
+          <a
+            href="{{ . }}"
+            target="_blank"
+            class="card-link"
+            >{{ i18n "website" }}</a
+          >
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+
+{{ end }}

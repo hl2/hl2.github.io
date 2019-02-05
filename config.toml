@@ -1,0 +1,23 @@
+title = "hl2"
+baseURL = "https://hl2.com/"
+DefaultContentLanguage = "en"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+  address = "hl2, Futuropolis 5, Teleport 4 Avenue Thomas Edison, 86960 Futuroscope Chasseneuil, France"
+  developersWebsiteURL = "https://developers.hl2.com/"
+  gitHubProfileURL = "https://github.com/hl2"
+  googleTagManagerID = "GTM-55HF8C3"
+  linkedInProfileURL = "https://www.linkedin.com/company/hl2-group"
+  salesEmail = "sales@hl2.com"
+  twitterProfileURL = "https://twitter.com/hl2_fr"
+  description = "Start-up company dedicated to Industrial Internet of Things (IIoT) using new LPWAN technologies such as Sigfox™ and LoRaWAN™"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+
+  [languages.fr]
+    languageName = "French"
+    description = "Start-up dédiée à l'Internet des Objets Industriel (IIoT) utilisant les nouvelles technologies LPWAN telles que Sigfox™ et LoRaWAN™"

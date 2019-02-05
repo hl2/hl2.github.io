@@ -1,0 +1,19 @@
+<div class="container-fluid section">
+  <span id="team" class="anchor"></span>
+
+  <div class="container">
+    <h1 class="text-center">{{ i18n "team" }}</h1>
+    <div class="row justify-content-center mt-5">
+      {{ range $.Site.Data.team.members }}
+      <div class="col-6 col-sm-4 col-lg-2 text-center">
+        <img class="img-thumbnail border-0 rounded-circle" width="120"
+        src="/images/team/{{ replace (lower .name) " " "-" }}.png" />
+        <ul class="list-unstyled mt-2">
+          <li>{{ .name }}</li>
+          <li class="font-weight-light text-muted">{{ .position }}</li>
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

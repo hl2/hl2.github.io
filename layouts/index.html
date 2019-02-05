@@ -1,0 +1,166 @@
+{{ define "main" }}
+
+<div class="jumbotron jumbotron-fluid mb-0 text-white d-flex">
+  <div class="container d-flex flex-fill">
+    <div class="row flex-fill justify-content-center align-items-center">
+      <div class="col-12 text-center">
+        <img class="img-fluid" width="150" src="/images/logo.svg" />
+      </div>
+      <div class="col-12 mt-5 text-center">
+        <h1>Revolutionize your objects without reinventing the wheel</h1>
+        <p class="lead">Faster, safer, and more efficient deployments</p>
+        <br/>
+        <h4>hl2, your IoT technology provider</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid border-bottom section">
+  <span id="products" class="anchor"></span>
+
+  <div class="container">
+    <h1 class="text-center">{{ i18n "products" }}</h1>
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body font-weight-light">
+            <h2 class="card-title">hl2 Panorama</h2>
+            <h5 class="card-subtitle font-weight-light text-muted">Scalable and interoperable IoT gateway</h5>
+            <br/>
+            <ul class="card-text list-unstyled">
+              <li class="mt-3">Collect data from LPWAN IoT operators (Sigfox, Orange, Objenious, Actility, Loriot, TTN, …)</li>
+              <li class="mt-3">National / international roaming management for public and private operators</li>
+              <li class="mt-3">Centralized registration of objects (automatic operator provisioning)</li>
+              <li class="mt-3">Data provisioning in your application (network to business data decoding/encoding)</li>
+              <li class="mt-3">Simple and efficient administration of your fleet of objects</li>
+              <li class="mt-3">REST APIs to quickly add features to your application (common API for all operators)</li>
+            </ul>
+          </div>
+          <div class="card-footer border-0 bg-white">
+            <a href="{{ "/contact" | relLangURL }}" class="btn btn-primary">Contact Sales <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mt-5 col-md-6 mt-md-0">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body font-weight-light">
+            <h2 class="card-title">SCAP / LTP network stack</h2>
+            <h5 class="card-subtitle font-weight-light text-muted">Make the most of LPWAN IoT networks, easily</h5>
+            <br/>
+            <ul class="card-text list-unstyled">
+              <li class="mt-3">Simplified application creation</li>
+              <li class="mt-3">Secure transfer of data from the object to your application, for all operators (AES-256 GCM encryption, 96-bit authentication and anti-replay)</li>
+              <li class="mt-3">Business data transmission of arbitrary size (dynamic packet size depending on the radio conditions, the IoT network, and the data set size)</li>
+              <li class="mt-3">Structuring of transmitted data</li>
+              <li class="mt-3">Improvement of your application's QoS</li>
+              <li class="mt-3">Supports many IoT LPWAN modems (Murrata, Nemeus, Multitech, …)</li>
+            </ul>
+          </div>
+          <div class="card-footer border-0 bg-white">
+            <a href="{{ "/contact" | relLangURL }}" class="btn btn-primary">Contact Sales <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mt-5 col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body font-weight-light">
+            <h2 class="card-title">Customizable object</h2>
+            <h5 class="card-subtitle text-muted font-weight-light">PLD reference design (Place and Leave Device)</h5>
+            <br/>
+            <ul class="card-text list-unstyled">
+              <li class="mt-3">Integrate a tested and versatile object ready to be tailored to your own applications' needs</li>
+              <li class="mt-3">Up to 10 years of autonomy thanks to an ultra-low-power design, optimized energy management (LEAF framework), and a high capacity battery</li>
+              <li class="mt-3">Modular electronic architecture, additional features available through shields</li>
+              <li class="mt-3">Compatible with the majority of digital sensors (I2C, SPI, UART, PWM, …)</li>
+              <li class="mt-3">Compact, rugged and waterproof enclosure</li>
+              <li class="mt-3">Communication on Sigfox and LoRaWAN IoT networks (ETSI & FCC) and SCAP / LTP</li>
+              <li class="mt-3">Open source LEAF framework for quick and easy creation of industrial IoT applications (energy management, task management, device management, IoT communication, …)</li>
+            </ul>
+          </div>
+          <div class="card-footer border-0 bg-white">
+            <a href="{{ "/contact" | relLangURL }}" class="btn btn-primary">Contact Sales <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mt-5 col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body font-weight-light">
+            <h2 class="card-title">Edge computing SDK</h2>
+            <h5 class="card-subtitle font-weight-light text-muted">&nbsp;</h5>
+            <br/>
+            <ul class="card-text list-unstyled">
+              <li class="mt-3">Add intelligence to your object right next to the measurement point</li>
+              <li class="mt-3">Improved application responsiveness and resilience</li>
+              <li class="mt-3">Reduced operating cost for your applications</li>
+              <li class="mt-3">Specifically designed with IoT in mind, very frugal use of resources (computation, memory, energy)</li>
+              <li class="mt-3">Measurements turned into high-level, high-value business information</li>
+              <li class="mt-3">Business modules embedding advanced algorithms suitable for vibration analysis, acoustic analysis, trend analysis and prediction</li>
+              <li class="mt-3">Wide range of statistical, modeling and signal processing functions</li>
+            </ul>
+          </div>
+          <div class="card-footer border-0 bg-white">
+            <a href="{{ "/contact" | relLangURL }}" class="btn btn-primary">Contact Sales <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-light border-bottom section">
+  <span id="use-cases" class="anchor bg-light"></span>
+
+  <div class="container">
+    <h1 class="text-center">{{ i18n "use-cases" }}</h1>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body font-weight-light">
+            <h2 class="card-title font-weight-light">IoT predictive analysis system for rotating machines</h2>
+            <br/>
+            <p>
+              This vibration analysis system produces conventional business data and predicts defects using algorithms running right
+              next to the sensor (Edge Computing). This information allows to smoothly scale up from preventive to predictive
+              maintenance.
+            </p>
+            <p>
+              Conventional on-board processing: rotational speed, temperature, RMS, OVL, OAL, characteristic frequency amplitude (low
+              frequency range), frequency band amplitudes, ISO 10816 / ISO 2372 threshold overruns. On-board predictive analysis
+              (experimental): classification of defects, vibratory energy drift by frequency bands (self-learning), expected uptime
+              before a threshold overrun (arbitrary or ISO).
+            </p>
+          </div>
+          <div class="card-footer border-0 bg-white">
+            <a href="{{ "/contact" | relLangURL }}" class="btn btn-primary">Contact Sales <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mt-5 col-md-6 mt-md-0">
+        <div class="card shadow-sm h-100">
+          <div class="card-body font-weight-light">
+            <h2 class="card-title font-weight-light">Autonomous gunshot detection system</h2>
+            <br/>
+            <p>
+              Based on the analysis of acoustic signals, this reference design allows the detection of sound events and their
+              filtering to effectively discriminate sounds produced by a firearm from any other similar sound. The object includes a
+              patent-pending algorithm assuring extremely short reaction times and high reliability.
+            </p>
+            <p>
+              Data is securely transmitted over IoT LPWAN networks. The recipient is informed of where and when an assault involving a
+              firearm took place and what kind of weapon was used, to effectively decide on the response strategy.
+            </p>
+          </div>
+          <div class="card-footer border-0 bg-white">
+            <a href="{{ "/contact" | relLangURL }}" class="btn btn-primary">Contact Sales <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ partial "home/team" . }}
+
+{{ end }}
