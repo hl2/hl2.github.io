@@ -1,0 +1,83 @@
+---
+title: Contact
+description: Start-up company dedicated to Industrial Internet of Things (IIoT) using new LPWAN technologies such as Sigfox™ and LoRaWAN™
+date: 2019-02-08T09:32:05+04:00
+---
+
+<div class="row">
+  <div class="col-12 col-md-6">
+    <form action="https://formspree.io/sales@hl2.com" method="POST">
+      <div class="form-group">
+        <label for="nameInput">Full Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nameInput"
+          name="name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="emailInput">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="emailInput"
+          name="email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="companyInput">Company</label>
+        <input
+          type="text"
+          class="form-control"
+          id="companyInput"
+          name="company"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="messageInput">How may we help you?</label>
+        <textarea
+          class="form-control"
+          rows="5"
+          id="messageInput"
+          name="message"
+          required
+        ></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        Send
+      </button>
+    </form>
+  </div>
+  <div class="col-12 mt-5 col-md-5 offset-md-1 mt-md-0">
+    <div class="row mt-4">
+      <div class="col-6 col-md-12">
+        <h4>Address</h4>
+        {{< address >}}
+      </div>
+      <div class="col-6 mt-0 col-md-12 mt-md-1">
+        <h4>Social</h4>
+        <ul class="list-inline">
+          <li class="list-inline-item h3">
+            <a href="{{< param gitHubProfileURL >}}" target="_blank">
+              <i class="fab fa-github text-dark"></i>
+            </a>
+          </li>
+          <li class="list-inline-item h3">
+            <a href="{{< param twitterProfileURL >}}" target="_blank">
+              <i class="fab fa-twitter text-primary"></i>
+            </a>
+          </li>
+          <li class="list-inline-item h3">
+            <a href="{{< param linkedInProfileURL >}}" target="_blank">
+              <i class="fab fa-linkedin text-primary"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

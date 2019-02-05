@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="{{ .Language }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+
+    {{ template "_internal/opengraph.html" . }}
+
+    {{ template "_internal/twitter_cards.html" . }}
+
+    {{ range.AllTranslations }}
+    <link
+      rel="alternate"
+      hreflang="{{ .Language }}"
+      href="{{ .RelPermalink | relLangURL }}"
+    />
+    {{ end }}
+
+    <!-- Google Tag Manager -->
+    {{ if not .Site.IsServer }}
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer', {{ .Site.Params.googleTagManagerID }});
+    </script>
+    {{ end }}
+    <!-- End Google Tag Manager -->
+
+    {{ $bootstrapCSS := resources.Get "css/bootstrap-4.3.1.css" }}
+    {{ $fontawesomeCSS := resources.Get "css/fontawesome-5.7.1.css" }}
+    {{ $mainCSS := resources.Get "css/main.css" }}
+    {{ $bundleCSS := slice $fontawesomeCSS $bootstrapCSS $mainCSS | resources.Concat "css/bundle.css" | resources.Minify | resources.Fingerprint "sha512" }}
+    <link
+      rel="stylesheet"
+      href="{{ $bundleCSS.Permalink }}"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16 32x32 48x48"
+      href="/favicon.png"
+    />
+
+    <title>{{ with .Params.Title }}{{ . }}{{ else }}{{ i18n "home" }}{{end}} | {{ .Site.Title }}</title>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    {{ if not .Site.IsServer }}
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id={{ .Site.Params.googleTagManagerID }}"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    {{ end }}
+    <!-- End Google Tag Manager (noscript) -->
+
+    {{ partial "header" . }}
+
+    <div
+      class="mt-for-navbar d-flex flex-fill flex-column"
+      style="min-height: 100vh"
+    >
+      {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+      {{ end }}
+    </div>
+
+    {{ partial "footer" . }}
+
+    {{ $jqueryJS := resources.Get "js/jquery-3.3.1.slim.min.js" }}
+    {{ $popperJS := resources.Get "js/popper-1.14.7.min.js" }}
+    {{ $bootstrapJS := resources.Get "js/bootstrap-4.3.1.min.js" }}
+    {{ $mainJS := resources.Get "js/main.js" }}
+    {{ $bundleJS := slice $jqueryJS $popperJS $bootstrapJS $mainJS | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
+    <script
+      src="{{ $bundleJS.Permalink }}"
+      integrity="{{ $bundleJS.Data.Integrity }}"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

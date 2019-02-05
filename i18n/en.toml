@@ -1,0 +1,50 @@
+[address]
+other = "Address"
+
+[company]
+other = "Company"
+
+[contact]
+other = "Contact"
+
+[developers]
+other = "Developers"
+
+[events]
+other = "Events"
+
+[home]
+other = "Home"
+
+[language]
+other = "Language"
+
+[legal-notices]
+other = "Legal notices"
+
+[more-details]
+other = "More details"
+
+[newsletter]
+other = "Never miss an update, subscribe to our newsletter!"
+
+[newsletter-input-placeholder]
+other = "your@email.com"
+
+[products]
+other = "Products"
+
+[sales]
+other = "Sales"
+
+[subscribe]
+other = "Subscribe"
+
+[team]
+other = "Team"
+
+[use-cases]
+other = "Use cases"
+
+[website]
+other = "Website"
