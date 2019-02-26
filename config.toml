@@ -8,7 +8,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   developersURL = "https://developers.hl2.com/"
   gitHubURL = "https://github.com/hl2"
   googleTagManagerID = "GTM-55HF8C3"
-  linkedInURL = "ttps://www.linkedin.com/company/hl2-group"
+  linkedInURL = "https://www.linkedin.com/company/hl2-group"
   salesEmail = "sales@hl2.com"
   twitterURL = "https://twitter.com/hl2_fr"
 
