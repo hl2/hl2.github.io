@@ -36,6 +36,12 @@ body {
   width: 1em;
 }
 
+.footer a,
+.footer address,
+.footer .copyright {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
 .jumbotron {
   background-color: var(--main-background-color);
   min-height: 350px;

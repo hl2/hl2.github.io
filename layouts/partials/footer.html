@@ -1,45 +1,45 @@
-<footer class="bg-dark text-white">
+<footer class="footer bg-light">
   <div class="container mt-5 mb-5">
     <div class="row justify-content-center">
       <div class="col-12 col-md-2">
         <h5 class="text-monospace">{{ .Site.Title }}</h5>
-        <p class="text-muted">&copy; {{ now.Format "2006"}}</p>
+        <p class="copyright">&copy; {{ now.Format "2006"}}</p>
       </div>
       <div class="col-5 col-md-2 mt-3 mt-md-0">
-        <h6 class="text-monospace">{{ i18n "company" }}</h6>
+        <h6 class="text-monospace text-black">{{ i18n "company" }}</h6>
         <ul class="list-unstyled">
           <li>
-            <a class="text-muted" href="{{ "/#products" | relLangURL }}">{{ i18n "products" }}</a>
+            <a href="{{ "/#products" | relLangURL }}">{{ i18n "products" }}</a>
           </li>
           <li>
-            <a class="text-muted" href="{{ "/#use-cases" | relLangURL }}">{{ i18n "use-cases" }}</a>
+            <a href="{{ "/#use-cases" | relLangURL }}">{{ i18n "use-cases" }}</a>
           </li>
           <li>
-            <a class="text-muted" href="{{ "/events" | relLangURL }}">{{ i18n "events" }}</a>
+            <a href="{{ "/events" | relLangURL }}">{{ i18n "events" }}</a>
           </li>
           <li>
-            <a class="text-muted" href="{{ .Site.Params.developersWebsiteURL }}">{{ i18n "developers" }}</a>
+            <a href="{{ .Site.Params.developersWebsiteURL }}">{{ i18n "developers" }}</a>
           </li>
           <li>
-            <a class="text-muted" href="mailto:{{ .Site.Params.salesEmail }}">{{ i18n "sales" }}</a>
+            <a href="mailto:{{ .Site.Params.salesEmail }}">{{ i18n "sales" }}</a>
           </li>
           <li>
-            <a class="text-muted" href="{{ .Site.Params.gitHubURL }}">GitHub</a>
+            <a href="{{ .Site.Params.gitHubURL }}">GitHub</a>
           </li>
           <li>
-            <a class="text-muted" href="{{ .Site.Params.twitterURL }}">Twitter</a>
+            <a href="{{ .Site.Params.twitterURL }}">Twitter</a>
           </li>
           <li>
-            <a class="text-muted" href="{{ .Site.Params.linkedInURL }}">LinkedIn</a>
+            <a href="{{ .Site.Params.linkedInURL }}">LinkedIn</a>
           </li>
           <li>
-            <a class="text-muted" href="/legal-notices">{{ i18n "legal-notices" }}</a>
+            <a href="/legal-notices">{{ i18n "legal-notices" }}</a>
           </li>
         </ul>
       </div>
       <div class="col-7 col-md-3 mt-3 mt-md-0">
         <h6 class="text-monospace">{{ i18n "address" }}</h6>
-        <address class="text-muted">
+        <address>
           {{ replace .Site.Params.Address "," "<br/>" | safeHTML }}
         </address>
       </div>
