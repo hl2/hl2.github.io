@@ -1,6 +1,7 @@
 title = "hl2"
 baseURL = "https://hl2.com/"
 DefaultContentLanguage = "en"
+enableRobotsTXT = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
