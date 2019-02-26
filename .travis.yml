@@ -1,10 +1,20 @@
 language: bash
 before_install:
-  - wget https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_0.53_Linux-64bit.deb
-  - sudo dpkg -i hugo*.deb
+- wget https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_0.53_Linux-64bit.deb
+- sudo dpkg -i hugo*.deb
 script:
-  - hugo
+- hugo
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: "$GITHUB_TOKEN"
+  local-dir: public
+  target-branch: gh-pages
+  on:
+    branch: master
 notifications:
   email: false
   slack:
     secure: Qb64ao8qyLV3+0rwt8W9K9RdDoSjJZkbVeBmw6bS0jTDar6WPxTseFz30K9ct72X60bn79wrGdXZ4aqCIBdDfxw8oSKqdu/xpl5St/mniWFkRs2q/U6YycC3hFHQeXrAkYv6YVhcs6Dq5dOREJkWsG/+jtkA9LFmY6ooP+ccMBDuelugzT9ujlD3Gg5K7e/h3+xd/HoaNl9+Lzha3Je1XK3OosSIUgKiuJ+/WC3NMSBGK3QfK2/tivjoyZ2samodSDKLFoahw7qAkJ4pN8eIWbxaE5pGKCdVerky+m4+pQHGVpcf334321U1QxhXcGOVHjnxLowLQuMvg2xGQiJiBbM7P82RFZTbDTrsoXNpbeiR9+0s00iUEgVVvoKgKqKAghYNBCtvwV2lPOEwR03NrA0q+/en04r4aMYyBNjB59IvYLh8/YjHYLFLRAsLh6add6IaYTupbzj1/KBJKm4ul7p2KyRyvyuwSlOMVoBcTNvm++OI3cCQn2uZzyH5yBi5H0s2nRPbcRM9s05+gBc6V9f3X+6PFqgukoa2syELwC7VV51CXGBa8cEoM1uVbLhCloIZRcWXBMjqDM6ij5PvtLIqDBqVpNPrRPExGfMi0JYHbRrLljykYVCKlYU0mIrj+K2+m59yPUWm/UWI0Wczwbw8DFU4q8o4xM5hyx0nTcg=
+env:
+  secure: ZPWn0qN6F9S21SRs1/ZUQrbRfb18lTbkPvS6q7VzeeoYwRt56W0q3YU78oO0aKRvaaqCScxEEQvpC6HcyBhPpkhEHKK8kYpAoVuFpyt4XN0oTbiWXCudwQQCEHsMhw2YtNBGm2VNFzD1J+VHw2mLdK0+Xla+vBfKvjeVQLnFhXLrG+dJRIFi3mdh07jqGPWg7TGlIm5Ag/+LRvKoBAUcpirzsfcsnsaAf9ml0Yoi9Ii1HTJGP72kn7ZXJC04L2Wa49UxiOBhzP2/Z7kDBwYRCmMTEzuFH08QO5C/JxNSMlNx90DaTtKZv9+0dkt1qtiO62uRF+E8hlsGbZO4XWT0nZOPM8zd14g+L2lj36hyWPoah172dtZ3FVTPWwfb7lIp5YDMoLH39CDViORKQkdwe602nMoQZwpICguYF6usWBRXD7U7xquYsoeq02o9hPLEaFUwUJyenx5ZEXp4YHqI4jBAyHYaXzRMjV8HOEUJddEa2oP5yx6d+Ts/3gX1y899vHDAWJ4+8Cv5QksYNW2m2dDHuJ1x141KLHJoXqdqYEDdZ78gLWxFsL1vvMslW1FzrnQg3wdUN4twNahMtROJ83rJ51CaZD2odyMPFHiHMOhDeEf197V/PdznWr8hKbeg700CT4CbyDzmkGBAIOdFC7fT/ov8+dEfoMnMwQyBUyk=
