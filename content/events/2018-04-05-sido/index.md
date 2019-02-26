@@ -1,23 +1,22 @@
 ---
 date: 2018-04-05
 title: SIDO
-description: L’événement fondateur de la filière IoT
+description: The founding event of the IoT field
 image: /images/events/sido2018.jpg
 websiteURL: https://www.sido-event.com
-address: Cité Internationale de Lyon
+address: Cité Internationale de Lyon, France
 booth: C11
 ---
 
-## Conférences
+## Conferences
 
-Du POC à l'industrialisation ? Méthodo de la réussite…, le 5 avril à 12h45, salle Pasteur
+From POC to industrialization? Methodology of success ..., April 5 at 12:45 pm, Pasteur room
 
 - Didier LONGUEVILLE, hl2 CTO & Cofounder
-  
-  
+
 ## Workshops
 
-Le Edge computing au service de la maintenance prédictive, le 4 avril à 16h15, salle Rhône 3
+Edge computing at the service of predictive maintenance, April 4 at 16:15, Rhône 3 room
 
 - Didier LONGUEVILLE, hl2 CTO & Cofounder
 - Eric DESPATURES, ENGIE Axima Project lead & Technical specialist

@@ -1,7 +1,7 @@
 ---
 date: 2018-05-24
 title: Viva Technology
-description: Viva Technology, or VivaTech, is an annual technology conference, dedicated to innovation and startups.
+description: Viva Technology, ou VivaTech, est une conférence technologique annuelle, dédiée à l'innovation et aux startups.
 image: /images/events/viva-technology.jpg
 websiteURL: https://vivatechnology.com
 address: Paris Expo Porte de Versailles

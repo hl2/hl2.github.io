@@ -1,23 +1,23 @@
 ---
 date: 2018-03-27
 title: Smart Industries
-description: Salon de l'industrie connectée, collaborative et efficiente
+description: Show of connected, collaborative and efficient industries
 image: /images/events/smart-industries.png
 websiteURL: https://www.smart-industries.fr
-address: Paris Expo Nord Villepinte
+address: Expo Nord Villepinte, Paris, France
 booth: 3F37, Village Cap'Tronic
 ---
 
-## Conférences
+## Conferences
 
-Expériences IOT avec hl2, le 28 mars à 15h, Espace Pitch, Entrée Hall 5
+IOT Experiments with hl2, March 28 at 3 pm, Pitch Space, Entrance Hall 5
 
 - Didier LONGUEVILLE, hl2 CTO & Cofounder
 - Florent GAL, Eramet group (alloys division) IT Manager for Purchasing and Maintenance
 
-La maintenance prédictive n'est plus de la science-fiction !, le 28 mars à 17h, Stand 4N100 (Table Ronde)
+Predictive maintenance is no longer science fiction!, March 28 at 5 pm, Booth 4N100 (Round Table)
 
-**TECHIN France** est une association qui apportent 400 solutions logicielles et internet portées par des commerçants tels que Dassault Systèmes, ESI, Microsoft, etc... TECHIN France a invité Didier LONGUEVILLE (hl2 CTO) à prendre part à la table ronde qui se tiendra au salon de l'industrie globale (@giparis2018).
+**TECHIN France** is an association that provide 400 software and internet solutions endorsed by commercial partners such as Dassault Systèmes, ESI, Microsoft, etc... TECHIN France invited Didier LONGUEVILLE (hl2 CTO) to take part in the round table to be held at the global industry fair (@giparis2018).
 
 - Didier LONGUEVILLE, hl2 CTO & Cofounder
 - Bertrand Wascat, Product Manager for Predictive Maintenance at ACOEM
@@ -27,7 +27,7 @@ La maintenance prédictive n'est plus de la science-fiction !, le 28 mars à 17h
 - Mathieu Cula, Co-Founder of Optmistik
 - Jean-Michel Lefevre, General Manager at ProbaYes
 
-La performance opérationnelle mesurée par les IoT, le 29 mars à 10h30, Espace Pitch, Entrée Hall 5
+Operational performance measured by IoT, March 29th at 10:30 am, Pitch Space, Entrance Hall 5
 
 - Didier LONGUEVILLE, hl2 CTO & Cofounder
 - Marc LEJEUNE, ENGIE Axima Purchasing and maintenance departments

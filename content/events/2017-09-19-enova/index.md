@@ -1,9 +1,9 @@
 ---
 date: 2017-09-19
 title: Enova
-description: Salon de l'innovation en électronique, mesure, vision et optique
+description: Innovation show of Electronics, Measurement, Vision and Optics
 image: /images/events/nenad-grujic-671248-unsplash.jpg
 websiteURL: http://www.enova-event.com
-address: Paris Expo Porte de Versailles
+address: Expo Porte de Versailles, Paris, France
 booth: L36
 ---

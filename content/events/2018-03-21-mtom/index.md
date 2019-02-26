@@ -3,23 +3,23 @@ date: 2018-03-21
 title: MtoM
 image: /images/events/louis-reed-747404-unsplash.jpg
 websiteURL: http://www.embedded-mtom.com
-address: Paris Expo Porte de Versailles
+address: Expo Porte de Versailles, Paris, France
 booth: D28
 ---
 
 ## Workshops
 
-Le Edge computing au service de la maintenance prédictive, le 21 mars à 11h
+Edge computing at the service of predictive maintenance, March 21 at 11am
 
 - Didier LONGUEVILLE, hl2 CTO & Cofounder
 - Eric DESPATURES, ENGIE Axima Project lead & Technical specialist
 
-L'IIOT : du Projet aux Pilotes, le 22 mars à 11h
+The IIOT: from Project to Pilots, March 22 at 11am
 
 - Didier LONGUEVILLE, hl2 CTO & Cofounder
 - Frederic GUILLOU, GRTgaz Innovation Project Manager
 
-L'IOT au service du traitement d'alertes, le 22 mars à 11h
+The IOT at the service of alert processing, March 22 at 11am
 
 - Kevin POLLET, hl2 Software Tech Lead
 - Eric BOILEAU, IT LINK Technical director
