@@ -11,7 +11,7 @@ other = "Contact"
 other = "Développeurs"
 
 [events]
-other = "Evènements"
+other = "Évènements"
 
 [home]
 other = "Accueil"
@@ -41,7 +41,7 @@ other = "Ventes"
 other = "S'abonner"
 
 [team]
-other = "Equipe"
+other = "Équipe"
 
 [use-cases]
 other = "Cas d'utilisation"
