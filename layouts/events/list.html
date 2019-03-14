@@ -56,6 +56,9 @@
               </li>
               {{ end }}
             </ul>
+            {{ with .Params.Subtitle }}
+              <p class="font-weight-bold">{{ . }}</p>
+            {{ end }}
             <p>{{ .Description }}</p>
           </div>
         </div>
