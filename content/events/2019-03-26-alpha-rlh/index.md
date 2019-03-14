@@ -12,8 +12,10 @@ date: 2019-02-27
 
 IoT business model - integrator perpective, agility ...
 
-- Florent AGNERAY, Chairman, hl2
-
-Edge computing / teamed with CATIE (UT Big Data and Simulation)
-
 - Didier LONGUEVILLE, CTO and co-founder, hl2
+
+## Links
+
+- Agenda: http://evenements.alpha-rlh.com/files/2019/03/Programme-26-mars-2.pdf
+- RLH: http://www.alpha-rlh.com/fre
+- XLIM: https://www.xlim.fr
