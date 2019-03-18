@@ -1,5 +1,4 @@
-Copyright (C) hl2
-=======================
+# Copyright (C) hl2
 
 ### All rights reserved
 
