@@ -1,8 +1,8 @@
 ---
 title: MtoM
-subtitle: Venez visiter le stand hl2 (E26) et assister au tables rondes que nous co-animerons
+subtitle: Venez visiter le stand hl2 (E26) et assister aux tables rondes que nous co-animerons
 image: /images/events/mtom.png
-description: "Les Salons IoT World et MtoM & Objets Connectés/Embedded Systems représentent LE plus grand événement Européen de l’IoT, du M2M, des Objets Connectés et de l’Embarqué. Ce Grand rendez-vous réunira, durant 2 jours, dans un même pavillon, plus de 300 acteurs leaders des secteurs de l’IoT, du M2M, des Objets Connectés, de l’Embarqué, du Cloud…et permettront aux 10 000 visiteurs attendus d’avoir une vision à 360° pour les aider dans la réalisation des projets de leurs entreprises.: de l’idée à la conception du système connecté ; du design électronique de l’objet à son exploitation opérationnelle…"
+description: "Les Salons IoT World et MtoM & Objets Connectés/Embedded Systems représentent LE plus grand événement Européen de l’IoT, du M2M, des Objets Connectés et de l’Embarqué. Ce grand rendez-vous réunira, durant 2 jours, dans un même pavillon, plus de 300 acteurs leaders des secteurs de l’IoT, du M2M, des Objets Connectés, de l’Embarqué, du Cloud…et permettront aux 10 000 visiteurs attendus d’avoir une vision à 360° pour les aider dans la réalisation des projets de leurs entreprises : de l’idée à la conception du système connecté ; du design électronique de l’objet à son exploitation opérationnelle…"
 website: http://www.embedded-mtom.com
 address: Paris Expo Porte de Versailles
 booth: E26

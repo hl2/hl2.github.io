@@ -1,7 +1,7 @@
 ---
 title: SIDO
 subtitle: Venez visiter le stand hl2 E340
-description: "Depuis 4 ans, SIDO structure la filière européenne de l’IoT et aide les entreprises à identifier de nouveaux leviers de croissance et à réinventer leurs business modèles en intégrant l’IoT. Avec l’accroissement de la puissance de calcul et l’intelligence embarquée, les projets connectés s'accélèrent et s'enrichissent. L’IoT, l’IA et la robotique se mêlent et s’intègrent dans des applications connectées toujours plus autonomes et intelligentes."
+description: "Depuis 4 ans, SIDO structure la filière européenne de l’IoT et aide les entreprises à identifier de nouveaux leviers de croissance et à réinventer leurs business model en intégrant l’IoT. Avec l’accroissement de la puissance de calcul et l’intelligence embarquée, les projets connectés s'accélèrent et s'enrichissent. L’IoT, l’IA et la robotique se mêlent et s’intègrent dans des applications connectées toujours plus autonomes et intelligentes."
 image: /images/events/sido2019.jpg
 website: https://www.sido-event.com
 address: Cité Internationale de Lyon
