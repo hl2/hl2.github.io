@@ -12,7 +12,7 @@ date: 2019-02-27
 
 ## Round Tables
 
-Edge Computing + Decentralized AI: When is it appropriate? For what benefits? With what technological constraints and possible additional costs?, March 20th at 10am, Klee room
+Edge Computing + Decentralized AI: When is it appropriate? For what benefits? With what technological constraints and possible additional costs?, March 20th at 11am, Klee room
 
 - Didier LONGUEVILLE, CTO & Co-founder, hl2
 - Aurélien JACQUIOT, Paris Site Manager, WITEKIO

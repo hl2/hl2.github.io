@@ -12,7 +12,7 @@ date: 2019-02-27
 
 ## Tables Rondes
 
-Edge Computing + IA décentralisée : Dans quels cas est-ce opportun ? Pour quels bénéfices ? Avec quelles contraintes technologiques et éventuels surcoûts ?, le 20 mars à 10h, Salle Klee
+Edge Computing + IA décentralisée : Dans quels cas est-ce opportun ? Pour quels bénéfices ? Avec quelles contraintes technologiques et éventuels surcoûts ?, le 20 mars à 11h, Salle Klee
 
 - Didier LONGUEVILLE, CTO & Co-founder, hl2
 - Aurélien JACQUIOT, Paris Site Manager, WITEKIO
