@@ -50,7 +50,9 @@
       href="/favicon.png"
     />
 
-    <title>{{ with .Params.Title }}{{ . }}{{ else }}{{ i18n "home" }}{{end}} | {{ .Site.Title }}</title>
+    <title>
+      {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Params.Title }} | {{ .Site.Title }}{{ end }}
+    </title>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
