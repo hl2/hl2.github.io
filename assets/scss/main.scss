@@ -1,0 +1,46 @@
+@import "./variables.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.anchor {
+  top: -$navbar-height;
+  display: block;
+  visibility: hidden;
+  position: absolute;
+}
+
+.footer {
+  a,
+  address,
+  .copyright {
+    color: rgba(0, 0, 0, 0.5) !important;
+  }
+}
+
+.jumbotron {
+  background-color: $hl2-color;
+  min-height: 350px;
+}
+
+.mt-for-navbar {
+  margin-top: $navbar-height;
+}
+
+.navbar {
+  background-color: $hl2-color;
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+
+  h1 {
+    @extend .mb-5;
+  }
+}

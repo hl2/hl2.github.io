@@ -1,0 +1,21 @@
+{
+  "name": "hl2.com",
+  "version": "0.0.0",
+  "description": "hl2.com dependencies",
+  "private": true,
+  "author": "hl2",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "homepage": "https://github.com/hl2/hl2.com#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hl2/hl2.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hl2/hl2.com/issues"
+  },
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "jquery": "3.3.1",
+    "popper.js": "1.14.7"
+  }
+}

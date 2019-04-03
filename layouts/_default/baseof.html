@@ -33,13 +33,18 @@
     {{ end }}
     <!-- End Google Tag Manager -->
 
-    {{ $bootstrapCSS := resources.Get "css/bootstrap-4.3.1.css" }}
-    {{ $fontawesomeCSS := resources.Get "css/fontawesome-5.7.1.css" }}
-    {{ $mainCSS := resources.Get "css/main.css" }}
-    {{ $bundleCSS := slice $fontawesomeCSS $bootstrapCSS $mainCSS | resources.Concat "css/bundle.css" | resources.Minify | resources.Fingerprint "sha512" }}
+    {{ $main := resources.Get "scss/main.scss" | resources.ToCSS }}
+    {{ $bundle := slice $main | resources.Concat "css/bundle.css" | resources.Minify | resources.Fingerprint "sha512" }}
     <link
       rel="stylesheet"
-      href="{{ $bundleCSS.Permalink }}"
+      href="{{ $bundle.Permalink }}"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
 
@@ -81,14 +86,14 @@
 
     {{ partial "footer" . }}
 
-    {{ $jqueryJS := resources.Get "js/jquery-3.3.1.slim.min.js" }}
-    {{ $popperJS := resources.Get "js/popper-1.14.7.min.js" }}
-    {{ $bootstrapJS := resources.Get "js/bootstrap-4.3.1.min.js" }}
-    {{ $mainJS := resources.Get "js/main.js" }}
-    {{ $bundleJS := slice $jqueryJS $popperJS $bootstrapJS $mainJS | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
+    {{ $jquery := resources.Get "js/jquery.slim.min.js" }}
+    {{ $popper := resources.Get "js/popper.min.js" }}
+    {{ $bootstrap := resources.Get "js/bootstrap.min.js" }}
+    {{ $main := resources.Get "js/main.js" }}
+    {{ $bundle := slice $jquery $popper $bootstrap $main | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
     <script
-      src="{{ $bundleJS.Permalink }}"
-      integrity="{{ $bundleJS.Data.Integrity }}"
+      src="{{ $bundle.Permalink }}"
+      integrity="{{ $bundle.Data.Integrity }}"
       crossorigin="anonymous"
     ></script>
   </body>
