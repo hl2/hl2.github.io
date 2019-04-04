@@ -8,12 +8,12 @@
   });
 
   // Configure cookie consent popup
+  (tarteAuCitron.job = tarteAuCitron.job || []).push("googlemapssearch");
+
   {{ if not .Site.IsServer }}
   tarteAuCitron.user.googletagmanagerId = "{{ .Site.Params.googleTagManagerID }}";
-  (tarteAuCitron.job = tarteAuCitron.job || []).push("googletagmanager");
+  tarteAuCitron.job.push("googletagmanager");
   {{ end }}
-
-  (tarteaucitron.job = tarteaucitron.job || []).push('googlemapssearch');
 
   tarteAuCitron.init({
     privacyUrl: "" /* Privacy policy url */,
