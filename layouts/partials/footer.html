@@ -70,12 +70,11 @@
         </address>
       </div>
       <div class="col-12 col-md-6 mt-3 mt-md-0">
-        <iframe
-          class="h-100 w-100"
-          frameborder="0"
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCgWrkc9EP9LwpHK0E1nwmnbeSil8mPhR8&q=hl2+Poitiers"
-          >
-        </iframe>
+        <div
+          class="h-100 w-100 googlemapssearch embed-responsive"
+          data-search="hl2+Poitiers"
+          data-api-key="{{ .Site.Params.googleSearchAPIKey }}">
+        </div>
       </div>
     </div>
   </div>

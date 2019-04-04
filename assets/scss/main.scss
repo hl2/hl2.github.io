@@ -22,6 +22,12 @@ body {
   }
 }
 
+.googlemapssearch {
+  iframe {
+    @extend .embed-responsive-item;
+  }
+}
+
 .jumbotron {
   background-color: $hl2-color;
   min-height: 350px;
