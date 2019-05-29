@@ -3,10 +3,7 @@ members = [
 	{ name= "Florent Agneray", position= "Chairman" },
 	{ name= "Mickael Bosch", position= "Hardware tech lead" },
 	{ name= "Kevin Pollet", position= "Software tech lead" },
-	{ name= "Claude Wesquy", position= "Business development manager" },
-	{ name= "David Cho-lerat", position= "Software engineer" },
 	{ name= "Guillaume Seguin", position= "Software engineer" },
 	{ name= "Catherine Lagorre", position= "Accounting & admin" },
-	{ name= "Anthony Rabine", position= "Firmware engineer" },
 	{ name= "Yoann Merceron", position= "Hardware engineer" }
 ]
