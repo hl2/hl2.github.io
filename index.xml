@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hl2</title>
+    <link>https://hl2.com/</link>
+    <description>Recent content on hl2</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 27 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://hl2.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Angers Connected Week</title>
+      <link>https://hl2.com/events/2017-10-25-eseo/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hl2.com/events/2017-10-25-eseo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Angers Connected Week</title>
+      <link>https://hl2.com/events/2018-11-22-eseo/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hl2.com/events/2018-11-22-eseo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Enova</title>
+      <link>https://hl2.com/events/2017-09-19-enova/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hl2.com/events/2017-09-19-enova/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MtoM</title>
+      <link>https://hl2.com/events/2018-03-21-mtom/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hl2.com/events/2018-03-21-mtom/</guid>
+      <description> Workshops Edge computing at the service of predictive maintenance, March 21 at 11am
+ Didier LONGUEVILLE, hl2 CTO &amp;amp; Cofounder Eric DESPATURES, ENGIE Axima Project lead &amp;amp; Technical specialist  The IIOT: from Project to Pilots, March 22 at 11am
+ Didier LONGUEVILLE, hl2 CTO &amp;amp; Cofounder Frederic GUILLOU, GRTgaz Innovation Project Manager  The IOT at the service of alert processing, March 22 at 11am
+ Kevin POLLET, hl2 Software Tech Lead Eric BOILEAU, IT LINK Technical director  </description>
+    </item>
+    
+    <item>
+      <title>MtoM</title>
+      <link>https://hl2.com/events/2019-03-20-mtom/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hl2.com/events/2019-03-20-mtom/</guid>
+      <description>Round Tables Edge Computing + Decentralized AI: When is it appropriate? For what benefits? With what technological constraints and possible additional costs?, March 20th at 11am, Klee room
+ Didier LONGUEVILLE, CTO &amp;amp; Co-founder, hl2 Aurélien JACQUIOT, Paris Site Manager, WITEKIO Jean-Luc BAUDOUIN, Technical Director, ADEUNIS Stéphane ALLAIRE, Director, OBJENIOUS Sébastien HUGUET, Marketing Segment Manager, EOLANE Guillaume Roy, IoT Technology Stream Champion, SOPRASTERIA  Industry 4.0 and predictive maintenance: how to go beyond 1st generation tools to better benefit from connected systems and AI?</description>
+    </item>
+    
+    <item>
+      <title>SIDO</title>
+      <link>https://hl2.com/events/2018-04-05-sido/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hl2.com/events/2018-04-05-sido/</guid>
+      <description> Conferences From POC to industrialization? Methodology of success &amp;hellip;, April 5 at 12:45 pm, Pasteur room
+ Didier LONGUEVILLE, hl2 CTO &amp;amp; Cofounder  Workshops Edge computing at the service of predictive maintenance, April 4 at 16:15, Rhône 3 room
+ Didier LONGUEVILLE, hl2 CTO &amp;amp; Cofounder Eric DESPATURES, ENGIE Axima Project lead &amp;amp; Technical specialist  </description>
+    </item>
+    
+    <item>
+      <title>SIDO</title>
+      <link>https://hl2.com/events/2019-04-10-sido/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hl2.com/events/2019-04-10-sido/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seminar</title>
+      <link>https://hl2.com/events/2018-11-27-cei86/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hl2.com/events/2018-11-27-cei86/</guid>
+      <description>Organized by CEI and Cap&amp;rsquo;Tronic / from 2pm to 5pm  Led by Didier LONGUEVILLE from hl2 and Vincent DEJOUY from QUANTMETRY
+ The proliferation of intelligent sensors, the growing adoption of IoT devices and the integration of many intelligent applications call for questions about the amount of generated data and their processing. Defining a processing architecture tailored for effective management of a massive amount of data is a real challenge.</description>
+    </item>
+    
+    <item>
+      <title>Smart Industries</title>
+      <link>https://hl2.com/events/2018-03-27-smart-industries/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hl2.com/events/2018-03-27-smart-industries/</guid>
+      <description>Conferences IOT Experiments with hl2, March 28 at 3 pm, Pitch Space, Entrance Hall 5
+ Didier LONGUEVILLE, hl2 CTO &amp;amp; Cofounder Florent GAL, Eramet group (alloys division) IT Manager for Purchasing and Maintenance  Predictive maintenance is no longer science fiction!, March 28 at 5 pm, Booth 4N100 (Round Table)
+TECHIN France is an association that provide 400 software and internet solutions endorsed by commercial partners such as Dassault Systèmes, ESI, Microsoft, etc&amp;hellip; TECHIN France invited Didier LONGUEVILLE (hl2 CTO) to take part in the round table to be held at the global industry fair (@giparis2018).</description>
+    </item>
+    
+    <item>
+      <title>Smart Living Day</title>
+      <link>https://hl2.com/events/2018-11-29-smart-living-day/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hl2.com/events/2018-11-29-smart-living-day/</guid>
+      <description>Organized by Pôle de Compétitivité régional Alpha RLHc / from 9am to 5pm The morning will be dedicated to market needs and the afternoon will include pitches for technological solutions - don&amp;rsquo;t miss hl2&amp;rsquo;s!</description>
+    </item>
+    
+    <item>
+      <title>Smart city &amp; grid</title>
+      <link>https://hl2.com/events/2017-10-04-smart-city-and-grid/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hl2.com/events/2017-10-04-smart-city-and-grid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The challenges of IoT: Meeting the needs - Stakes - Training</title>
+      <link>https://hl2.com/events/2019-03-26-alpha-rlh/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hl2.com/events/2019-03-26-alpha-rlh/</guid>
+      <description> Keynotes IoT business model - integrator perpective, agility &amp;hellip;
+ Didier LONGUEVILLE, CTO and co-founder, hl2  Links  Agenda: http://evenements.alpha-rlh.com/files/2019/03/Programme-26-mars-2.pdf RLH: http://www.alpha-rlh.com/fre XLIM: https://www.xlim.fr  </description>
+    </item>
+    
+    <item>
+      <title>Viva Technology</title>
+      <link>https://hl2.com/events/2018-05-24-viva-technology/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hl2.com/events/2018-05-24-viva-technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wise Factory, Angers, France</title>
+      <link>https://hl2.com/events/2018-06-28-angers-wise-factory/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hl2.com/events/2018-06-28-angers-wise-factory/</guid>
+      <description> Conferences Edge Computing: technological challenges to overcome
+ Didier LONGUEVILLE, hl2 CTO &amp;amp; Cofounder  </description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://hl2.com/contact/</link>
+      <pubDate>Fri, 08 Feb 2019 09:32:05 +0400</pubDate>
+      
+      <guid>https://hl2.com/contact/</guid>
+      <description> Full Name  Email  Company  How may we help you?   Send    Address hl2
+Futuropolis 5
+Teleport 4 Avenue Thomas Edison
+86960 Futuroscope Chasseneuil
+France   Social               </description>
+    </item>
+    
+    <item>
+      <title>Legal notices</title>
+      <link>https://hl2.com/legal-notices/</link>
+      <pubDate>Fri, 08 Feb 2019 09:32:05 +0400</pubDate>
+      
+      <guid>https://hl2.com/legal-notices/</guid>
+      <description>Copyright In accordance with the laws governing literary, artistic, and industrial property rights, the reproduction and/or use, alone or in combination, of some or all of the components on the hl2 site is strictly prohibited.
+All of the brands cited herein are registered trademarks.
+Company hl2
+A French &amp;ldquo;Société par Actions Simplifiée&amp;rdquo; with share capital of 584 592 €
+Futuropolis 5, Teleport 4, Avenue Thomas Edison, 86960, Futuroscope Chasseneuil, France R.</description>
+    </item>
+    
+  </channel>
+</rss>
