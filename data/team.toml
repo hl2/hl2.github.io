@@ -1,6 +1,5 @@
 members = [
   { name= "Didier Longueville", position= "CTO and co-founder" },
-	{ name= "Florent Agneray", position= "Chairman" },
 	{ name= "Mickael Bosch", position= "Hardware tech lead" },
 	{ name= "Yoann Merceron", position= "Hardware engineer" }
 ]
